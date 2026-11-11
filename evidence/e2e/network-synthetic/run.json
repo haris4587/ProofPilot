@@ -1,0 +1,28 @@
+{
+  "network": "studionet",
+  "chainId": 61999,
+  "contractAddress": "0x95e28B38a3268f9e625e766B3FD6Cd0aa9f5430f",
+  "taskId": "synthetic-e2e-mwcdokzk",
+  "sender": "0x86FBc0059a649078A0EBbe530d2D4b8BDEd0C90E",
+  "mode": "real-network-local-research-fixture",
+  "heuristExecution": false,
+  "sourceCommit": "636c150aa1729b574e2eeaf593c62952e4534621",
+  "mandateHash": "95cb196f31d81caac31042b60b4a7e408360597768476c0cc3be02e050bc1f9e",
+  "evidenceHash": "574e6622017db36bc78a05512fc38e0ec4d6da7fe95033377ce2a40ff5b811cd",
+  "transactions": [
+    {
+      "method": "create_assignment",
+      "hash": "0xfe7e76106a3e76f02c2663557b92a74df0bbfa0c0600b89de1bcf2a77523eda1",
+      "status": "FINALIZED",
+      "explorer": "https://explorer-studio.genlayer.com/transactions/0xfe7e76106a3e76f02c2663557b92a74df0bbfa0c0600b89de1bcf2a77523eda1",
+      "executionVerified": true
+    },
+    {
+      "method": "submit_delivery",
+      "hash": "0x4851673c3e177a0bf1b4182c388ef0a72e82f7710096b09791fe7b892fa22a88",
+      "status": "BROADCAST",
+      "explorer": "https://explorer-studio.genlayer.com/transactions/0x4851673c3e177a0bf1b4182c388ef0a72e82f7710096b09791fe7b892fa22a88"
+    }
+  ],
+  "error": "An unknown RPC error occurred."
+}

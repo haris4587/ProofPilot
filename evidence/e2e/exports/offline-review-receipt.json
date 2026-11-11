@@ -1,0 +1,10 @@
+{
+  "mode": "offline-fixture",
+  "taskId": "pp-8769142f-27d",
+  "mandateHash": "b8131167584f7aaee3ee0405f998d6cbd14aab0f39994f8a10beea5b4ff8d0e9",
+  "evidenceHash": "450b30b0e290d6b7418372ad7853bcf6f82e89444fb882204106a47f235ad1bf",
+  "networkTransaction": null,
+  "finalized": false,
+  "expectedOutcome": "INCONCLUSIVE",
+  "reason": "Fewer pinned sources than required. This is a local precondition check, not a GenLayer verdict."
+}

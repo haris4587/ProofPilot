@@ -27,3 +27,7 @@ Contract: [0x95e28B38a3268f9e625e766B3FD6Cd0aa9f5430f](https://explorer-studio.g
 ## Verified production website
 
 [ProofPilot on Vercel](https://proofpilot-anza0x.vercel.app/) is READY in production. Homepage and status API returned 200. The research endpoint correctly rejected GET with 405. The complete labeled offline browser workflow passed. The runtime error/fatal scan returned no matching records for the checked window. See `evidence/vercel-deployment.json` and `evidence/vercel-live.png`. Live Heurist credentials remain unconfigured.
+
+## 11 November 2026 production audit
+
+The latest verified audit, all-six-stage screenshots, downloaded exports, passing 46-test CI reference, production deployment metadata, real finalized successful commitments, failed adjudication and finalized state reads are recorded in [evidence/e2e/README.md](evidence/e2e/README.md). This supersedes earlier unexecuted-smoke wording: synthetic create/delivery were attempted, but no successful finalized adjudication or genuine Heurist execution is claimed.

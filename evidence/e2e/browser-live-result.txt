@@ -1,0 +1,65 @@
+- complementary:
+  - link "ProofPilot .":
+    - /url: "#"
+    - text: ProofPilot
+    - generic: .
+  - generic: P
+  - strong: Research workspace
+  - generic: Partner Demo Lab
+  - generic: WORKSPACE
+  - navigation:
+    - button "Overview":
+      - text: Overview
+    - button "Assignments":
+      - text: Assignments
+    - button "Agent deliveries":
+      - text: Agent deliveries
+    - button "Dispute court 0":
+      - text: Dispute court
+      - generic: "0"
+    - button "Evidence vault" [active]:
+      - text: Evidence vault
+  - strong: GenLayer Studionet
+  - generic: Development network · 61999
+  - link "Project source":
+    - /url: https://github.com/haris4587/ProofPilot
+    - text: Project source
+  - button "Integration settings":
+    - text: Integration settings
+  - generic: PP
+  - strong: Demo operator
+  - generic: Research delivery court
+- banner:
+  - text: Workspace
+  - generic: Evidence vault
+  - generic: Live workflow
+  - button "Integration settings":
+  - generic: P
+- main:
+  - paragraph: AUDIT TRAIL
+  - heading "Evidence vault" [level=1]
+  - paragraph: Export the exact bytes you committed.
+  - heading "Immutable commitments" [level=3]
+  - text: Mandate SHA-256
+  - code: b8131167584f7aaee3ee0405f998d6cbd14aab0f39994f8a10beea5b4ff8d0e9
+  - button "Copy Mandate SHA-256":
+  - text: Delivery SHA-256
+  - code: Not committed yet
+  - button "Mandate":
+    - text: Mandate
+  - button "Evidence bundle" [disabled]:
+    - text: Evidence bundle
+  - button "Provider receipt" [disabled]:
+    - text: Provider receipt
+  - heading "Transaction history" [level=3]
+  - button "Refresh chain records"
+  - strong: create_assignment
+  - generic: FINALIZED · SUCCESS
+  - link "0x588b72…9228bc":
+    - /url: https://explorer-studio.genlayer.com/transactions/0x588b72936f26043dd0728da770e430ab18a0a226b4a70da730edac38f39228bc
+    - text: 0x588b72…9228bc
+  - paragraph: Hashes prove integrity, not origin. Heurist provenance is an operator receipt, not a provider signature.
+  - status:
+    - text: Mandate finalized on Studionet.
+  - generic: ProofPilot / AI Agent Delivery Court
+  - generic: Agreement first. Evidence always.• Development demo

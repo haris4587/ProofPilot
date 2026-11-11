@@ -1,0 +1,43 @@
+{
+  "network": "studionet",
+  "chainId": 61999,
+  "contractAddress": "0x95e28B38a3268f9e625e766B3FD6Cd0aa9f5430f",
+  "taskId": "aave-e2e-mwcde45j",
+  "sender": "0x146D6052A25D9CE1430912CCAD9E7eC317a2fAa5",
+  "mode": "real-network-local-research-fixture",
+  "heuristExecution": false,
+  "sourceCommit": "636c150aa1729b574e2eeaf593c62952e4534621",
+  "mandateHash": "b8131167584f7aaee3ee0405f998d6cbd14aab0f39994f8a10beea5b4ff8d0e9",
+  "evidenceHash": "c27a937939424497cfa193c324f0fc8fa9b367e66dbd023eb0912a79f1bceba8",
+  "transactions": [
+    {
+      "method": "create_assignment",
+      "hash": "0x0a908886c45f664fe515f4d65505de056148897e04b679a4c5cdda569658ee3f",
+      "status": "FINALIZED",
+      "explorer": "https://explorer-studio.genlayer.com/transactions/0x0a908886c45f664fe515f4d65505de056148897e04b679a4c5cdda569658ee3f",
+      "executionVerified": true
+    },
+    {
+      "method": "submit_delivery",
+      "hash": "0xdb280cda90a62e95f490995d9f3aacd7d6c50753d3e893bf243438e6a2c7db0e",
+      "status": "FINALIZED",
+      "explorer": "https://explorer-studio.genlayer.com/transactions/0xdb280cda90a62e95f490995d9f3aacd7d6c50753d3e893bf243438e6a2c7db0e",
+      "executionVerified": true
+    },
+    {
+      "method": "open_dispute",
+      "hash": "0xd0b2234ca2357109bcd603ba811d025566c436adfd5d8c538124046af9dbde49",
+      "status": "FINALIZED",
+      "explorer": "https://explorer-studio.genlayer.com/transactions/0xd0b2234ca2357109bcd603ba811d025566c436adfd5d8c538124046af9dbde49",
+      "executionVerified": true
+    },
+    {
+      "method": "adjudicate",
+      "hash": "0xe67b06242e9379510ea7543337556f3a9177ba1ed42f717cdce826e4f2538a31",
+      "status": "FINALIZED",
+      "explorer": "https://explorer-studio.genlayer.com/transactions/0xe67b06242e9379510ea7543337556f3a9177ba1ed42f717cdce826e4f2538a31",
+      "executionVerified": false
+    }
+  ],
+  "error": "Execution success could not be verified; inspect the saved receipt before any retry."
+}

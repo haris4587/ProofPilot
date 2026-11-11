@@ -30,3 +30,7 @@ Deep navy background, ProofPilot mark centered left, the actual verdict receipt 
 ## Status
 
 This document provides the complete production storyboard, narration, shot list and editing plan. A mission-ready MP4 requires recorded credentialed Heurist execution. A locally rendered concept/walkthrough, if included, must be labeled as such and does not replace that recording.
+
+## Verified audit and filming status
+
+See [evidence/e2e/README.md](evidence/e2e/README.md) for the actual November 11 run. Genuine Heurist execution and successful finalized adjudication are still outstanding. Use the preview only as a verification report, not a completed mission demonstration. The exact final-film timeline is in evidence/e2e/video/EDITING.md.

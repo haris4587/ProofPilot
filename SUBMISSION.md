@@ -1,15 +1,21 @@
-# Partner Demo Lab submission draft
+# Partner Demo Lab submission — verification draft
 
-**Project:** ProofPilot — AI Agent Delivery Court
+**Mission:** Internet Court Partner Demo Lab, November 9–23, 2026.
+
+**Project:** ProofPilot — AI Agent Delivery Court. Existing implementation preserved.
+
+**Website:** https://proofpilot-anza0x.vercel.app/ (Vercel production READY).
 
 **Repository:** https://github.com/haris4587/ProofPilot
 
-**Use case:** Research delivery can be reviewed against the scope, required facts and evidence terms agreed before execution. ProofPilot combines an explicitly identified Internet Court protocol adapter, a genuine server-side Heurist Mesh integration and an original GenLayer adjudication contract.
+ProofPilot locks research scope before execution, commits exact delivery bytes and routes disputes to an original GenLayer contract. The server-side Heurist Mesh adapter and Internet Court protocol adapter are implemented. Their existence does not prove a completed real partner run.
 
-GenLayer is central: its contract owns the immutable mandate, evidence commitment, dispute authorization and independently validated terminal decision. A frontend or server cannot provide a final verdict. Validators independently retrieve and hash-check pinned evidence, assess each criterion and compare substantive conclusions.
+**Verified:** All six browser workflow stages in labeled offline mode; real browser mandate finalized SUCCESS; gasless Stable Studionet mandate, delivery and dispute finalized SUCCESS; 46 automated tests and deployment checks; desktop and narrow-width reflow; local evidence export with byte hashes. See [the complete audit](evidence/e2e/README.md), screenshots and raw receipts.
 
-**Reproducibility:** Run the interface locally or deploy it on Vercel, configure server-only Heurist credentials, deploy the contract in Studio with the built-in account, then follow SETUP.md and DEMO.md. Offline fixtures are clearly labeled.
+**Not submission-ready:** HEURIST_API_KEY is absent, so there is no actual provider response. The Aave adjudication transaction finalized with execution ERROR and final state remains DISPUTED. No finalized verdict is claimed. ACCEPTED/REJECTED/INCONCLUSIVE coverage currently comes from explicit mocked contract tests, not three network outcomes. The narrated preview honestly shows those gaps and cannot stand in for the requested successful mission film.
 
-**Before submission:** attach the real credentialed Heurist receipt and source pin, successful finalized on-chain workflow records, verified Vercel URL and a video under 45 seconds. Do not describe this project as a completed three-way live demonstration until those records exist. Contract-only synthetic smoke tests are development evidence, not paid provider evidence.
+**To finalize:** securely add the Heurist key in Vercel; explicitly authorize any paid single request; redeploy; capture a fresh locked-mandate → genuine provider → evidence → successful finalized AI adjudication run. Diagnose the invalid grounded decision before further consensus attempts. Any technically necessary replacement contract requires separate authorization. Then replace blocked video segments with genuine results and use official partner logo assets.
 
-**No escrow/payment claim:** ProofPilot does not transfer funds, revoke delegated permissions, file to an invented official Internet Court API or update a reputation registry.
+The existing contract is 0x95e28B38a3268f9e625e766B3FD6Cd0aa9f5430f on chain 61999; no replacement was deployed during this audit. A transaction being broadcast, accepted or finalized with ERROR is never presented as a verdict.
+
+No escrow, funds transfer, invented official court API, permission revocation or reputation-registry update is claimed. Counts describe the current browser session, not persistent global usage.

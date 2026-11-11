@@ -1,0 +1,22 @@
+{
+  "network": "studionet",
+  "chainId": 61999,
+  "contractAddress": "0x95e28B38a3268f9e625e766B3FD6Cd0aa9f5430f",
+  "taskId": "aave-e2e-mwcdb61v",
+  "sender": "0xEd5F27DD4491585eE4Bc70bC93d10E65710b1038",
+  "mode": "real-network-local-research-fixture",
+  "heuristExecution": false,
+  "sourceCommit": "636c150aa1729b574e2eeaf593c62952e4534621",
+  "mandateHash": "b8131167584f7aaee3ee0405f998d6cbd14aab0f39994f8a10beea5b4ff8d0e9",
+  "evidenceHash": "c27a937939424497cfa193c324f0fc8fa9b367e66dbd023eb0912a79f1bceba8",
+  "transactions": [
+    {
+      "method": "create_assignment",
+      "hash": "0xc316a8edc7daa20347666d4ebc87f4c9d426a1821ecc3b60244af17796a0af25",
+      "status": "7",
+      "explorer": "https://explorer-studio.genlayer.com/transactions/0xc316a8edc7daa20347666d4ebc87f4c9d426a1821ecc3b60244af17796a0af25",
+      "executionVerified": false
+    }
+  ],
+  "error": "Execution success could not be verified; inspect the saved receipt before any retry."
+}

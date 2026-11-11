@@ -11,11 +11,13 @@ const canonical=v=>v===null||typeof v!=='object'?JSON.stringify(v).replace(/[\u0
 const hash=s=>createHash('sha256').update(s).digest('hex');
 const serialize=v=>JSON.stringify(v,(_,v)=>typeof v==='bigint'?v.toString():v,2);
 const account=createAccount();const client=createClient({chain:studionet,account});
-const taskId='aave-e2e-'+Date.now().toString(36);const dir='evidence/e2e/network';await mkdir(dir,{recursive:true});
-const mandate=JSON.parse(await readFile('evidence/e2e/exports/offline-mandate.json','utf8'));
-const files=['aave-borrowing.txt','aave-health.txt','chainlink-money-markets.txt'];
-const sources=await Promise.all(files.map(async name=>({url:`https://raw.githubusercontent.com/haris4587/ProofPilot/${pin}/fixtures/aave-v3/${name}`,sha256:hash(await readFile('fixtures/aave-v3/'+name))})));
-const bundle={report:await readFile('fixtures/aave-v3/local-report.txt','utf8'),sources,provenance:{mode:'local-research-contract-test',provider:'Locally authored test report; not Heurist',sourceCommit:pin}};
+const synthetic=process.env.PROOFPILOT_NETWORK_PROFILE==='synthetic';
+const taskId=(synthetic?'synthetic-e2e-':'aave-e2e-')+Date.now().toString(36);const dir=synthetic?'evidence/e2e/network-synthetic':'evidence/e2e/network';await mkdir(dir,{recursive:true});
+const mandate=JSON.parse(await readFile(synthetic?'evidence/smoke-mandate.json':'evidence/e2e/exports/offline-mandate.json','utf8'));
+const files=synthetic?['demolend-source.txt']:['aave-borrowing.txt','aave-health.txt','chainlink-money-markets.txt'];
+const fixtureDir=synthetic?'fixtures':'fixtures/aave-v3';
+const sources=await Promise.all(files.map(async name=>({url:`https://raw.githubusercontent.com/haris4587/ProofPilot/${pin}/${fixtureDir}/${name}`,sha256:hash(await readFile(fixtureDir+'/'+name))})));
+const bundle={report:await readFile(synthetic?'fixtures/demolend-report.txt':'fixtures/aave-v3/local-report.txt','utf8'),sources,provenance:{mode:'local-research-contract-test',provider:'Locally authored test report; not Heurist',sourceCommit:pin}};
 const m=canonical(mandate),b=canonical(bundle);await writeFile(dir+'/mandate.json',m);await writeFile(dir+'/delivery.json',b);
 const record={network:'studionet',chainId:61999,contractAddress:address,taskId,sender:account.address,mode:'real-network-local-research-fixture',heuristExecution:false,sourceCommit:pin,mandateHash:hash(m),evidenceHash:hash(b),transactions:[]};
 const persist=()=>writeFile(dir+'/run.json',serialize(record));await persist();

@@ -1,0 +1,28 @@
+{
+  "url": "https://proofpilot-anza0x.vercel.app/",
+  "deployment": "dpl_F6DxRyxH8dz9uPoKzqgGYeRYnMkB",
+  "state": "READY",
+  "sourceCommit": "e932ea8afbd01d8f1f6c6565e0ac71a05a206c3f",
+  "hosting": "Vercel",
+  "statusApi": {
+    "status": 200,
+    "body": {
+      "heuristConfigured": false,
+      "operatorConfigured": true,
+      "network": "studionet",
+      "chainId": 61999
+    }
+  },
+  "unauthenticatedResearchPost": 401,
+  "runtimeErrorFatalScan": {
+    "window": "10m",
+    "result": "No logs found for the specified criteria"
+  },
+  "browserApplicationWarnings": 0,
+  "environmentMetadata": {
+    "HEURIST_API_KEY": "absent",
+    "PROOFPILOT_OPERATOR_TOKEN": "sensitive production variable configured; value omitted",
+    "VITE_CONTRACT_ADDRESS": "0x95e28B38a3268f9e625e766B3FD6Cd0aa9f5430f"
+  },
+  "gitConnection": "Direct source deployment with commit metadata; automatic GitHub integration not verified and Vercel import reported missing integration."
+}
