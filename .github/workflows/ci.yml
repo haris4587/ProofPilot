@@ -1,0 +1,34 @@
+name: ProofPilot checks
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  offline-tests:
+    name: Offline tests, lint and production build
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+      - name: Install locked dependencies
+        run: npm ci
+      - name: JavaScript and adapter tests
+        run: npm test
+      - name: Python contract-logic tests (mock GenVM)
+        run: npm run test:contract
+      - name: Type checking
+        run: npm run typecheck
+      - name: ESLint
+        run: npm run lint
+      - name: Build
+        run: npm run build
