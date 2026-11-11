@@ -1,0 +1,3 @@
+import js from '@eslint/js';
+import ts from 'typescript-eslint';
+export default ts.config({ignores:['dist/**','node_modules/**']},js.configs.recommended,{languageOptions:{globals:{process:'readonly',console:'readonly'}}},...ts.configs.recommended,{files:['**/*.ts','**/*.tsx'],languageOptions:{globals:{process:'readonly',fetch:'readonly',setTimeout:'readonly',AbortSignal:'readonly',Buffer:'readonly',URL:'readonly',Request:'readonly',Response:'readonly',console:'readonly',crypto:'readonly',window:'readonly',document:'readonly',localStorage:'readonly',navigator:'readonly',Blob:'readonly',TextEncoder:'readonly',HTMLInputElement:'readonly',HTMLTextAreaElement:'readonly'}}});

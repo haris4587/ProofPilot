@@ -1,0 +1,14 @@
+import {readFile,writeFile} from 'node:fs/promises';
+import {createHash} from 'node:crypto';
+import {createAccount,createClient} from 'genlayer-js';
+import {studionet} from 'genlayer-js/chains';
+import {TransactionStatus} from 'genlayer-js/types';
+const key=process.env.GENLAYER_PRIVATE_KEY;
+if(!key||!/^0x[0-9a-fA-F]{64}$/.test(key))throw new Error('Configure a disposable development key in GENLAYER_PRIVATE_KEY, or use Studio built-in deployment. Do not export your existing Studio key.');
+const code=await readFile('contracts/proof_pilot.py');const account=createAccount(key);const client=createClient({chain:studionet,account});
+const hash=await client.deployContract({code,leaderOnly:false,consensusMaxRotations:2});console.log('Deployment transaction:',hash);
+const receipt=await client.waitForTransactionReceipt({hash,status:TransactionStatus.FINALIZED,interval:5000,retries:30});
+await writeFile('evidence/deployment-cli-receipt.json',JSON.stringify(receipt,(_,v)=>typeof v==='bigint'?v.toString():v,2));
+const leaders=receipt.consensus_data?.leader_receipt;const leader=Array.isArray(leaders)?leaders[0]:leaders;
+if((receipt.statusName||receipt.status)!=='FINALIZED'||!(receipt.txExecutionResultName==='SUCCESS'||leader?.execution_result==='SUCCESS'))throw new Error('Deployment is not verified finalized and successful. Inspect the saved receipt.');
+console.log(JSON.stringify({network:'studionet',chainId:61999,sender:account.address,transaction:hash,sourceSha256:createHash('sha256').update(code).digest('hex'),data:receipt.data},null,2));

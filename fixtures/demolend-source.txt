@@ -1,0 +1,3 @@
+SYNTHETIC TEST SOURCE - not real protocol data, not a Heurist response.
+DemoLend is a fictional research fixture for ProofPilot contract testing.
+Suppliers provide assets to a shared liquidity pool. Borrowers must post collateral worth more than the loan. If collateral value falls below the maintenance threshold, a position may be liquidated. Smart contract vulnerabilities can lead to losses. The fixture describes no live token price, TVL or investment opportunity.

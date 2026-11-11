@@ -1,0 +1,2 @@
+SYNTHETIC TEST DELIVERY - generated locally, not by Heurist.
+DemoLend is a fictional pooled lending protocol. Suppliers provide assets to a shared liquidity pool. Borrowers must post collateral worth more than the loan. Positions can be liquidated if collateral falls below the maintenance threshold. Smart contract vulnerabilities can lead to losses. No real market metrics or investment advice are provided.

@@ -1,0 +1,17 @@
+import { z } from 'zod';
+export const disputeRules = 'Client may dispute once after delivery. Final adjudication is terminal; protocol-level appeals remain available. No funds are transferred.';
+const ascii = (min:number,max:number) => z.string().min(min).max(max).regex(/^[\x20-\x7e\n]+$/, 'Use plain English text');
+export const mandateSchema = z.object({version:z.literal('proofpilot/1'),objective:ascii(10,1000),requiredFacts:z.array(ascii(3,240)).min(1).max(6),rubric:z.array(ascii(3,240)).min(1).max(6),minSources:z.number().int().min(1).max(3),deliveryConditions:ascii(10,500),adjudicator:z.literal('GenLayer:61999:ProofPilot'),disputeRules:z.literal(disputeRules)}).strict().refine(m=>new Set(m.requiredFacts).size===m.requiredFacts.length && new Set(m.rubric).size===m.rubric.length,'Duplicate criteria');
+export type Mandate = z.infer<typeof mandateSchema>;
+export const sourceSchema=z.object({url:z.string().max(350).regex(/^https:\/\/raw\.githubusercontent\.com\/[A-Za-z0-9_-]+\/[A-Za-z0-9_.-]+\/[a-f0-9]{40}\/[A-Za-z0-9_./-]+$/).refine(s=>!s.includes('..')),sha256:z.string().regex(/^[a-f0-9]{64}$/)}).strict();
+export const bundleSchema=z.object({report:ascii(1,12000),sources:z.array(sourceSchema).max(3),provenance:z.record(z.unknown()).refine(v=>canonical(v).length<=2000)}).strict().refine(b=>new Set(b.sources.map(s=>s.url)).size===b.sources.length,'Duplicate sources');
+export type Bundle=z.infer<typeof bundleSchema>;
+export function canonical(value:unknown):string {
+  if(value===null || typeof value!=='object') return JSON.stringify(value).replace(/[\u007f-\uffff]/g,c=>'\\u'+c.charCodeAt(0).toString(16).padStart(4,'0'));
+  if(Array.isArray(value)) return '['+value.map(canonical).join(',')+']';
+  return '{'+Object.entries(value as Record<string,unknown>).sort(([a],[b])=>a<b?-1:a>b?1:0).map(([k,v])=>canonical(k)+':'+canonical(v)).join(',')+'}';
+}
+export async function sha256(text:string):Promise<string>{return Array.from(new Uint8Array(await crypto.subtle.digest('SHA-256',new TextEncoder().encode(text)))).map(x=>x.toString(16).padStart(2,'0')).join('');}
+export const defaultMandate:Mandate={version:'proofpilot/1',objective:'Research Aave and explain its lending model, supported networks and key risks using source-backed evidence.',requiredFacts:['Explain how overcollateralized lending works','Identify supported networks from source evidence','Describe liquidation and smart contract risks'],rubric:['Every material factual claim is supported by the pinned evidence','Keep the report relevant, balanced and free of investment recommendations'],minSources:1,deliveryConditions:'Deliver a clear English research report with attributed sources and no unsupported numerical claims.',adjudicator:'GenLayer:61999:ProofPilot',disputeRules};
+export const fixtureReport='OFFLINE FIXTURE - not a Heurist response. Aave is a decentralized liquidity protocol. Suppliers provide liquidity and borrowers can obtain overcollateralized loans. Loans may be liquidated when collateral becomes insufficient. Smart contract vulnerabilities remain a risk. This example does not establish supported networks or current metrics.';
+export function download(name:string,value:unknown){const a=document.createElement('a');const url=URL.createObjectURL(new Blob([typeof value==='string'?value:JSON.stringify(value,null,2)],{type:'application/json'}));a.href=url;a.download=name;a.click();URL.revokeObjectURL(url);}
