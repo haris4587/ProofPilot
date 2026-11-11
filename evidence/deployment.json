@@ -1,0 +1,17 @@
+{
+  "network": "studionet",
+  "chainId": 61999,
+  "contractAddress": "0x95e28B38a3268f9e625e766B3FD6Cd0aa9f5430f",
+  "deploymentTransaction": "0xc5a1f0ccff0831cb9a16fc5c2027d72466a8c81a77fbc07aeaea4992ab610516",
+  "observedStatus": "FINALIZED",
+  "observedThrough": "GenLayer Studio UI on 2026-11-11",
+  "executionEvidence": "Studio displayed deployed contract and its generated public read/write methods. A subsequent finalized get_count response was not captured.",
+  "sourceFile": "evidence/deployed-source.py",
+  "sourceSha256": "952b7842db7f54aad4ed9d50d571eb9d75b6f3cada81e709de2b993fcd8d49d2",
+  "sourceDifference": "contracts/proof_pilot.py adds an explicit None guard for SDK type checking. The existing deployment predates that guard; its exception handler already returns INCONCLUSIVE for an invalid body.",
+  "addressURL": "https://explorer-studio.genlayer.com/address/0x95e28B38a3268f9e625e766B3FD6Cd0aa9f5430f",
+  "deploymentURL": "https://explorer-studio.genlayer.com/transactions/0xc5a1f0ccff0831cb9a16fc5c2027d72466a8c81a77fbc07aeaea4992ab610516",
+  "workflowTransactions": [],
+  "heuristExecution": null,
+  "additionalDeployment": "Blocked by automatic approval review; separate authorization required."
+}

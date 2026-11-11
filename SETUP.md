@@ -38,3 +38,5 @@ Create original source snapshots, each at most 8,192 bytes, and commit them to a
 ```
 
 `OWNER`, `REPO`, `COMMIT` and `ACTUAL_SHA256` are placeholders, not an execution record. Source attribution belongs in the snapshot and report. Preserve complete provider response separately before extracting the report. The provenance hash is not a provider signature.
+
+Draft state and transaction IDs survive a page refresh in the same tab through versioned sessionStorage. API/operator tokens are never persisted. After an uncertain transaction, use Evidence vault → Refresh chain records; final decisions are read again from finalized chain state. The SDK is loaded only when chain functionality is used.

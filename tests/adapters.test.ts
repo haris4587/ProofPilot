@@ -20,3 +20,9 @@ describe('Commitments',()=>{
  it('rejects duplicate acceptance criteria',()=>expect(mandateSchema.safeParse({...defaultMandate,rubric:['same','same']}).success).toBe(false));
  it('rejects mutable evidence',()=>expect(bundleSchema.safeParse({report:'A report',sources:[{url:'https://example.com/live',sha256:'0'.repeat(64)}],provenance:{}}).success).toBe(false));
 });
+
+describe('Transaction finality boundary',()=>{
+ it('rejects pending and accepted execution',async()=>{const {successful}=await import('../src/chain');expect(successful({status:'ACCEPTED',txExecutionResultName:'SUCCESS'})).toBe(false);expect(successful({status:'PENDING'})).toBe(false);});
+ it('requires execution success as well as finality',async()=>{const {successful}=await import('../src/chain');expect(successful({status:'FINALIZED',txExecutionResultName:'ERROR'})).toBe(false);expect(successful({status:'FINALIZED',txExecutionResultName:'SUCCESS'})).toBe(true);});
+ it('supports both stable Studio leader receipt shapes',async()=>{const {successful}=await import('../src/chain');expect(successful({status:'FINALIZED',consensus_data:{leader_receipt:{execution_result:'SUCCESS'}}})).toBe(true);expect(successful({status:'FINALIZED',consensus_data:{leader_receipt:[{execution_result:'SUCCESS'}]}})).toBe(true);});
+});
