@@ -32,3 +32,7 @@ describe('Session counts and offline receipts',()=>{
  it('never converts an offline review into a finalized verdict',async()=>{const {offlineReceipt}=await import('../src/workflowState');const r=offlineReceipt('task','mandate','evidence',0,2);expect(r.expectedOutcome).toBe('INCONCLUSIVE');expect(r.finalized).toBe(false);expect(r.networkTransaction).toBe(null);expect(offlineReceipt('task','m','e',2,2).expectedOutcome).toBe('NOT_EVALUATED');});
  it('formats validation failures without dumping raw Zod JSON',async()=>{const {friendlyError,mandateSchema,defaultMandate}=await import('../src/domain');const invalid=mandateSchema.safeParse({...defaultMandate,objective:'x'});if(invalid.success)throw Error('Invalid fixture');expect(friendlyError(invalid.error)).toContain('objective:');expect(friendlyError(new SyntaxError('bad JSON'))).toContain('source manifest');});
 });
+
+describe('Stable Studionet numeric status receipts',()=>{
+ it('recognizes FINALIZED=7 only with execution success',async()=>{const {successful,statusName}=await import('../src/chain');expect(statusName({status:7})).toBe('FINALIZED');expect(successful({status:7,consensus_data:{leader_receipt:[{execution_result:'SUCCESS'}]}})).toBe(true);expect(successful({status:7,consensus_data:{leader_receipt:[{execution_result:'ERROR'}]}})).toBe(false);expect(successful({status:5,consensus_data:{leader_receipt:[{execution_result:'SUCCESS'}]}})).toBe(false);});
+});

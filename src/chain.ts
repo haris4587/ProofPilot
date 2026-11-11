@@ -1,4 +1,4 @@
-import type {TransactionHash,CalldataEncodable} from 'genlayer-js/types';
+import {transactionsStatusNumberToName,type TransactionHash,type CalldataEncodable} from 'genlayer-js/types';
 export const explorer='https://explorer-studio.genlayer.com';
 export const contractAddress=import.meta.env.VITE_CONTRACT_ADDRESS || '0x95e28B38a3268f9e625e766B3FD6Cd0aa9f5430f';
 export async function devClient(){
@@ -7,8 +7,9 @@ export async function devClient(){
  if(!key){key=generatePrivateKey();sessionStorage.setItem('proofpilot-dev-key',key);}
  const account=createAccount(key);return {account,client:createClient({chain:studionet,account})};
 }
+export function statusName(t:Record<string,unknown>):string{const raw=t.statusName??t.status;return typeof raw==='number'?(transactionsStatusNumberToName[String(raw) as keyof typeof transactionsStatusNumberToName]||'UNKNOWN'):String(raw||'UNKNOWN');}
 export function successful(t:Record<string,unknown>){
- const status=t.statusName||t.status;
+ const status=statusName(t);
  const result=t.txExecutionResultName;
  const consensus=t.consensus_data as {leader_receipt?:Array<{execution_result?:string}>|{execution_result?:string}}|undefined;
  const leaders=consensus?.leader_receipt;
