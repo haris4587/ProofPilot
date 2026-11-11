@@ -23,3 +23,7 @@ Official implementation references were read from the pinned source repositories
 ## Observed Studionet deployment
 
 Contract: [0x95e28B38a3268f9e625e766B3FD6Cd0aa9f5430f](https://explorer-studio.genlayer.com/address/0x95e28B38a3268f9e625e766B3FD6Cd0aa9f5430f). Deployment transaction: [0xc5a1f0ccff0831cb9a16fc5c2027d72466a8c81a77fbc07aeaea4992ab610516](https://explorer-studio.genlayer.com/transactions/0xc5a1f0ccff0831cb9a16fc5c2027d72466a8c81a77fbc07aeaea4992ab610516), observed FINALIZED in Studio. The exact deployed source is archived in `evidence/deployed-source.py`; metadata describes its small difference from the typechecked source. No real Heurist execution or finalized adjudication is claimed. `smoke-mandate.json` and `smoke-bundle.json` are prepared synthetic inputs, not executed transactions.
+
+## Verified production website
+
+[ProofPilot on Vercel](https://proofpilot-anza0x.vercel.app/) is READY in production. Homepage and status API returned 200. The research endpoint correctly rejected GET with 405. The complete labeled offline browser workflow passed. The runtime error/fatal scan returned no matching records for the checked window. See `evidence/vercel-deployment.json` and `evidence/vercel-live.png`. Live Heurist credentials remain unconfigured.

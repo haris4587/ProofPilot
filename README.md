@@ -2,6 +2,10 @@
 
 Agree the work. Verify the delivery.
 
+**Live website:** https://proofpilot-anza0x.vercel.app/
+
+![Published ProofPilot dashboard](evidence/vercel-live.png)
+
 ProofPilot implements a research-delivery workflow around immutable mandates, a protected Heurist Mesh research adapter and an original GenLayer Intelligent Contract. The dark React interface guides the operator through assignment, agreement, execution, evidence commitment, dispute and finalized receipt.
 
 ## Honest integration status

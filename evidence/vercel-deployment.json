@@ -1,0 +1,23 @@
+{
+  "provider": "Vercel",
+  "teamId": "team_q3Hws3azM4H1y6hiRGxo6eRP",
+  "projectId": "prj_9unyAjWlY4DNX29COzETBhlOsMVl",
+  "deploymentId": "dpl_HeWNfwJ6qNxcsDi2xewP2YXrqSBH",
+  "target": "production",
+  "status": "READY",
+  "url": "https://proofpilot-anza0x.vercel.app/",
+  "deploymentURL": "https://proofpilot-5687o7nqg-anza0x.vercel.app",
+  "sourceCommit": "6d53a4bf368ffd35454f46445d2440ed47c17f4f",
+  "deploymentMethod": "Direct source upload through connected Vercel API; GitHub linking was refused by Vercel for this repository.",
+  "checks": {
+    "homepage": 200,
+    "statusAPI": 200,
+    "researchGET": 405,
+    "browserOfflineWorkflow": "PASS: assignment, mandate hash, fixture delivery, evidence hash, dispute and explicitly non-network outcome explanation",
+    "runtimeErrorScan": "No error or fatal logs returned for this deployment in the checked 10-minute window"
+  },
+  "heuristConfigured": false,
+  "operatorConfigured": false,
+  "screenshot": "evidence/vercel-live.png",
+  "limitations": "Live research needs HEURIST_API_KEY and PROOFPILOT_OPERATOR_TOKEN. No paid execution or finalized adjudication is claimed."
+}

@@ -25,4 +25,4 @@ Studionet is a development environment and may reset. Keep the reproducible sour
 
 ## Current release record
 
-The first instance is recorded in `evidence/deployment.json`, with its exact source archived alongside it. An additional deployment of the explicit null-guard version was blocked by automatic approval review, which requested separate GenLayer deployment authorization. The Vercel connection also requires the account owner to approve access to team `anza0x`. No website has been published yet.
+The first instance is recorded in `evidence/deployment.json`, with its exact source archived alongside it. An additional deployment of the explicit null-guard version was blocked by automatic approval review, which requested separate GenLayer deployment authorization. Vercel team access was subsequently approved. The website is published at https://proofpilot-anza0x.vercel.app/ with deployment state READY; see `evidence/vercel-deployment.json`. The source was uploaded directly because Vercel refused repository linking for this GitHub account. Git-push deployment automation is not connected.
