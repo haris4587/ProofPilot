@@ -1,0 +1,5 @@
+ATTRIBUTED RESEARCH SNAPSHOT - analyst-written paraphrase, not an authenticated publisher archive and not Heurist output.
+Publisher: Aave
+Source: https://aave.com/help/borrowing/borrow-tokens
+Retrieved: 2026-11-11
+Borrowing on Aave uses previously supplied assets as collateral. Borrowers need enough collateral for their debt; insufficient collateral can lead to liquidation. Borrowing rates adjust with reserve utilization and governance-set parameters. Utilization expresses the share of supplied liquidity currently borrowed. Changes in borrowing or repayments can change the rate. Interest accrues on the debt. This snapshot makes no claim about a current interest rate or yield.

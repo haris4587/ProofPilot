@@ -1,0 +1,10 @@
+LOCAL CONTRACT TEST REPORT - authored from attributed source summaries, not a Heurist execution.
+Assignment: Aave V3 Lending Research Verification.
+
+Supply and borrowing: Users supply assets to a liquidity pool. Assets enabled as collateral can support borrowing within the market's risk limits. Adequate collateral must be maintained. Aave's borrowing guide supports this explanation; Chainlink's separate money-market overview corroborates the pooled, collateral-backed model.
+
+Health factor and liquidation: Aave describes health factor as liquidation-threshold-adjusted collateral value divided by borrowed value. A value below 1 makes a position eligible for liquidation. Collateral price changes and growing debt can weaken it. Liquidators can repay debt and receive collateral under protocol rules. A health factor above 1 does not remove market or smart-contract risk.
+
+Variable borrowing interest: Aave borrowing rates respond to utilization and governance parameters. More borrowing relative to supplied liquidity can make funds scarcer; repayments or added supply change that balance. Variable rates can change over time, so debt accrues interest at a changing rate rather than a promised fixed return. Chainlink independently explains the general supply-and-demand rate mechanism.
+
+Evidence: Aave borrowing guide; Aave health factor and liquidation guide; Chainlink decentralized money markets overview. The pinned documents retain each original source URL and identify themselves as analyst-written paraphrases. These are not cryptographically authenticated publisher snapshots. The Aave material supplies protocol-specific details; the Chainlink overview supplies independent general corroboration. No unresolved contradiction was identified among these bounded extracts. Their scope does not verify live reserve parameters, current rates, or investment profitability. No such numerical claims or investment recommendations are made.

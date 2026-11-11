@@ -1,0 +1,5 @@
+ATTRIBUTED RESEARCH SNAPSHOT - analyst-written paraphrase, not an authenticated publisher archive and not Heurist output.
+Publisher: Chainlink
+Source: https://chain.link/education-hub/decentralized-money-markets
+Retrieved: 2026-11-11
+Decentralized money markets connect suppliers of on-chain assets with borrowers through smart contracts. Collateral worth more than the debt can secure borrowing. Market interest commonly responds to available supply and borrowing demand: scarce liquidity and strong demand tend to raise rates. Asset-price information helps determine when collateral is insufficient and liquidation is needed. Price-feed failures can cause incorrect liquidations. The article discusses Aave as a money-market example, not as a version-specific promise of returns.

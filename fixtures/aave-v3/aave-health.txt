@@ -1,0 +1,5 @@
+ATTRIBUTED RESEARCH SNAPSHOT - analyst-written paraphrase, not an authenticated publisher archive and not Heurist output.
+Publisher: Aave
+Source: https://aave.com/help/borrowing/liquidations
+Retrieved: 2026-11-11
+Health factor compares the collateral value adjusted by its weighted liquidation threshold with the borrowed value. Below one, the position becomes eligible for liquidation. Collateral price falls or increases in debt can lower health factor. Liquidators repay debt and receive collateral under protocol rules. An above-one value is not a universal guarantee of safety: asset volatility and correlation matter. No current market parameter or liquidation percentage is asserted here.
