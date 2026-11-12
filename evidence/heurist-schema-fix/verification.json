@@ -1,0 +1,25 @@
+{
+  "date": "2026-11-12",
+  "schemaUrl": "https://mesh.heurist.xyz/mesh_schema?agent_id=ExaSearchDigestAgent",
+  "schemaHttpStatus": 200,
+  "schemaSha256": "bc52520f096614747186fedb77a2117ac0c7c03e7a8b309be3443d947158d6c4",
+  "schemaFixture": "tests/fixtures/heurist-exa-schema-2026-11-12.json",
+  "agent": "ExaSearchDigestAgent",
+  "tool": "exa_web_search",
+  "required": [
+    "search_term"
+  ],
+  "searchResultLimit": 6,
+  "publishedToolPrice": 0.5,
+  "pricingUnit": "credits",
+  "realResearchPostsMadeDuringFix": 0,
+  "javascriptTests": 31,
+  "mockedPythonContractTests": 22,
+  "checks": [
+    "TypeScript",
+    "ESLint",
+    "production build"
+  ],
+  "credentialsReadOrChanged": false,
+  "contractChangedOrRedeployed": false
+}

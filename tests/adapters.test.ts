@@ -1,11 +1,22 @@
 import {describe,it,expect,vi} from 'vitest';
-import {authorized,research,getJSON,findTool} from '../server/heurist';
+import {authorized,research,getJSON,findTool,researchRequest} from '../server/heurist';
+import {readFileSync} from 'node:fs';
 import {canonical,defaultMandate,mandateSchema,bundleSchema} from '../src/domain';
 const schema={ExaSearchDigestAgent:{tools:[{type:'function',function:{name:'exa_web_search',parameters:{type:'object',properties:{query:{type:'string'}},required:['query']}}}]}};
 const response={data:{summary:'Research delivery',sources:['https://aave.com']}};
+const publishedSchema=JSON.parse(readFileSync(new URL('./fixtures/heurist-exa-schema-2026-11-12.json',import.meta.url),'utf8'));
 describe('Heurist adapter',()=>{
  it('requires configured payment before any API request',async()=>{const f=vi.fn();await expect(research({objective:'Research the lending model'},undefined,f)).rejects.toThrow('not configured');expect(f).not.toHaveBeenCalled();});
  it('checks schema and executes a single authenticated request',async()=>{const f=vi.fn().mockResolvedValueOnce(new Response(JSON.stringify(schema))).mockResolvedValueOnce(new Response(JSON.stringify(response),{headers:{'x-request-id':'real-id-in-test'}}));const r=await research({objective:'Research the Aave lending model'},'test-key',f);expect(f).toHaveBeenCalledTimes(2);expect(f.mock.calls[1][0]).toBe('https://mesh.heurist.xyz/mesh_request');expect(JSON.parse(f.mock.calls[1][1].body)).toEqual({agent_id:'ExaSearchDigestAgent',input:{tool:'exa_web_search',tool_arguments:{query:'Research the Aave lending model'}}});expect(f.mock.calls[1][1].headers.Authorization).toBe('Bearer test-key');expect(r.rawSha256).toHaveLength(64);});
+ it('uses search_term and six results with the actual published schema snapshot',async()=>{const f=vi.fn().mockResolvedValueOnce(new Response(JSON.stringify(publishedSchema))).mockResolvedValueOnce(new Response(JSON.stringify(response)));const receipt=await research({objective:'Research the Aave lending model'},'test-key',f);expect(f).toHaveBeenCalledTimes(2);expect(receipt.request.input.tool_arguments).toEqual({search_term:'Research the Aave lending model',limit:6});expect(JSON.parse(f.mock.calls[1][1].body)).toEqual(receipt.request);expect(receipt.schemaSha256).toHaveLength(64);expect(f.mock.calls[1][1].signal).toBeInstanceOf(AbortSignal);});
+ it.each([
+  {type:'object',properties:{search_term:{type:'string'}},required:['search_term','unknown']},
+  {type:'object',properties:{search_term:{type:'number'}},required:['search_term']},
+  {type:'object',properties:{search_term:{type:'string'}},required:'search_term'},
+  {type:'array',properties:{search_term:{type:'string'}},required:['search_term']},
+  {type:'object',properties:{search_term:{type:'string'}},required:[]},
+ ])('refuses incompatible published arguments before a research POST: %j',async(parameters)=>{const f=vi.fn().mockResolvedValue(new Response(JSON.stringify({name:'exa_web_search',parameters})));await expect(research({objective:'Research the Aave lending model'},'test-key',f)).rejects.toThrow('schema differs');expect(f).toHaveBeenCalledTimes(1);});
+ it('does not add an unsupported limit parameter',()=>expect(researchRequest(schema,'Research the Aave lending model').input.tool_arguments).toEqual({query:'Research the Aave lending model'}));
  it('refuses changed schemas without executing',async()=>{const f=vi.fn().mockResolvedValue(new Response('{}'));await expect(research({objective:'Research the Aave lending model'},'test',f)).rejects.toThrow('schema differs');expect(f).toHaveBeenCalledTimes(1);});
  it('does not retry uncertain execution',async()=>{const f=vi.fn().mockResolvedValueOnce(new Response(JSON.stringify(schema))).mockRejectedValueOnce(new Error('timeout'));await expect(research({objective:'Research the Aave lending model'},'test',f)).rejects.toThrow('timed out');expect(f).toHaveBeenCalledTimes(2);});
  it.each([401,403,402,429,500])('handles HTTP %i safely',async(status)=>{const f=vi.fn().mockResolvedValue(new Response('private diagnostic',{status}));await expect(getJSON('https://mesh.heurist.xyz/mesh_request',{},f)).rejects.not.toThrow('private diagnostic');expect(f).toHaveBeenCalledOnce();});
