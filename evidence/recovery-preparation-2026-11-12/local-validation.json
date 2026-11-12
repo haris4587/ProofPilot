@@ -10,5 +10,11 @@
   "originalMandateHash": "15817685c3278b18b84d040264e0c5313675ff0236c9eaed58f7a61e57b921f4",
   "replacementMandateHash": "ea0c7ee8300f76a9eee5a06794a5c393c79b734c8945a872b4d78f88ba580c73",
   "evidenceHash": "63f65ff031703e754867fac5fb6c40013392b6d365b80613ad9f8339accf1500",
-  "priorErrorInvestigation": "An invented citation reproduces the same bounded LLM_ERROR offline after two invalid outputs; this does not establish the historical root cause. A grounded INCONCLUSIVE structure passes strict validation without weakening it."
+  "priorErrorInvestigation": "An invented citation reproduces the same bounded LLM_ERROR offline after two invalid outputs; this does not establish the historical root cause. A grounded INCONCLUSIVE structure passes strict validation without weakening it.",
+  "productionDependencyAudit": {
+    "vulnerabilities": 0,
+    "command": "npm audit --omit=dev --audit-level=high",
+    "zod": "4.6.7",
+    "fixedAdvisory": "GHSA-mrhx-c7xc-m3w5"
+  }
 }

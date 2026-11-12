@@ -4,7 +4,7 @@ const ascii = (min:number,max:number) => z.string().min(min).max(max).regex(/^[\
 export const mandateSchema = z.object({version:z.literal('proofpilot/1'),objective:ascii(10,1000),requiredFacts:z.array(ascii(3,240)).min(1).max(6),rubric:z.array(ascii(3,240)).min(1).max(6),minSources:z.number().int().min(1).max(3),deliveryConditions:ascii(10,500),adjudicator:z.literal('GenLayer:61999:ProofPilot'),disputeRules:z.literal(disputeRules)}).strict().refine(m=>new Set(m.requiredFacts).size===m.requiredFacts.length && new Set(m.rubric).size===m.rubric.length,'Duplicate criteria');
 export type Mandate = z.infer<typeof mandateSchema>;
 export const sourceSchema=z.object({url:z.string().max(350).regex(/^https:\/\/raw\.githubusercontent\.com\/[A-Za-z0-9_-]+\/[A-Za-z0-9_.-]+\/[a-f0-9]{40}\/[A-Za-z0-9_./-]+$/).refine(s=>!s.includes('..')),sha256:z.string().regex(/^[a-f0-9]{64}$/)}).strict();
-export const bundleSchema=z.object({report:ascii(1,12000),sources:z.array(sourceSchema).max(3),provenance:z.record(z.unknown()).refine(v=>canonical(v).length<=2000)}).strict().refine(b=>new Set(b.sources.map(s=>s.url)).size===b.sources.length,'Duplicate sources');
+export const bundleSchema=z.object({report:ascii(1,12000),sources:z.array(sourceSchema).max(3),provenance:z.record(z.string(),z.unknown()).refine(v=>canonical(v).length<=2000)}).strict().refine(b=>new Set(b.sources.map(s=>s.url)).size===b.sources.length,'Duplicate sources');
 export type Bundle=z.infer<typeof bundleSchema>;
 export function canonical(value:unknown):string {
   if(value===null || typeof value!=='object') return JSON.stringify(value).replace(/[\u007f-\uffff]/g,c=>'\\u'+c.charCodeAt(0).toString(16).padStart(4,'0'));
