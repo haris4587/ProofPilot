@@ -46,3 +46,8 @@ A strict authentic archive importer and an explicitly retrospective replacement-
 ## Three recovery transactions finalized
 
 The approved replacement mandate, exact authentic Heurist delivery, and dispute all reached FINALIZED / SUCCESS. Finalized state is DISPUTED with the expected evidence hash and no decision. See [verified transaction receipts](evidence/recovery-transactions-2026-11-12/README.md). Adjudication has not been authorized or submitted; no further Heurist request occurred.
+
+
+## Authorized adjudication finalized with execution ERROR
+
+The single adjudication for pp-recovery-18ec1e64ccb747d8 finalized with execution ERROR: `[LLM_ERROR] Invalid grounded decision; rotate validator`. The task remains DISPUTED with no decision and unchanged delivery commitment. See [genuine receipt and investigation](evidence/final-adjudication-2026-11-12/README.md). No retry, additional Heurist call, validator weakening or redeployment occurred. This is not an INCONCLUSIVE verdict or completed mission. Success-dependent final video and submission work is blocked.
