@@ -31,3 +31,8 @@ The schema fix is deployed and passed 53 tests. One secure browser research subm
 ## Successful Heurist free-credit claim and secure installation
 
 The official X verification claim returned HTTP 200 and 100 credits for anza0x. Its issued key is installed as the existing HEURIST_API_KEY Production Secret; operator and contract variables are unchanged. See [the non-secret claim evidence](evidence/heurist-free-credit-claim-2026-11-12/README.md). No new research request was made; provider execution with the funded key and successful finalized GenLayer adjudication remain unverified and require further work.
+
+
+## Funded Heurist research verified — 12 November 2026
+
+One authorized live ExaSearchDigestAgent / exa_web_search submission succeeded at 10:53:59.523 UTC using the existing configured funded key. The genuine response and SHA-256 verification, pinned source excerpts, prepared delivery commitment and screenshot are in [the funded execution evidence](evidence/heurist-funded-attempt-2026-11-12/README.md). No automatic retry, purchase, subscription or consensus execution occurred. The existing mandate was reused; its owner differs from the active cloud tab account, so delivery has not been sent. The provider cites an absent source [6]; this and limited source coverage remain explicit review gaps. Mission submission is still pending authorized owner delivery/dispute and successful finalized adjudication. No contract or validator security was changed.

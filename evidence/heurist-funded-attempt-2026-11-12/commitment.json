@@ -1,0 +1,9 @@
+{
+  "taskId": "pp-b6fafae9-9d2",
+  "mandateHash": "15817685c3278b18b84d040264e0c5313675ff0236c9eaed58f7a61e57b921f4",
+  "sourceCommit": "256420256b995e55543241e9b4e616a95a262699",
+  "evidenceHash": "63f65ff031703e754867fac5fb6c40013392b6d365b80613ad9f8339accf1500",
+  "bundleBytes": 4935,
+  "status": "PREPARED - NOT SUBMITTED ON CHAIN",
+  "providerResponseSha256": "f28bd1f3b05b34087f1a4bcb798f27b30240088a232608f740575f64151fb544"
+}

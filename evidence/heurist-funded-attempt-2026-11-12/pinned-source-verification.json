@@ -1,0 +1,23 @@
+[
+  {
+    "url": "https://raw.githubusercontent.com/haris4587/ProofPilot/256420256b995e55543241e9b4e616a95a262699/evidence/heurist-funded-attempt-2026-11-12/sources/aave-intro.txt",
+    "httpStatus": 200,
+    "sha256": "46792654bdb5e201dcab3075ed0bc02451bf1e8ae70d7c8ab8e38d96c9d81a8c",
+    "bytes": 579,
+    "matchesLocal": true
+  },
+  {
+    "url": "https://raw.githubusercontent.com/haris4587/ProofPilot/256420256b995e55543241e9b4e616a95a262699/evidence/heurist-funded-attempt-2026-11-12/sources/aave-reserve.txt",
+    "httpStatus": 200,
+    "sha256": "64d7d9465f588ee0755ba251dcf55f0afe12d033c0143539924236c61e3a9710",
+    "bytes": 568,
+    "matchesLocal": true
+  },
+  {
+    "url": "https://raw.githubusercontent.com/haris4587/ProofPilot/256420256b995e55543241e9b4e616a95a262699/evidence/heurist-funded-attempt-2026-11-12/sources/bank.txt",
+    "httpStatus": 200,
+    "sha256": "0ec54618e6a872e1db8ca1546965756cd1ee727ddb3728952a303c436e166c63",
+    "bytes": 628,
+    "matchesLocal": true
+  }
+]

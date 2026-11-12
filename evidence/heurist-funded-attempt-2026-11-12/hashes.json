@@ -1,0 +1,17 @@
+{
+  "README.md": "1e5a57365248923f47a3cb4ff1a3629fad3faf5d2b3081b6bbcd2871baf8c57c",
+  "commitment.json": "2a63545f4226f655fefc182f84c2decba9db59d47f801f915216568ec91f5da1",
+  "delivery-prepared.json": "63f65ff031703e754867fac5fb6c40013392b6d365b80613ad9f8339accf1500",
+  "finalized-state-after.json": "a6826b297511a9e0a300b07d0f1853817dc10e657a07c146367c6ec01e6f2747",
+  "finalized-state-before.json": "a6826b297511a9e0a300b07d0f1853817dc10e657a07c146367c6ec01e6f2747",
+  "pinned-source-verification.json": "fb4956d6e0e4edac3484304a333d1ec61620e01fdcdcb1ccdedbdf96d95b9bd4",
+  "provider-receipt.json": "eed95566eca83094782b4cb26bf06ab0f0f10078eb169cadcd14c2242de0149d",
+  "provider-response.json": "f28bd1f3b05b34087f1a4bcb798f27b30240088a232608f740575f64151fb544",
+  "provider-summary.txt": "34a115cae4369b9ca9c99152e6734985610fb1af7a266c08c6451310431e4a7d",
+  "research-success.jpg": "ef5e295742fcb31ff00f3530912770ec052182cd29f4d123f166313647d6d0d8",
+  "source-observations.json": "52b915b74d8202541ce330023b5065ab13a9b51abfc275fad6740ba4e6408015",
+  "sources/aave-intro.txt": "46792654bdb5e201dcab3075ed0bc02451bf1e8ae70d7c8ab8e38d96c9d81a8c",
+  "sources/aave-reserve.txt": "64d7d9465f588ee0755ba251dcf55f0afe12d033c0143539924236c61e3a9710",
+  "sources/bank.txt": "0ec54618e6a872e1db8ca1546965756cd1ee727ddb3728952a303c436e166c63",
+  "verification.json": "45e1ada33042710d6e8f9228f20e75214c87dc5dd069335030e560fe95fbe76f"
+}
