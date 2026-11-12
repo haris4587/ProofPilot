@@ -31,3 +31,7 @@ Contract: [0x95e28B38a3268f9e625e766B3FD6Cd0aa9f5430f](https://explorer-studio.g
 ## 11 November 2026 production audit
 
 The latest verified audit, all-six-stage screenshots, downloaded exports, passing 46-test CI reference, production deployment metadata, real finalized successful commitments, failed adjudication and finalized state reads are recorded in [evidence/e2e/README.md](evidence/e2e/README.md). This supersedes earlier unexecuted-smoke wording: synthetic create/delivery were attempted, but no successful finalized adjudication or genuine Heurist execution is claimed.
+
+## 12 November 2026 live configuration update
+
+Heurist and operator production configuration now report true. A fresh real browser mandate finalized SUCCESS before execution. The provider test awaits private entry of the separate operator token; no Heurist request or new adjudication has occurred. See [verified preparation evidence](evidence/live-heurist-2026-11-12/README.md). This supersedes prior statements that HEURIST_API_KEY is absent; mission readiness remains incomplete.

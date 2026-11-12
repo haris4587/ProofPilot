@@ -1,0 +1,42 @@
+{
+  "date": "2026-11-12",
+  "productionUrl": "https://proofpilot-anza0x.vercel.app/",
+  "deploymentId": "dpl_5Dk4zdUKSzFJFCTbvUxLnG5jpg84",
+  "deploymentStatus": "READY",
+  "sourceCommit": "e932ea8afbd01d8f1f6c6565e0ac71a05a206c3f",
+  "apiStatus": {
+    "http": 200,
+    "heuristConfigured": true,
+    "operatorConfigured": true,
+    "network": "studionet",
+    "chainId": 61999
+  },
+  "environmentMetadata": {
+    "HEURIST_API_KEY": {
+      "type": "sensitive",
+      "target": [
+        "production"
+      ]
+    },
+    "PROOFPILOT_OPERATOR_TOKEN": {
+      "type": "sensitive",
+      "target": [
+        "production"
+      ]
+    },
+    "VITE_CONTRACT_ADDRESS": {
+      "type": "plain",
+      "target": [
+        "production"
+      ]
+    }
+  },
+  "taskId": "pp-d605969e-ef4",
+  "mandateTransaction": "0xc8fa73a245b6d6a8e5f2c9865624ae5ef8f5df03da2d56a4696843035f666be2",
+  "mandateHash": "15817685c3278b18b84d040264e0c5313675ff0236c9eaed58f7a61e57b921f4",
+  "mandateStatus": "FINALIZED",
+  "mandateExecution": "SUCCESS",
+  "providerRequestsMade": 0,
+  "providerAuthenticationVerified": false,
+  "blocker": "Operator token is configured server-side but its value is unavailable to this session. The browser requires private operator credential entry before the protected provider call. No token was exposed or rotated."
+}

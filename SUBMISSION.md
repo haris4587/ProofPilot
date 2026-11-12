@@ -19,3 +19,7 @@ ProofPilot locks research scope before execution, commits exact delivery bytes a
 The existing contract is 0x95e28B38a3268f9e625e766B3FD6Cd0aa9f5430f on chain 61999; no replacement was deployed during this audit. A transaction being broadcast, accepted or finalized with ERROR is never presented as a verdict.
 
 No escrow, funds transfer, invented official court API, permission revocation or reputation-registry update is claimed. Counts describe the current browser session, not persistent global usage.
+
+## 12 November 2026 live configuration update
+
+Heurist and operator production configuration now report true. A fresh real browser mandate finalized SUCCESS before execution. The provider test awaits private entry of the separate operator token; no Heurist request or new adjudication has occurred. See [verified preparation evidence](evidence/live-heurist-2026-11-12/README.md). This supersedes prior statements that HEURIST_API_KEY is absent; mission readiness remains incomplete.
