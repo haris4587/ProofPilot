@@ -38,3 +38,9 @@ npm test: 46 JavaScript/frontend-domain and adapter tests. npm run test:contract
 Mission remains incomplete until separately approved creation/delivery/dispute and a successful finalized adjudication, then final video and submission evidence. The retrospective replacement must never be presented as research performed after its lock.
 
 Security dependency check found preexisting Zod GHSA-mrhx-c7xc-m3w5. The direct dependency is pinned to patched 4.6.7, record schemas use the compatible explicit string-key API, and the production dependency audit now reports zero vulnerabilities. All 72 tests, build and lint were rerun successfully after this change. No server credential or API configuration changed.
+
+## Production browser verification
+
+Deployment dpl_dWaA1bu1bQXBwp2TLAdq7KSVmaXG (d19251f) reached READY; CI passed. Both file upload and bundled archive load succeeded. A file with one extra newline was rejected with a clear canonical-byte error. Frozen report, blocked delivery before mandate finality, disabled recovery research, unchecked creation approval, original receipt export integrity and empty transaction history were observed. The same public recovery draft survived reload. The prepared task is pp-recovery-18ec1e64ccb747d8 with owner 0x98ed19cBF7541be09f3e5EFc13bddeAd99f8dF85; replacement-plan.json contains the exact proposal. No approval control or transaction button was activated. Screenshots and browser-verification.json record this.
+
+Full audit also reports 20 preexisting development-tool advisories (13 moderate, 5 high, 2 critical), recorded in development-dependency-audit.json. The production dependency audit is clean after the Zod patch. Development servers were not exposed or added; broad toolchain upgrades remain separate work and are not represented as fixed here.

@@ -1,0 +1,31 @@
+{
+  "status": "PREPARED_ONLY",
+  "taskId": "pp-recovery-18ec1e64ccb747d8",
+  "owner": "0x98ed19cBF7541be09f3e5EFc13bddeAd99f8dF85",
+  "originalTaskId": "pp-b6fafae9-9d2",
+  "mandate": {
+    "version": "proofpilot/1",
+    "objective": "Aave V3 Lending Research Verification: Research Aave V3 decentralized lending and borrowing. Explain supplying assets, collateralized borrowing, health factor and liquidation risk, and variable borrowing interest rates. Use at least two independently attributable reliable sources with direct URLs. Support factual claims with evidence, acknowledge contradictions, and provide no investment advice or unsupported financial claims.",
+    "requiredFacts": [
+      "Explain how users supply assets and borrow against collateral",
+      "Explain the health factor and liquidation risk",
+      "Explain how variable borrowing interest rates work"
+    ],
+    "rubric": [
+      "All three required facts are covered accurately",
+      "At least two independently attributable sources",
+      "Factual claims supported by evidence",
+      "No unsupported financial claims",
+      "Any unresolved contradiction must be acknowledged"
+    ],
+    "minSources": 2,
+    "deliveryConditions": "Deliver clear English research with direct source URLs. Review the submitted report against the original locked mandate and require evidence-backed consensus. Recovery review: the archived Heurist research was received on 2026-11-12 at 10:53:59.523 UTC before this replacement mandate. Review that prior result; no new agent execution is claimed.",
+    "adjudicator": "GenLayer:61999:ProofPilot",
+    "disputeRules": "Client may dispute once after delivery. Final adjudication is terminal; protocol-level appeals remain available. No funds are transferred."
+  },
+  "mandateHash": "ea0c7ee8300f76a9eee5a06794a5c393c79b734c8945a872b4d78f88ba580c73",
+  "evidenceHash": "63f65ff031703e754867fac5fb6c40013392b6d365b80613ad9f8339accf1500",
+  "contractAddress": "0x95e28B38a3268f9e625e766B3FD6Cd0aa9f5430f",
+  "chainId": 61999,
+  "researchReceivedAt": "2026-11-12T10:53:59.523Z"
+}
