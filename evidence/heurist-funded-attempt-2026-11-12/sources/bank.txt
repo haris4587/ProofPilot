@@ -1,0 +1,8 @@
+SOURCE EXCERPT - captured independently by the ProofPilot operator after Heurist execution
+Original URL: https://www.banqueducanada.ca/wp-content/uploads/2026/04/sap2026-13.pdf
+Publisher: Bank of Canada staff paper authors Jonathan Chiu and Furkan Danisman
+Captured at UTC: 2026-11-12T10:57:38.082642+00:00
+Original downloaded file SHA-256: 27ba23840d6f0e6b2a992155de4207e01e893def56ada6a98b01aa7e4f126a03
+Extraction: HTML text or PDF pdftotext, whitespace collapsed. Selected exact excerpt below; other source content is omitted.
+
+Interest rates are determined algorithmically based on the utilization rate of each asset pool.

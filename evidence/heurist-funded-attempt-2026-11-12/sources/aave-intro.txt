@@ -1,0 +1,8 @@
+SOURCE EXCERPT - captured independently by the ProofPilot operator after Heurist execution
+Original URL: https://www.aave.org/help/aave-101/introduction-to-aave
+Publisher: Aave
+Captured at UTC: 2026-11-12T10:57:38.076007+00:00
+Original downloaded file SHA-256: 3891006f9807da51a4b42f976b2fe5f511c1a2170b129f515d123ecca81a49c7
+Extraction: HTML text or PDF pdftotext, whitespace collapsed. Selected exact excerpt below; other source content is omitted.
+
+These supplied assets are “pooled” and can also be utilised as collateral for borrowing while continuing to earn interest.

@@ -1,0 +1,8 @@
+SOURCE EXCERPT - captured independently by the ProofPilot operator after Heurist execution
+Original URL: https://www.aave.com/docs/aave-v3/concepts/reserve
+Publisher: Aave
+Captured at UTC: 2026-11-12T10:57:38.077374+00:00
+Original downloaded file SHA-256: e19abfc6b6650fbb88aa22f170c89b01c9623ba86b6d2a18099e6873c0512f24
+Extraction: HTML text or PDF pdftotext, whitespace collapsed. Selected exact excerpt below; other source content is omitted.
+
+When debt exceeds collateral value times this threshold (Health Factor below 1), liquidators can repay part of the debt.

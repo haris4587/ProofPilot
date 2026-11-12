@@ -1,0 +1,29 @@
+[
+  {
+    "path": "evidence/heurist-funded-attempt-2026-11-12/sources/aave-intro.txt",
+    "originalUrl": "https://www.aave.org/help/aave-101/introduction-to-aave",
+    "publisher": "Aave",
+    "snapshotType": "bounded exact excerpt; not complete document",
+    "sha256": "46792654bdb5e201dcab3075ed0bc02451bf1e8ae70d7c8ab8e38d96c9d81a8c",
+    "originalDownloadSha256": "3891006f9807da51a4b42f976b2fe5f511c1a2170b129f515d123ecca81a49c7",
+    "bytes": 579
+  },
+  {
+    "path": "evidence/heurist-funded-attempt-2026-11-12/sources/aave-reserve.txt",
+    "originalUrl": "https://www.aave.com/docs/aave-v3/concepts/reserve",
+    "publisher": "Aave",
+    "snapshotType": "bounded exact excerpt; not complete document",
+    "sha256": "64d7d9465f588ee0755ba251dcf55f0afe12d033c0143539924236c61e3a9710",
+    "originalDownloadSha256": "e19abfc6b6650fbb88aa22f170c89b01c9623ba86b6d2a18099e6873c0512f24",
+    "bytes": 568
+  },
+  {
+    "path": "evidence/heurist-funded-attempt-2026-11-12/sources/bank.txt",
+    "originalUrl": "https://www.banqueducanada.ca/wp-content/uploads/2026/04/sap2026-13.pdf",
+    "publisher": "Bank of Canada staff paper authors Jonathan Chiu and Furkan Danisman",
+    "snapshotType": "bounded exact excerpt; not complete document",
+    "sha256": "0ec54618e6a872e1db8ca1546965756cd1ee727ddb3728952a303c436e166c63",
+    "originalDownloadSha256": "27ba23840d6f0e6b2a992155de4207e01e893def56ada6a98b01aa7e4f126a03",
+    "bytes": 628
+  }
+]

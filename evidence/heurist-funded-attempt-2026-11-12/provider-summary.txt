@@ -1,0 +1,18 @@
+Aave V3 is a decentralized, non-custodial liquidity protocol that enables users to lend and borrow crypto assets through smart contracts across multiple blockchain networks like Ethereum, Polygon, and Avalanche [1, 3, 5].
+
+Supplying assets involves users depositing cryptocurrencies into Aave's liquidity pools to earn interest [5]. Upon supplying, users receive interest-bearing aTokens (e.g., aWETH for WETH), which are ERC-20 tokens whose balance automatically increases over time due to accrued interest [1, 3, 5]. The interest earned by suppliers is not fixed and varies based on the "utilization rate" of the asset in the pool: a higher utilization rate (more borrowed liquidity) leads to increased interest rates to incentivize more supply and borrowing repayments [1, 5]. Users can withdraw their assets and accrued interest by redeeming aTokens, provided there is available unborrowed liquidity [3, 5].
+
+Collateralized borrowing requires users to post supplied assets as collateral to access liquidity [3, 5]. All loans on Aave V3 are "overcollateralized," meaning "the value of the collateral must exceed the borrowed amount" as a safeguard against market volatility [1, 3, 5]. Each collateral asset has a specific "Loan-to-Value (LTV) ratio," which determines "the maximum amount that can be borrowed relative to the collateral’s value" [4, 5, 6]. For example, a 75% LTV on ETH collateral means a user can borrow up to 75% of the ETH's value [5, 6]. The LTV ratio "evolves with market conditions" [6]. Borrowers can repay their loans, including accrued interest, at any time to unlock their collateral [5].
+
+Liquidation risk is managed through a "Health Factor" [1, 3, 6]. This factor is calculated based on the collateral value and the liquidation threshold of the assets, relative to the total borrowed amount [6]. If a user's health factor drops below 1, typically due to falling collateral prices or accrued interest, their position becomes "eligible for liquidation" [1, 3, 5, 6]. At this point, "third-party liquidators can repay a portion of the debt and receive the corresponding collateral, plus a liquidation bonus" [1, 3, 5]. This mechanism ensures the protocol's solvency by maintaining adequate collateralization [1, 5]. The "liquidation threshold" is the specific collateral ratio where a position is deemed undercollateralized and can be liquidated [1, 4, 6].
+
+Variable borrowing interest rates are determined algorithmically and adjust dynamically based on the "utilization rate" of each asset pool [1, 3, 4, 5]. As the utilization rate increases, indicating higher borrowing demand and reduced liquidity, interest rates rise to incentivize more supply and moderate further borrowing [1, 4, 5]. Aave V3 uses an interest rate model with "two slopes with an optimal utilization point," where rates rise faster beyond this optimal point [3].
+
+[WARNING] Total Value Locked (TVL) data may be outdated. Aave was reported to have approximately 34 billion USD secured in smart contracts as of July 29, 2025 [1].
+
+Sources:
+1. https://www.banqueducanada.ca/wp-content/uploads/2026/04/sap2026-13.pdf
+2. https://www.aave.org/docs/aave-v3/overview
+3. https://www.aave.com/docs/aave-v3/concepts/reserve
+4. https://www.aave.org/help/aave-101/introduction-to-aave
+5. https://github.com/aave/risk-v3/blob/main/asset-risk/risk-parameters.md

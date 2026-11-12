@@ -1,0 +1,30 @@
+{
+  "verifiedAtUTC": "2026-11-12T10:53:59.523Z",
+  "productionUrl": "https://proofpilot-anza0x.vercel.app/",
+  "deploymentId": "dpl_5UJM2jLnP8tCP4HobZYbR3p72YfK",
+  "sourceCommit": "d7362d8a1de027b11057cd352f2b9feb9aecaf51",
+  "heuristConfigured": true,
+  "operatorConfigured": true,
+  "taskId": "pp-b6fafae9-9d2",
+  "mandateHash": "15817685c3278b18b84d040264e0c5313675ff0236c9eaed58f7a61e57b921f4",
+  "mandateStatus": "AGREED",
+  "mandateOwner": "0xF4e184B9187c95e52378eE4769cDc2495b933eF6",
+  "activeBrowserAccountMatchesOwner": false,
+  "newMandatesCreated": 0,
+  "researchSubmissions": 1,
+  "automaticRetries": 0,
+  "providerStatus": "success",
+  "providerResponseSha256Verified": true,
+  "providerRequestId": null,
+  "creditsPurchased": false,
+  "subscriptionStarted": false,
+  "remainingCreditBalance": "Not returned; no extra provider call made",
+  "consensusExecutions": 0,
+  "contractRedeployed": false,
+  "validatorSecurityModified": false,
+  "knownResponseIssues": [
+    "Citations reference [6], but only five URLs are listed.",
+    "Provider does not return source bodies, retrieval timestamps, signatures, execution duration or billed credits.",
+    "Research execution success is distinct from acceptance against the mandate."
+  ]
+}
