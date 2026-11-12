@@ -4,5 +4,17 @@
   "newKeyStoredPrivately": true,
   "tweetUrl": "https://x.com/Anza0x/status/2120809812531593573",
   "credits": 100,
-  "twitter_handle": "anza0x"
+  "twitter_handle": "anza0x",
+  "productionKeyInstalled": true,
+  "vercelVariable": "HEURIST_API_KEY",
+  "vercelType": "sensitive",
+  "vercelTargets": [
+    "production"
+  ],
+  "vercelUpdatedAt": 1794477586435,
+  "operatorAndContractVariablesUnchanged": true,
+  "additionalResearchRequestsMade": 0,
+  "creditsPurchased": false,
+  "subscriptionStarted": false,
+  "contractRedeployed": false
 }

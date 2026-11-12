@@ -43,3 +43,7 @@ The production schema mismatch was traced to `query` versus the published `searc
 ## Autonomous attempt after schema repair — 12 November 2026
 
 The schema fix is deployed and passed 53 tests. One secure browser research submission reached provider credit-error handling: **Heurist credits are required** (HTTP 402 mapping). No report, provider receipt, delivery or new verdict exists. A fresh mandate finalized SUCCESS before the attempt. See [the genuine attempt record](evidence/heurist-live-attempt-2026-11-12/README.md). No credits were purchased or retries made; the mission remains incomplete.
+
+## Successful Heurist free-credit claim and secure installation
+
+The official X verification claim returned HTTP 200 and 100 credits for anza0x. Its issued key is installed as the existing HEURIST_API_KEY Production Secret; operator and contract variables are unchanged. See [the non-secret claim evidence](evidence/heurist-free-credit-claim-2026-11-12/README.md). No new research request was made; provider execution with the funded key and successful finalized GenLayer adjudication remain unverified and require further work.
