@@ -23,3 +23,7 @@ No escrow, funds transfer, invented official court API, permission revocation or
 ## 12 November 2026 live configuration update
 
 Heurist and operator production configuration now report true. A fresh real browser mandate finalized SUCCESS before execution. The provider test awaits private entry of the separate operator token; no Heurist request or new adjudication has occurred. See [verified preparation evidence](evidence/live-heurist-2026-11-12/README.md). This supersedes prior statements that HEURIST_API_KEY is absent; mission readiness remains incomplete.
+
+## Autonomous attempt after schema repair — 12 November 2026
+
+The schema fix is deployed and passed 53 tests. One secure browser research submission reached provider credit-error handling: **Heurist credits are required** (HTTP 402 mapping). No report, provider receipt, delivery or new verdict exists. A fresh mandate finalized SUCCESS before the attempt. See [the genuine attempt record](evidence/heurist-live-attempt-2026-11-12/README.md). No credits were purchased or retries made; the mission remains incomplete.

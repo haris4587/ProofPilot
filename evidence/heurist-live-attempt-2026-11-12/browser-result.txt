@@ -1,0 +1,63 @@
+- complementary:
+  - link "ProofPilot .":
+    - /url: "#"
+    - text: ProofPilot
+    - generic: .
+  - generic: P
+  - strong: Research workspace
+  - generic: Partner Demo Lab
+  - generic: WORKSPACE
+  - navigation:
+    - button "Overview":
+      - text: Overview
+    - button "Assignments":
+      - text: Assignments
+    - button "Agent deliveries":
+      - text: Agent deliveries
+    - button "Dispute court 0":
+      - text: Dispute court
+      - generic: "0"
+    - button "Evidence vault" [active]:
+      - text: Evidence vault
+  - strong: GenLayer Studionet
+  - generic: Development network · 61999
+  - link "Project source":
+    - /url: https://github.com/haris4587/ProofPilot
+    - text: Project source
+  - button "Integration settings":
+    - text: Integration settings
+  - generic: PP
+  - strong: Demo operator
+  - generic: Research delivery court
+- banner:
+  - text: Workspace
+  - generic: Evidence vault
+  - generic: Live workflow
+  - button "Integration settings":
+  - generic: P
+- main:
+  - paragraph: AUDIT TRAIL
+  - heading "Evidence vault" [level=1]
+  - paragraph: Export the exact bytes you committed.
+  - heading "Immutable commitments" [level=3]
+  - text: Mandate SHA-256
+  - code: 15817685c3278b18b84d040264e0c5313675ff0236c9eaed58f7a61e57b921f4
+  - button "Copy Mandate SHA-256":
+  - text: Delivery SHA-256
+  - code: Not committed yet
+  - button "Mandate":
+    - text: Mandate
+  - button "Evidence bundle" [disabled]:
+    - text: Evidence bundle
+  - button "Provider receipt" [disabled]:
+    - text: Provider receipt
+  - heading "Transaction history" [level=3]
+  - button "Refresh chain records"
+  - strong: create_assignment
+  - generic: FINALIZED · SUCCESS
+  - link "0x34e437…669cc5":
+    - /url: https://explorer-studio.genlayer.com/transactions/0x34e43767d03071b2ac71d911d2c06d1cf3e96972aab852404bbce6bddb669cc5
+    - text: 0x34e437…669cc5
+  - paragraph: Hashes prove integrity, not origin. Heurist provenance is an operator receipt, not a provider signature.
+  - generic: ProofPilot / AI Agent Delivery Court
+  - generic: Agreement first. Evidence always.• Development demo

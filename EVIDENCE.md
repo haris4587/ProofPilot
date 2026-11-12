@@ -39,3 +39,7 @@ Heurist and operator production configuration now report true. A fresh real brow
 ## Heurist preflight schema repair
 
 The production schema mismatch was traced to `query` versus the published `search_term` argument. The adapter repair, captured public schema and 53 passing regression checks are documented in [the schema repair audit](evidence/heurist-schema-fix/README.md). No research POST or real provider result was produced by these offline checks.
+
+## Autonomous attempt after schema repair — 12 November 2026
+
+The schema fix is deployed and passed 53 tests. One secure browser research submission reached provider credit-error handling: **Heurist credits are required** (HTTP 402 mapping). No report, provider receipt, delivery or new verdict exists. A fresh mandate finalized SUCCESS before the attempt. See [the genuine attempt record](evidence/heurist-live-attempt-2026-11-12/README.md). No credits were purchased or retries made; the mission remains incomplete.
