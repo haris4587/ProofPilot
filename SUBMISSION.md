@@ -36,3 +36,8 @@ The official X verification claim returned HTTP 200 and 100 credits for anza0x. 
 ## Funded Heurist research verified — 12 November 2026
 
 One authorized live ExaSearchDigestAgent / exa_web_search submission succeeded at 10:53:59.523 UTC using the existing configured funded key. The genuine response and SHA-256 verification, pinned source excerpts, prepared delivery commitment and screenshot are in [the funded execution evidence](evidence/heurist-funded-attempt-2026-11-12/README.md). No automatic retry, purchase, subscription or consensus execution occurred. The existing mandate was reused; its owner differs from the active cloud tab account, so delivery has not been sent. The provider cites an absent source [6]; this and limited source coverage remain explicit review gaps. Mission submission is still pending authorized owner delivery/dispute and successful finalized adjudication. No contract or validator security was changed.
+
+
+## Reviewed recovery preparation
+
+A strict authentic archive importer and an explicitly retrospective replacement-mandate draft are prepared. The original task/research remain unchanged. See [recovery preparation](evidence/recovery-preparation-2026-11-12/README.md). No new Heurist request, blockchain transaction or adjudication was performed. Mission readiness remains pending separate transaction approvals and finalized results.
