@@ -57,3 +57,8 @@ One authorized live ExaSearchDigestAgent / exa_web_search submission succeeded a
 ## Reviewed recovery preparation
 
 A strict authentic archive importer and an explicitly retrospective replacement-mandate draft are prepared. The original task/research remain unchanged. See [recovery preparation](evidence/recovery-preparation-2026-11-12/README.md). No new Heurist request, blockchain transaction or adjudication was performed. Mission readiness remains pending separate transaction approvals and finalized results.
+
+
+## Three recovery transactions finalized
+
+The approved replacement mandate, exact authentic Heurist delivery, and dispute all reached FINALIZED / SUCCESS. Finalized state is DISPUTED with the expected evidence hash and no decision. See [verified transaction receipts](evidence/recovery-transactions-2026-11-12/README.md). Adjudication has not been authorized or submitted; no further Heurist request occurred.

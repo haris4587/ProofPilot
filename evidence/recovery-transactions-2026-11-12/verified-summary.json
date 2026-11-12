@@ -1,0 +1,39 @@
+{
+  "taskId": "pp-recovery-18ec1e64ccb747d8",
+  "owner": "0x98ed19cBF7541be09f3e5EFc13bddeAd99f8dF85",
+  "walletAddressVerifiedInRetainedBrowser": true,
+  "contract": "0x95e28B38a3268f9e625e766B3FD6Cd0aa9f5430f",
+  "chainId": 61999,
+  "transactions": [
+    {
+      "method": "create_assignment",
+      "hash": "0x2e63d550506ba6f41660df7f576919305bbfc11b9ea2b9d742f49fe2a9d3ac0d",
+      "status": "FINALIZED",
+      "execution": "SUCCESS",
+      "explorer": "https://explorer-studio.genlayer.com/transactions/0x2e63d550506ba6f41660df7f576919305bbfc11b9ea2b9d742f49fe2a9d3ac0d"
+    },
+    {
+      "method": "submit_delivery",
+      "hash": "0x62cb228cf71f0ebdf6a3b21899aee8c6aef705116efc8e7dbf90bfd4d2bb2c25",
+      "status": "FINALIZED",
+      "execution": "SUCCESS",
+      "explorer": "https://explorer-studio.genlayer.com/transactions/0x62cb228cf71f0ebdf6a3b21899aee8c6aef705116efc8e7dbf90bfd4d2bb2c25"
+    },
+    {
+      "method": "open_dispute",
+      "hash": "0x7237ec7f2ffa49ebff42e7cdbbdacb8835b249fed9cd00ca9bba08290bacf9e6",
+      "status": "FINALIZED",
+      "execution": "SUCCESS",
+      "explorer": "https://explorer-studio.genlayer.com/transactions/0x7237ec7f2ffa49ebff42e7cdbbdacb8835b249fed9cd00ca9bba08290bacf9e6"
+    }
+  ],
+  "mandateHash": "ea0c7ee8300f76a9eee5a06794a5c393c79b734c8945a872b4d78f88ba580c73",
+  "evidenceHash": "63f65ff031703e754867fac5fb6c40013392b6d365b80613ad9f8339accf1500",
+  "exactAuthenticDeliveryBytesVerified": true,
+  "finalizedTaskStatus": "DISPUTED",
+  "disputeReason": "Please independently review whether the research delivery satisfies every requirement in the original mandate.",
+  "adjudicationSubmitted": false,
+  "decision": {},
+  "newHeuristRequests": 0,
+  "privateKeysExported": false
+}
