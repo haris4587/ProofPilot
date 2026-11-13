@@ -1,0 +1,14 @@
+{
+  "status": "UNDEPLOYED_DIAGNOSTIC_CANDIDATE",
+  "source": "contracts/proof_pilot_v2.py",
+  "sourceSha256": "48eb272b98de3978248d6cd10a40b4cc9e9a5e508424ecba243c53cc98ef4e1f",
+  "dependencyHeader": "# { \"Depends\": \"py-genlayer:1jb45aa8ynh2a9c9xn3b7qqh8sm5q93hwfp7jqmwsfhh8jpz09h6\" }",
+  "constructorArgs": [],
+  "chainId": 61999,
+  "value": 0,
+  "leaderOnly": false,
+  "consensusMaxRotations": 2,
+  "originalContractAddress": "0x95e28B38a3268f9e625e766B3FD6Cd0aa9f5430f",
+  "newContractAddress": null,
+  "rootCauseProven": false
+}

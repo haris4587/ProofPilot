@@ -35,3 +35,12 @@ export async function inspect(hash:string){
  if(!/^0x[0-9a-fA-F]{64}$/.test(hash))throw new Error('Invalid transaction hash.');
  const {client}=await devClient();return client.getTransaction({hash:hash as TransactionHash});
 }
+
+export function receiptStatus(t:Record<string,unknown>):string{
+ if(successful(t))return 'FINALIZED · SUCCESS';
+ const status=statusName(t);
+ if(status!=='FINALIZED')return status;
+ const data=t.consensus_data as {leader_receipt?:Array<{execution_result?:string}>|{execution_result?:string}}|undefined;
+ const rows=data?.leader_receipt;const leader=Array.isArray(rows)?rows[0]:rows;
+ return leader?.execution_result==='ERROR'?'FINALIZED · EXECUTION ERROR':'FINALIZED · EXECUTION UNVERIFIED';
+}

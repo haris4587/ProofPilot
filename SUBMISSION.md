@@ -51,3 +51,8 @@ The approved replacement mandate, exact authentic Heurist delivery, and dispute 
 ## Authorized adjudication finalized with execution ERROR
 
 The single adjudication for pp-recovery-18ec1e64ccb747d8 finalized with execution ERROR: `[LLM_ERROR] Invalid grounded decision; rotate validator`. The task remains DISPUTED with no decision and unchanged delivery commitment. See [genuine receipt and investigation](evidence/final-adjudication-2026-11-12/README.md). No retry, additional Heurist call, validator weakening or redeployment occurred. This is not an INCONCLUSIVE verdict or completed mission. Success-dependent final video and submission work is blocked.
+
+
+## Offline diagnosis and undeployed V2 candidate
+
+The authentic nine-criterion/four-corpus input was reconstructed exactly. V1 accepts a grounded synthetic nine-criterion answer in offline mocks; the historical rejected response remains unavailable. A minimal diagnostic V2 preserves strict validation and adds categorized failures without raw provider messages. No V2 deployment or further adjudication occurred. See [diagnosis](evidence/adjudication-diagnosis/REPORT.md) and [approval-gated migration plan](evidence/adjudication-diagnosis/MIGRATION.md). Mission remains incomplete; execution ERROR is not a verdict.

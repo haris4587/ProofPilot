@@ -1,0 +1,159 @@
+{
+  "criteriaCount": 9,
+  "corpusCount": 4,
+  "bundleBytes": 4935,
+  "corpusUtf8Bytes": [
+    3456,
+    579,
+    568,
+    628
+  ],
+  "promptUtf8Bytes": 7472,
+  "promptSha256": "4fb37d25e0e268c1a54e59e0a819f2ef3f06d2ae90b499d87d1ce5247569b6fb",
+  "deployedSourceSha256": "952b7842db7f54aad4ed9d50d571eb9d75b6f3cada81e709de2b993fcd8d49d2",
+  "rotationCount": 2,
+  "resultName": "MAJORITY_DISAGREE",
+  "rounds": [
+    {
+      "round": "Leader Rotation",
+      "leaders": [
+        {
+          "mode": "leader",
+          "execution": "ERROR",
+          "modelPolicy": "policy:prd-minimax",
+          "processingTimeMs": 69939,
+          "llmUsage": {
+            "tokens": {
+              "node-0xC65Ec56a1141866951B34D846be8EF433764A48B/openai/gpt-5.4": {
+                "input": 1802,
+                "total": 2443,
+                "output": 641
+              },
+              "node-0x560FBD37a10bC2B96F118071e922c9106c12Ba1d/policy:prd-minimax": {
+                "input": 1962,
+                "total": 2740,
+                "output": 778
+              }
+            }
+          },
+          "errorBase64": "AVtMTE1fRVJST1JdIEludmFsaWQgZ3JvdW5kZWQgZGVjaXNpb247IHJvdGF0ZSB2YWxpZGF0b3I=",
+          "stdout": "",
+          "stderr": ""
+        },
+        {
+          "mode": "validator",
+          "execution": "ERROR",
+          "modelPolicy": "policy:prd-minimax",
+          "processingTimeMs": 2185,
+          "llmUsage": null,
+          "errorBase64": "AVtMTE1fRVJST1JdIEludmFsaWQgZ3JvdW5kZWQgZGVjaXNpb247IHJvdGF0ZSB2YWxpZGF0b3I=",
+          "stdout": "",
+          "stderr": ""
+        }
+      ],
+      "validatorVotes": [
+        "disagree",
+        "idle",
+        "idle",
+        "disagree"
+      ],
+      "validatorLLMUsage": [
+        null,
+        null,
+        null,
+        null
+      ]
+    },
+    {
+      "round": "Leader Rotation",
+      "leaders": [
+        {
+          "mode": "leader",
+          "execution": "ERROR",
+          "modelPolicy": "openai/gpt-5.4",
+          "processingTimeMs": 23033,
+          "llmUsage": {
+            "tokens": {
+              "node-0x1Cd67946A11E6410a3DF1b27d35F4a511e93c882/openai/gpt-5.4": {
+                "input": 3604,
+                "total": 4963,
+                "output": 1359
+              }
+            }
+          },
+          "errorBase64": "AVtMTE1fRVJST1JdIEludmFsaWQgZ3JvdW5kZWQgZGVjaXNpb247IHJvdGF0ZSB2YWxpZGF0b3I=",
+          "stdout": "",
+          "stderr": ""
+        },
+        {
+          "mode": "validator",
+          "execution": "ERROR",
+          "modelPolicy": "openai/gpt-5.4",
+          "processingTimeMs": 0,
+          "llmUsage": null,
+          "errorBase64": "AmlkbGU=",
+          "stdout": "",
+          "stderr": "Validator execution cancelled after quorum"
+        }
+      ],
+      "validatorVotes": [
+        "idle",
+        "disagree",
+        "disagree",
+        "disagree"
+      ],
+      "validatorLLMUsage": [
+        null,
+        null,
+        null,
+        null
+      ]
+    },
+    {
+      "round": "Undetermined",
+      "leaders": [
+        {
+          "mode": "leader",
+          "execution": "ERROR",
+          "modelPolicy": "policy:prd-gpt-5-4",
+          "processingTimeMs": 20326,
+          "llmUsage": {
+            "tokens": {
+              "node-0x711353514049EAc21213834ADd07eF552aF394E6/policy:prd-gpt-5-4": {
+                "input": 3604,
+                "total": 4769,
+                "output": 1165
+              }
+            }
+          },
+          "errorBase64": "AVtMTE1fRVJST1JdIEludmFsaWQgZ3JvdW5kZWQgZGVjaXNpb247IHJvdGF0ZSB2YWxpZGF0b3I=",
+          "stdout": "",
+          "stderr": ""
+        },
+        {
+          "mode": "validator",
+          "execution": "ERROR",
+          "modelPolicy": "policy:prd-gpt-5-4",
+          "processingTimeMs": 3405,
+          "llmUsage": null,
+          "errorBase64": "AVtMTE1fRVJST1JdIEludmFsaWQgZ3JvdW5kZWQgZGVjaXNpb247IHJvdGF0ZSB2YWxpZGF0b3I=",
+          "stdout": "",
+          "stderr": ""
+        }
+      ],
+      "validatorVotes": [
+        "idle",
+        "idle",
+        "disagree",
+        "disagree"
+      ],
+      "validatorLLMUsage": [
+        null,
+        null,
+        null,
+        null
+      ]
+    }
+  ],
+  "rejectedLLMResponseCaptured": false
+}

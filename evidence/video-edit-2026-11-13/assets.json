@@ -1,0 +1,36 @@
+{
+  "status": "HONEST_PROGRESS_EDIT_NOT_FINAL_SUCCESS_VIDEO",
+  "durationSeconds": 45,
+  "resolution": [
+    1920,
+    1080
+  ],
+  "fps": 24,
+  "assets": [
+    {
+      "path": "evidence/e2e/screenshots/00-dashboard.jpg",
+      "sha256": "7033c9870f934ddea549b9582521f62743e6e0eebbfc70e915fd906ae94682d9",
+      "unaltered": true
+    },
+    {
+      "path": "evidence/heurist-live-attempt-2026-11-12/mandate-finalized.jpg",
+      "sha256": "d548a8cf88d46622b9cb2750b47066714cbb1e94c309ce810ff135a689925c75",
+      "unaltered": true
+    },
+    {
+      "path": "evidence/heurist-funded-attempt-2026-11-12/research-success.jpg",
+      "sha256": "ef5e295742fcb31ff00f3530912770ec052182cd29f4d123f166313647d6d0d8",
+      "unaltered": true
+    },
+    {
+      "path": "evidence/recovery-transactions-2026-11-12/three-finalized.jpg",
+      "sha256": "5ab093251a5f76ef4d2200147e8908a371b6c02512e39ff1cf0251f3bb2f11e4",
+      "unaltered": true
+    },
+    {
+      "path": "evidence/final-adjudication-2026-11-12/finalized-without-success.jpg",
+      "sha256": "4623814c9a82460ef071ff9ce6bf9fdac4002a479fe8d82a24cee8d62e4bf769",
+      "unaltered": true
+    }
+  ]
+}

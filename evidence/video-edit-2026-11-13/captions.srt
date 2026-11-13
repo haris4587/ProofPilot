@@ -1,0 +1,29 @@
+1
+00:00:00,000 --> 00:00:05,000
+ProofPilot · Auditable research delivery
+VERIFIED PROGRESS — ADJUDICATION FAILED
+
+2
+00:00:05,000 --> 00:00:12,000
+Original mandate preceded genuine research.
+Replacement mandate later disclosed wallet recovery.
+
+3
+00:00:12,000 --> 00:00:20,000
+Genuine Heurist Mesh execution · ExaSearchDigestAgent
+Original response, sources and SHA-256 preserved.
+
+4
+00:00:20,000 --> 00:00:30,000
+Mandate · Delivery · Dispute
+Three FINALIZED / SUCCESS transactions.
+
+5
+00:00:30,000 --> 00:00:40,000
+Adjudication FINALIZED / EXECUTION ERROR
+Task remains DISPUTED. No valid verdict.
+
+6
+00:00:40,000 --> 00:00:45,000
+proofpilot-anza0x.vercel.app
+Diagnostic V2 tested offline; NOT DEPLOYED.
