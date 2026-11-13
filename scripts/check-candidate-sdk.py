@@ -1,11 +1,19 @@
 """Real pinned SDK, native direct mode, mocked I/O. Not WASM/network consensus."""
-import hashlib,json,re
+import hashlib,json,re,shutil
 from pathlib import Path
 from gltest.direct import VMContext,deploy_contract
 root=Path(__file__).resolve().parents[1]
 state=json.loads((root/'evidence/corrected-lifecycle-2026-11-13/adjudication-state.json').read_text())
 canonical=lambda x:json.dumps(x,sort_keys=True,separators=(',',':'),ensure_ascii=True)
 sha=lambda x:hashlib.sha256(x.encode()).hexdigest()
+# genlayer-test 0.29.2 hard-codes a release asset name that now returns 404.
+# Reuse the official artifact already downloaded and checked by genvm-linter.
+from gltest.direct.sdk_loader import CACHE_DIR
+artifacts=sorted((Path.home()/'.cache/genvm-linter').glob('genvm-universal-*.tar.xz'))
+if artifacts:
+ CACHE_DIR.mkdir(parents=True,exist_ok=True)
+ target=CACHE_DIR/artifacts[-1].name
+ if not target.exists():shutil.copyfile(artifacts[-1],target)
 vm=VMContext()
 with vm.activate():
  p=deploy_contract(root/'contracts/proof_pilot_v3.py',vm)
