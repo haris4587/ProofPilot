@@ -72,3 +72,8 @@ The single adjudication for pp-recovery-18ec1e64ccb747d8 finalized with executio
 ## Offline diagnosis and undeployed V2 candidate
 
 The authentic nine-criterion/four-corpus input was reconstructed exactly. V1 accepts a grounded synthetic nine-criterion answer in offline mocks; the historical rejected response remains unavailable. A minimal diagnostic V2 preserves strict validation and adds categorized failures without raw provider messages. No V2 deployment or further adjudication occurred. See [diagnosis](evidence/adjudication-diagnosis/REPORT.md) and [approval-gated migration plan](evidence/adjudication-diagnosis/MIGRATION.md). Mission remains incomplete; execution ERROR is not a verdict.
+
+
+## V2 deployment verified — 13 November 2026
+
+One V2 deployment FINALIZED / SUCCESS at 0x8d64250Eb8c3Eafb8628482d2381799189055a90. Transaction 0xca8d01c87659b60cf40611f768f664e884e1ac54af1c17cc994d5003c75a0c2c. Exact approved source hash verified; finalized get_count=0. See evidence/v2-deployment-2026-11-13. Migration is prepared only; adjudication remains unauthorized, and no genuine V2 verdict exists. V1 and production contract configuration preserved. Mission is not yet submission-ready.
