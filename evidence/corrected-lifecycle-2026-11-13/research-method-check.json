@@ -1,0 +1,6 @@
+{
+  "method": "GET",
+  "httpStatus": 405,
+  "body": "{\"error\":\"Use POST.\"}",
+  "providerRequest": false
+}

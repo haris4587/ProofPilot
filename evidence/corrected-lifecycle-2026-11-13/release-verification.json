@@ -1,0 +1,69 @@
+{
+  "verifiedAt": "2026-11-13",
+  "applicationCommit": "06222683b14b1c6a1ab8c03a114cd0539e5e7a1f",
+  "ci": {
+    "url": "https://github.com/haris4587/ProofPilot/actions/runs/43398914704",
+    "status": "completed",
+    "conclusion": "success"
+  },
+  "deployment": {
+    "id": "dpl_ASzLnrdJojcNqvfoZMjTWmmGMRmT",
+    "url": "proofpilot-d5bbl2un7-anza0x.vercel.app",
+    "status": "READY",
+    "commit": "06222683b14b1c6a1ab8c03a114cd0539e5e7a1f",
+    "target": "production"
+  },
+  "productionUrl": "https://proofpilot-anza0x.vercel.app/",
+  "apiStatus": {
+    "httpStatus": 200,
+    "heuristConfigured": true,
+    "operatorConfigured": true,
+    "network": "studionet",
+    "chainId": 61999
+  },
+  "productionWriteTarget": "0x95e28B38a3268f9e625e766B3FD6Cd0aa9f5430f",
+  "currentReadOnlyArchive": "0xdcDdcB1C570700Da7C3d6c98E9FCC23801608373",
+  "browser": {
+    "readOnlyFinalizedState": "DISPUTED / no verdict: live read verified",
+    "desktop": {
+      "width": 1363,
+      "height": 936,
+      "documentWidth": 1348
+    },
+    "narrow": {
+      "width": 340,
+      "height": 234,
+      "documentWidth": 337,
+      "method": "400% browser zoom; responsive CSS check, not mobile-device emulation"
+    },
+    "deviceEmulation": "Previously blocked by organization browser policy; not bypassed or retried",
+    "exports": [
+      {
+        "name": "Authentic bundle",
+        "bytes": 4935,
+        "sha256": "63f65ff031703e754867fac5fb6c40013392b6d365b80613ad9f8339accf1500"
+      },
+      {
+        "name": "Finalized task",
+        "bytes": 7262,
+        "sha256": "7c377bea36cd79bfc9a888a4f0e69df43fbf425323e92a0c28af21d8f8aceada",
+        "state": "DISPUTED",
+        "decision": {}
+      }
+    ],
+    "applicationConsoleErrors": 0,
+    "browserExtensionErrors": 10,
+    "sessionCounters": "Archive does not increment session usage counters"
+  },
+  "runtimeErrors": {
+    "window": "15m",
+    "levels": [
+      "error",
+      "fatal"
+    ],
+    "result": "No matching logs"
+  },
+  "missionReady": false,
+  "portalSubmission": false,
+  "video": "45-second narrated blocked-progress report; no successful adjudication or decision hash exists."
+}

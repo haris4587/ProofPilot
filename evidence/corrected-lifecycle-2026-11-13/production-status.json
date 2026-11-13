@@ -1,0 +1,7 @@
+{
+  "httpStatus": 200,
+  "heuristConfigured": true,
+  "operatorConfigured": true,
+  "network": "studionet",
+  "chainId": 61999
+}

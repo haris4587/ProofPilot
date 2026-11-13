@@ -16,7 +16,7 @@ Description (copy-ready, truthful): ProofPilot locks AI research requirements, p
 - Mandate SHA-256: ea0c7ee8300f76a9eee5a06794a5c393c79b734c8945a872b4d78f88ba580c73
 - Evidence SHA-256: 63f65ff031703e754867fac5fb6c40013392b6d365b80613ad9f8339accf1500 (4,935 exact bytes)
 - Decision hash: NONE — execution ERROR, not an INCONCLUSIVE verdict.
-- Passing baseline CI: https://github.com/haris4587/ProofPilot/actions/runs/43395638759 (87 tests). Latest release CI will be linked in the final report.
+- Passing application CI: https://github.com/haris4587/ProofPilot/actions/runs/43398914704 (87 tests, type checking, lint and build). Production/browser checks: evidence/corrected-lifecycle-2026-11-13/release-verification.json.
 - Video: evidence/corrected-demo-2026-11-13/ProofPilot-verified-progress.mp4 — honest 45-second blocked-progress film, not a successful mission demo.
 
 | Method | Verified result | Explorer |
