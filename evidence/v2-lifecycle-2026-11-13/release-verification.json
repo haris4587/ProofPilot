@@ -1,0 +1,66 @@
+{
+  "verifiedAt": "2026-11-13",
+  "applicationCommit": "e39a141f37183bcd7374d3aa7f25f2cb5f41ea2f",
+  "ci": {
+    "url": "https://github.com/haris4587/ProofPilot/actions/runs/43376785296",
+    "status": "completed",
+    "conclusion": "success"
+  },
+  "deployment": {
+    "id": "dpl_3zUiYxcbABh2Kxk1fuJ3Vc4CgUx3",
+    "url": "proofpilot-mp656olcv-anza0x.vercel.app",
+    "state": "READY",
+    "target": "production",
+    "commit": "e39a141f37183bcd7374d3aa7f25f2cb5f41ea2f"
+  },
+  "productionUrl": "https://proofpilot-anza0x.vercel.app/",
+  "apiStatus": {
+    "httpStatus": 200,
+    "heuristConfigured": true,
+    "operatorConfigured": true,
+    "network": "studionet",
+    "chainId": 61999
+  },
+  "productionContractAddress": "0x95e28B38a3268f9e625e766B3FD6Cd0aa9f5430f",
+  "v2ArchiveContract": "0x8d64250Eb8c3Eafb8628482d2381799189055a90",
+  "browserChecks": {
+    "desktopViewport": {
+      "width": 1363,
+      "height": 936,
+      "documentWidth": 1348
+    },
+    "narrowViewport": {
+      "width": 340,
+      "height": 234,
+      "documentWidth": 337,
+      "method": "400% browser zoom responsive CSS test; not mobile-device emulation"
+    },
+    "deviceEmulation": "Blocked by organization browser policy; no bypass attempted",
+    "readOnlyChainRefresh": "PASS: Live finalized read verified / DISPUTED / no verdict",
+    "bundleDownload": {
+      "bytes": 4935,
+      "sha256": "63f65ff031703e754867fac5fb6c40013392b6d365b80613ad9f8339accf1500"
+    },
+    "appConsoleErrors": 0,
+    "browserExtensionErrorsObserved": true,
+    "sessionCounters": "Archive does not increment this tab's zero counts"
+  },
+  "runtimeErrors": {
+    "deploymentId": "dpl_3zUiYxcbABh2Kxk1fuJ3Vc4CgUx3",
+    "window": "15m",
+    "level": [
+      "error",
+      "fatal"
+    ],
+    "result": "No matching logs"
+  },
+  "video": {
+    "path": "evidence/final-demo-2026-11-13/ProofPilot-verified-progress.mp4",
+    "duration": 45,
+    "width": 1920,
+    "height": 1080,
+    "status": "BLOCKED_PROGRESS_REPORT_NOT_SUCCESSFUL_MISSION_FILM"
+  },
+  "missionReady": false,
+  "portalSubmission": false
+}

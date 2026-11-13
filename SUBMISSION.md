@@ -17,7 +17,7 @@ Description (copy-ready, truthful): ProofPilot gives AI research an immutable ma
 - Finalized mandate SHA-256: ea0c7ee8300f76a9eee5a06794a5c393c79b734c8945a872b4d78f88ba580c73
 - Finalized evidence SHA-256: 63f65ff031703e754867fac5fb6c40013392b6d365b80613ad9f8339accf1500
 - Decision hash: NONE — execution error, no verdict.
-- CI: latest verified run is recorded in evidence/v2-lifecycle-2026-11-13/release-verification.json when available. Prior approved-source CI: https://github.com/haris4587/ProofPilot/actions/runs/43372706236
+- CI: 87 tests plus type checking, lint and build passed: https://github.com/haris4587/ProofPilot/actions/runs/43376785296 (application commit e39a141f37183bcd7374d3aa7f25f2cb5f41ea2f). Deployment/browser evidence: evidence/v2-lifecycle-2026-11-13/release-verification.json
 - Video: evidence/final-demo-2026-11-13/ProofPilot-verified-progress.mp4 — 45-second narrated verification report, explicitly NOT a successful mission film.
 
 | Method | Verified result | Transaction |
