@@ -1,5 +1,9 @@
 # Latest verified status — 13 November 2026
 
+## Undeployed structured assessment candidate — 13 November 2026
+
+`contracts/proof_pilot_v3.py` is a single offline replacement candidate. Models produce nine criterion/state/reference rows; source quotations, outcome and bounded explanation are derived deterministically. Validators retrieve and hash sources independently, make a blind assessment, then verify citation relevance. Prior versions/tasks/evidence remain preserved. No new deployment, blockchain write, funding, Heurist request, Git push or Vercel release has occurred. [Engineering review](evidence/structured-candidate-2026-11-13/REVIEW.md), [reproduction guide](REPRODUCE.md) and [bounded execution plan](FINAL_EXECUTION_PLAN.md). Production is still the historical deployment; this local change is not live. Browser CI and genuine network consensus remain unverified.
+
 ## Latest corrected-contract result — 13 November 2026
 
 The four authorized transactions were each submitted once. Mandate, authentic delivery and dispute finalized SUCCESS; the single corrected adjudication finalized execution ERROR. Task pp-corrected-18ec1e64ccb747d8 remains DISPUTED with no verdict/decision hash. All blockchain writes stopped. [Current receipts, diagnostics and remaining limitation](evidence/corrected-lifecycle-2026-11-13/README.md). The deployed source and original research are unchanged; no new Heurist call or deployment occurred. Production transaction configuration remains V1 because corrected-contract activation required successful adjudication. The public read-only archive now shows the actual corrected-contract failure. Earlier preparation and V2 records below are historical.

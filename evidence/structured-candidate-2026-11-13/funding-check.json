@@ -1,0 +1,7 @@
+{
+  "mode": "READ_ONLY",
+  "historicalEvidence": "Archived studio-rpc-observation.json reports entries without parameters, complete log or verified effects. Fresh transaction/state GETs do not establish funding attribution.",
+  "installedSDK": "genlayer-js 1.1.8 exposes sim_fundAccount only as the explicit accountActions.fundAccount method, guarded for localnet. No fundAccount invocation found in inspected writeContract/deployContract implementations. SDK custom RPC transport uses retryCount 0.",
+  "publicStudioBundleInspection": "HTTP 403 on GET https://studio.genlayer.com/; no bypass attempted. No historical UI funding behavior inferred from this.",
+  "conclusion": "No evidence of real-fund transfers. Cannot establish historical simulator funding effects or guarantee Studio UI will not internally fund. No funding action performed; execution plan stops if funding is needed."
+}

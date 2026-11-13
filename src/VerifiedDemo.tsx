@@ -9,8 +9,14 @@ import {explorer} from './chain';
 
 const repository='https://github.com/haris4587/ProofPilot';
 const bundle=JSON.parse(state.bundle) as Bundle;
-export default function VerifiedDemo(){
+export default function VerifiedDemo({onWalkthrough}:{onWalkthrough:()=>void}){
  const [checking,setChecking]=useState(false);
+ const [localStatus,setLocalStatus]=useState('');
+ const verifyLocal=async()=>{
+  const bundleOK=await sha256(reviewedArchive())===record.evidenceHash;
+  const mandateOK=await sha256(canonical(state.mandate))===record.mandateHash;
+  setLocalStatus(bundleOK&&mandateOK?'Both archived SHA-256 commitments verified locally. This checks bytes, not factual accuracy or live consensus.':'Archive commitment mismatch. Stop and inspect the downloaded records.');
+ };
  const [status,setStatus]=useState('Archived finalized snapshot · verified 13 November 2026');
  const refresh=async()=>{
   setChecking(true);
@@ -28,6 +34,7 @@ export default function VerifiedDemo(){
   finally{setChecking(false);}
  };
  return <section className="panel verified-demo" id="verified-demo" aria-label="Verified partner demonstration">
+  <div className="info-strip"><div><strong>Try the Demo · no credentials required</strong><ol><li>Verify the archived mandate and delivery hashes locally.</li><li>Inspect the genuine report, source limits and four transaction links below.</li><li>Optionally verify finalized state with a public read, or try the labeled offline lifecycle.</li></ol><div className="button-row"><button className="button secondary" onClick={()=>void verifyLocal()}>Verify archived hashes locally</button><button className="button secondary" onClick={onWalkthrough}>Try offline lifecycle</button><a href={`${repository}/blob/main/REPRODUCE.md`} target="_blank" rel="noreferrer">Reproduction instructions</a></div><p role="status">{localStatus}</p></div></div>
   <div className="section-heading"><div><p className="eyebrow">GENUINE PARTNER EXECUTION · ARCHIVED EVIDENCE</p><h3>Aave V3 research review</h3><p>Heurist succeeded. Corrected-contract mandate, delivery and dispute finalized successfully.</p></div><span className="status-tag amber">DISPUTED · NO VERDICT</span></div>
   <div className="info-strip"><div><strong>Adjudication FINALIZED · execution ERROR</strong><p>Strict validation rejected reason/quotation formatting and one response shape. The transaction rolled back; it produced no ACCEPTED, REJECTED or INCONCLUSIVE decision. Decision hash: not created.</p></div></div>
   <p className="help" role="status">{status}</p>

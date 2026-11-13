@@ -1,0 +1,24 @@
+{
+  "mode": "READ_ONLY",
+  "observedAt": "2026-11-13T10:08:03.528Z",
+  "rpc": "https://studio.genlayer.com/api",
+  "methods": [
+    "eth_chainId",
+    "eth_gasPrice",
+    "eth_getBalance"
+  ],
+  "results": [
+    {
+      "status": "fulfilled",
+      "value": "0xf22f"
+    },
+    {
+      "status": "fulfilled",
+      "value": "0x0"
+    },
+    {
+      "status": "fulfilled",
+      "value": "0x0"
+    }
+  ]
+}

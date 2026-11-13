@@ -1,0 +1,5 @@
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+Listing tests:
+  [desktop] › demo.spec.ts:2:1 › credential-free archive verification and clearly labeled offline lifecycle
+  [mobile] › demo.spec.ts:2:1 › credential-free archive verification and clearly labeled offline lifecycle
+Total: 2 tests in 1 file

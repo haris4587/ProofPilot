@@ -1,0 +1,7 @@
+{
+  "localChromium": "socket() failed: Operation not permitted",
+  "cloudBrowser": "localhost:4173 ERR_CONNECTION_REFUSED",
+  "result": "NOT_RUN",
+  "preparedTests": 2,
+  "nextGate": "Run npm run test:browser in supported CI before release; no pass claim."
+}

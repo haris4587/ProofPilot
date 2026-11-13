@@ -6,3 +6,6 @@ dist/
 *.tsbuildinfo
 __pycache__/
 *.pyc
+.venv/
+test-results/
+playwright-report/
