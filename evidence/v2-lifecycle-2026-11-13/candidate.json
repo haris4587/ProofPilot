@@ -1,0 +1,7 @@
+{
+  "status": "OFFLINE_ONLY_NOT_DEPLOYED",
+  "baseSourceSha256": "48eb272b98de3978248d6cd10a40b4cc9e9a5e508424ecba243c53cc98ef4e1f",
+  "candidateSourceSha256": "b68dcb73a839a53e8875d5c65e03069dab936fdfee1e45a053d9876634a9425a",
+  "change": "One prompt clarification; no validator, storage, ABI, execution bounds or authentic evidence changes.",
+  "liveReliabilityProven": false
+}

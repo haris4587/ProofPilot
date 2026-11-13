@@ -1,3 +1,14 @@
+# Latest verified status — 13 November 2026
+
+Genuine Heurist execution succeeded. V2 lifecycle: three FINALIZED / SUCCESS transactions, followed by FINALIZED / execution ERROR adjudication. Final task DISPUTED, decision {}, no verdict or decision hash. [Current raw evidence and diagnosis](evidence/v2-lifecycle-2026-11-13/README.md). This supersedes older preparation/configuration statements below; historical evidence is retained.
+
+| Method | Verified result | Transaction |
+| --- | --- | --- |
+| create_assignment | FINALIZED / SUCCESS | [Explorer](https://explorer-studio.genlayer.com/transactions/0x209d8e8e899b1f68ab896698969666573e0e68e50a217c11fb804153b29823ad) |
+| submit_delivery | FINALIZED / SUCCESS | [Explorer](https://explorer-studio.genlayer.com/transactions/0xfa6672091cdb93481e4505dca8da5bdf511c4f6078d0f5b2397f51d2603c62e4) |
+| open_dispute | FINALIZED / SUCCESS | [Explorer](https://explorer-studio.genlayer.com/transactions/0x33edab7de57f447890e7eaaf768be556b056a098f8a479db038b4e68278178cb) |
+| adjudicate | FINALIZED / ERROR | [Explorer](https://explorer-studio.genlayer.com/transactions/0xf70976a7d9effddb50ad4bd208c6c98b7ea39939a77a3eb22767177e57ad6dd9) |
+
 # Evidence and verification
 
 Use actual JSON records in `evidence/` as the source of truth for deployment, transactions and validation. No addresses, hashes, paid provider responses or screenshots are fabricated.

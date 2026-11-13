@@ -1,0 +1,10 @@
+--- a/contracts/proof_pilot_v2.py
++++ b/contracts/proof_pilot_v2.py
+@@ -182,6 +182,7 @@
+             # Clarify the exact count and final delivery-condition criterion without
+             # prefilling statuses or changing the acceptance predicate.
+             prompt += '\nReturn exactly ' + str(len(criteria)) + ' criteria states, including the final deliveryConditions criterion. Citation indices are 0 through ' + str(len(corpus)-1) + '. Use plain ASCII reason and exact ASCII source substrings. Do not wrap the object or add keys.'
++            prompt += '\nThe criteria array must contain ONLY JSON strings, never objects, booleans or explanations. Each string must be exactly SATISFIED, VIOLATED or UNKNOWN (case-sensitive). Put explanations in reason. For each citation, quote must decode to an exact contiguous substring of the selected corpus entry, not a paraphrase or its JSON-escaped presentation. Keep the existing evidence-based outcome rules; do not select an outcome to satisfy formatting.'
+             failures = []
+             for attempt in range(2):
+                 try:

@@ -1,0 +1,38 @@
+{
+  "contract": "0x8d64250Eb8c3Eafb8628482d2381799189055a90",
+  "owner": "0x67Da51Fd9AC1d52F34F5d01d06da8548979fC514",
+  "taskId": "pp-v2-review-18ec1e64ccb747d8",
+  "chainId": 61999,
+  "state": "DISPUTED",
+  "verdict": null,
+  "decisionHash": null,
+  "mandateHash": "ea0c7ee8300f76a9eee5a06794a5c393c79b734c8945a872b4d78f88ba580c73",
+  "evidenceHash": "63f65ff031703e754867fac5fb6c40013392b6d365b80613ad9f8339accf1500",
+  "researchReceivedAt": "2026-11-12T10:53:59.523Z",
+  "transactions": [
+    {
+      "method": "create_assignment",
+      "hash": "0x209d8e8e899b1f68ab896698969666573e0e68e50a217c11fb804153b29823ad",
+      "status": "FINALIZED",
+      "execution": "SUCCESS"
+    },
+    {
+      "method": "submit_delivery",
+      "hash": "0xfa6672091cdb93481e4505dca8da5bdf511c4f6078d0f5b2397f51d2603c62e4",
+      "status": "FINALIZED",
+      "execution": "SUCCESS"
+    },
+    {
+      "method": "open_dispute",
+      "hash": "0x33edab7de57f447890e7eaaf768be556b056a098f8a479db038b4e68278178cb",
+      "status": "FINALIZED",
+      "execution": "SUCCESS"
+    },
+    {
+      "method": "adjudicate",
+      "hash": "0xf70976a7d9effddb50ad4bd208c6c98b7ea39939a77a3eb22767177e57ad6dd9",
+      "status": "FINALIZED",
+      "execution": "ERROR"
+    }
+  ]
+}

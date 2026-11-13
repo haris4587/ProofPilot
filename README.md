@@ -12,9 +12,9 @@ ProofPilot implements a research-delivery workflow around immutable mandates, a 
 
 - **Internet Court:** explicitly identified protocol adapter, based on its agent-performance review connector. Uses an agreed objective/rubric, committed action receipts, a dispute condition and a review decision. There is no invented Internet Court filing endpoint, escrow or delegation.
 - **Heurist:** real server-side `/mesh_schema` and `/mesh_request` adapter for `ExaSearchDigestAgent.exa_web_search`, with payment credentials, schema checking and bounded responses. Live operation requires a configured API key and operator token. Offline fixtures are labeled; they are not provider results.
-- **GenLayer:** `contracts/proof_pilot.py` owns irreversible task commitments and independently evaluated delivery decisions. Stable Studionet, chain 61999. The deployment record and actual transactions are recorded in `evidence/` when available.
+- **GenLayer:** V1 `contracts/proof_pilot.py` is preserved. Diagnostic V2 `contracts/proof_pilot_v2.py` is deployed at `0x8d64250Eb8c3Eafb8628482d2381799189055a90`, Stable Studionet 61999. Production transaction configuration remains V1 because the authorized switch was conditional on successful V2 adjudication; the website shows V2 evidence in a separate read-only archive.
 - **Website:** configured exclusively for Vercel. No alternative hosting is authorized.
-- **Mission readiness:** a credentialed live Heurist execution and its pinned response must be recorded before this can be submitted as a complete three-way integration demo. Contract smoke tests using synthetic fixtures do not replace that evidence.
+- **Mission readiness:** genuine funded Heurist research is preserved. V2 mandate, exact delivery and dispute finalized SUCCESS; V2 adjudication finalized with execution ERROR. No valid verdict exists. The mission is not submission-ready. See [current evidence](evidence/v2-lifecycle-2026-11-13/README.md).
 
 ## Run
 
@@ -46,3 +46,14 @@ See [ARCHITECTURE.md](ARCHITECTURE.md), [SETUP.md](SETUP.md), [DEPLOYMENT.md](DE
 ## Review boundaries
 
 The contract proves adherence to agreed evidence and consensus logic, not the truth of an untrusted source or a provider identity. An operator-provided Heurist receipt is not a cryptographic provider attestation. The demo transfers no funds. Its protocol-adapter outcome is advisory; it does not create a legally binding court ruling.
+
+## Current verified lifecycle
+
+| Method | Verified result | Transaction |
+| --- | --- | --- |
+| create_assignment | FINALIZED / SUCCESS | [Explorer](https://explorer-studio.genlayer.com/transactions/0x209d8e8e899b1f68ab896698969666573e0e68e50a217c11fb804153b29823ad) |
+| submit_delivery | FINALIZED / SUCCESS | [Explorer](https://explorer-studio.genlayer.com/transactions/0xfa6672091cdb93481e4505dca8da5bdf511c4f6078d0f5b2397f51d2603c62e4) |
+| open_dispute | FINALIZED / SUCCESS | [Explorer](https://explorer-studio.genlayer.com/transactions/0x33edab7de57f447890e7eaaf768be556b056a098f8a479db038b4e68278178cb) |
+| adjudicate | FINALIZED / ERROR | [Explorer](https://explorer-studio.genlayer.com/transactions/0xf70976a7d9effddb50ad4bd208c6c98b7ea39939a77a3eb22767177e57ad6dd9) |
+
+The [87 automated tests](.github/workflows/ci.yml) cover frontend/domain/adapter logic and mocked contract execution. They do not substitute for real consensus. The genuine research predates the disclosed V2 mandate; no new Heurist execution is claimed. [V2 contract explorer](https://explorer-studio.genlayer.com/address/0x8d64250Eb8c3Eafb8628482d2381799189055a90) · [Preserved V1](https://explorer-studio.genlayer.com/address/0x95e28B38a3268f9e625e766B3FD6Cd0aa9f5430f).

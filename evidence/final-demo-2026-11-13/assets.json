@@ -1,0 +1,33 @@
+{
+  "status": "BLOCKED_PROGRESS_REPORT_NOT_SUCCESSFUL_MISSION_DEMO",
+  "resolution": [
+    1920,
+    1080
+  ],
+  "durationSeconds": 45,
+  "fps": 24,
+  "narration": "Synthetic English (libflite slt), editorial voice-over, not partner speech",
+  "assets": [
+    {
+      "path": "evidence/e2e/screenshots/00-dashboard.jpg",
+      "sha256": "7033c9870f934ddea549b9582521f62743e6e0eebbfc70e915fd906ae94682d9",
+      "unalteredSource": true
+    },
+    {
+      "path": "evidence/heurist-live-attempt-2026-11-12/mandate-finalized.jpg",
+      "sha256": "d548a8cf88d46622b9cb2750b47066714cbb1e94c309ce810ff135a689925c75",
+      "unalteredSource": true
+    },
+    {
+      "path": "evidence/heurist-funded-attempt-2026-11-12/research-success.jpg",
+      "sha256": "ef5e295742fcb31ff00f3530912770ec052182cd29f4d123f166313647d6d0d8",
+      "unalteredSource": true
+    },
+    {
+      "path": "evidence/v2-lifecycle-2026-11-13/execution-error.jpg",
+      "sha256": "f2cabd7ca28b8bb95613702a0de4ac8dc94c8d71341424c570cd523cdc939dc0",
+      "unalteredSource": true
+    }
+  ],
+  "transactionRecord": "evidence/v2-lifecycle-2026-11-13/summary.json"
+}

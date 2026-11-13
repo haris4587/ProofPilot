@@ -1,0 +1,32 @@
+{
+  "chainId": 61999,
+  "address": "0x8d64250Eb8c3Eafb8628482d2381799189055a90",
+  "owner": "0x67Da51Fd9AC1d52F34F5d01d06da8548979fC514",
+  "sourceSha256": "48eb272b98de3978248d6cd10a40b4cc9e9a5e508424ecba243c53cc98ef4e1f",
+  "finalizedCount": 0,
+  "taskAbsentBecauseEmptyContract": true,
+  "mandateSha256": "ea0c7ee8300f76a9eee5a06794a5c393c79b734c8945a872b4d78f88ba580c73",
+  "bundleBytes": 4935,
+  "bundleSha256": "63f65ff031703e754867fac5fb6c40013392b6d365b80613ad9f8339accf1500",
+  "providerRawSha256": "f28bd1f3b05b34087f1a4bcb798f27b30240088a232608f740575f64151fb544",
+  "sources": [
+    {
+      "url": "https://raw.githubusercontent.com/haris4587/ProofPilot/256420256b995e55543241e9b4e616a95a262699/evidence/heurist-funded-attempt-2026-11-12/sources/aave-intro.txt",
+      "status": 200,
+      "bytes": 579,
+      "sha256": "46792654bdb5e201dcab3075ed0bc02451bf1e8ae70d7c8ab8e38d96c9d81a8c"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/haris4587/ProofPilot/256420256b995e55543241e9b4e616a95a262699/evidence/heurist-funded-attempt-2026-11-12/sources/aave-reserve.txt",
+      "status": 200,
+      "bytes": 568,
+      "sha256": "64d7d9465f588ee0755ba251dcf55f0afe12d033c0143539924236c61e3a9710"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/haris4587/ProofPilot/256420256b995e55543241e9b4e616a95a262699/evidence/heurist-funded-attempt-2026-11-12/sources/bank.txt",
+      "status": 200,
+      "bytes": 628,
+      "sha256": "0ec54618e6a872e1db8ca1546965756cd1ee727ddb3728952a303c436e166c63"
+    }
+  ]
+}

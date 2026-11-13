@@ -1,0 +1,11 @@
+{
+  "javascriptTests": 47,
+  "pythonMockTests": 40,
+  "totalTests": 87,
+  "typecheck": "PASS",
+  "lint": "PASS",
+  "productionBuild": "PASS",
+  "productionDependencyAuditVulnerabilities": 0,
+  "candidateCompatibility": "AST proves one added prompt instruction only; unchanged storage, ABI, validator logic, bounds. No new live GenVM candidate execution.",
+  "secretsReview": "New archive contains public chain receipts, operator-approved research evidence, test logs and screenshots; no signing keys or API credentials."
+}

@@ -1,0 +1,2 @@
+40 deterministic Python contract/mock tests passed.
+Includes four offline prompt-clarification regressions. No live provider or consensus execution in tests.

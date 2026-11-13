@@ -1,0 +1,57 @@
+{
+  "historicalModelResponsesAvailable": false,
+  "rounds": [
+    {
+      "round": 0,
+      "mode": "leader",
+      "execution": "ERROR",
+      "diagnostics": [
+        {
+          "attempt": 0,
+          "code": "CRITERIA_STATE",
+          "responseHash": "e4f2ecb457c1b99783f5dd742a840c7d60b56f8848ad09dc932c365c68920f9b"
+        },
+        {
+          "attempt": 1,
+          "code": "CRITERIA_STATE",
+          "responseHash": "ee016296b4595c3430142c21db1ca1098d13261d1a2bfed08547b584695375c9"
+        }
+      ]
+    },
+    {
+      "round": 1,
+      "mode": "leader",
+      "execution": "ERROR",
+      "diagnostics": [
+        {
+          "attempt": 0,
+          "code": "CRITERIA_STATE",
+          "responseHash": "ce8bf597e695cd2925151504b7378c8aa9bd106c6d0b024508040e0861fff1e0"
+        },
+        {
+          "attempt": 1,
+          "code": "QUOTE_NOT_FOUND",
+          "responseHash": "25687cdf9a170be16a52a103922c7002786292f3dbeecb648060492a3d8dd013"
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "mode": "leader",
+      "execution": "ERROR",
+      "diagnostics": [
+        {
+          "attempt": 0,
+          "code": "CRITERIA_STATE",
+          "responseHash": "fd2401d2cbb8f62c130c7360bdf73d51e94bccf26d8f536db0872ba3ba2f0d6f"
+        },
+        {
+          "attempt": 1,
+          "code": "CRITERIA_STATE",
+          "responseHash": "8880bae4210c44eb14d26a9a4a85105154a4516658eeffca4fbf1c24f4a18c30"
+        }
+      ]
+    }
+  ],
+  "interpretation": "CRITERIA_STATE means at least one criterion is not an allowed enum value. Exact item types/values are not archived. QUOTE_NOT_FOUND means one syntactically acceptable quote is absent from its chosen corpus. Do not invent the rejected response."
+}

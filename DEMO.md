@@ -1,36 +1,16 @@
-# 45-second demo package
+# Actual 45-second demonstration — blocked progress report
 
-## Recording prerequisites
+The current MP4 is evidence/final-demo-2026-11-13/ProofPilot-verified-progress.mp4, with English synthetic narration, readable captions, 1920×1080, 24 fps, H.264/AAC. It is explicitly labeled VERIFIED PROGRESS — ADJUDICATION BLOCKED throughout. It cannot satisfy the requested successful mission demo until a real verdict exists.
 
-Prepare a genuine live Heurist run under a previously committed mandate, pin all source snapshots and wait for a successful finalized adjudication. Keep an offline fixture recording visibly labeled. Never edit a pending transaction to appear finalized or present a fixture as live provider output.
+| Time | Authentic evidence shown |
+| --- | --- |
+| 0–5 | Existing ProofPilot website and Internet Court / Heurist / GenLayer integration names |
+| 5–12 | Original mandate evidence and disclosed later V2 recovery mandate |
+| 12–20 | Genuine archived Heurist research success and preserved source limitations |
+| 20–30 | Three finalized successful V2 transactions and exact evidence commitment |
+| 30–40 | Actual V2 FINALIZED / execution ERROR receipt and diagnostic codes; DISPUTED, no verdict |
+| 40–45 | Production URL, repository and explicit remaining adjudication blocker |
 
-## Storyboard, captions and English voice-over
+render.py, captions.srt, narration.txt, assets.json and probe.json in that directory reproduce the edit and identify unaltered screenshots by SHA-256. Text panels summarize actual archived receipts; they are editorial captions, not fabricated application screens. Synthetic voices are editing assets, not recorded provider/validator speech. No secret-bearing browser state is included.
 
-| Time | Screen / caption | Voice-over |
-| --- | --- | --- |
-| 0-5s | ProofPilot dashboard. Internet Court, Heurist, GenLayer wordmarks. Caption: “Agree the work. Verify the delivery.” | “ProofPilot makes an AI research delivery accountable to the original agreement.” |
-| 5-12s | Open assignment and immutable mandate. Highlight required facts, evidence conditions and hash. Caption: “Terms locked before execution.” | “Internet Court’s mandate pattern fixes the brief, acceptance criteria and dispute rules before work begins.” |
-| 12-20s | Show real Heurist research request and preserved provider receipt. Caption: “Heurist Mesh · real research execution.” | “A Heurist agent executes the research. We preserve its response and pin the supporting evidence.” |
-| 20-30s | Open dispute; show original mandate/evidence hashes and GenLayer review. Caption: “Independent validators. Same evidence.” | “If the delivery is contested, GenLayer validators independently fetch the evidence and evaluate every agreed requirement.” |
-| 30-40s | Show genuine finalized successful receipt, exact source quote and explorer transaction. Caption: actual outcome only. | “The result is a grounded, auditable decision. Missing evidence stays inconclusive. No successful result is invented.” |
-| 40-45s | ProofPilot brand, repository and verified Vercel URL. Caption: “Reproduce the workflow.” | “ProofPilot. Clear terms, provable work. Explore the code and reproduce the workflow.” |
-
-Use 1920x1080, 24 or 30 fps. Total duration at most 45.00 seconds; target 43 seconds. Record screen at a readable zoom with the complete mode badge visible. Capture raw clips first; do not include real keys, wallet secrets or operator tokens. Keep a shot list file identifying task ID, source commit and transaction hashes.
-
-## Editing and motion
-
-Use clean 150-250 ms crossfades between sections, one restrained cyan highlight per scene, and 95%-105% slow movement only on static title panels. Keep screenshots at native aspect ratio and captions within 8% safe margins. Never animate unobserved validator counts, statuses or responses. Avoid lengthy network waiting in the cut: show the real earlier request followed by its actual recorded finalized receipt, with a small “earlier recorded run” label.
-
-Voice-over should be calm, English, approximately 135 words/minute; trim pauses rather than exceeding 45 seconds. Music optional at low level under narration. Generate captions from the exact final spoken words. Export H.264 MP4, yuv420p, AAC audio and faststart metadata.
-
-## Thumbnail
-
-Deep navy background, ProofPilot mark centered left, the actual verdict receipt card on the right. Text: “Can your AI agent prove its work?” Beneath it: “Internet Court × Heurist × GenLayer”. Use official partner assets only from their public brand sources; do not imply endorsement.
-
-## Status
-
-This document provides the complete production storyboard, narration, shot list and editing plan. A mission-ready MP4 requires recorded credentialed Heurist execution. A locally rendered concept/walkthrough, if included, must be labeled as such and does not replace that recording.
-
-## Verified audit and filming status
-
-See [evidence/e2e/README.md](evidence/e2e/README.md) for the actual November 11 run. Genuine Heurist execution and successful finalized adjudication are still outstanding. Use the preview only as a verification report, not a completed mission demonstration. The exact final-film timeline is in evidence/e2e/video/EDITING.md.
+For a later successful final cut, replace only the actual failed-outcome segment after a separately authorized real successful adjudication, add its genuine decision hash/explorer receipt, update production to the verified contract, and recheck all captions. Preserve retrospective research disclosure. Never relabel execution ERROR as INCONCLUSIVE.

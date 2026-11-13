@@ -1,0 +1,3 @@
+# Narrated 45-second verified progress video
+
+ProofPilot-verified-progress.mp4 is H.264/AAC, 1920×1080, 24 fps, 45.000 seconds. Rendered with AI-assisted editorial scripting, authentic screenshots and raw transaction values, English synthetic narration (libflite), readable captions and restrained fades. The persistent label states ADJUDICATION BLOCKED. This is not a successful mission-submission film. No verdict is fabricated. See assets.json, captions.srt, narration.txt, probe.json and render.py. Reproduce with Python Pillow and FFmpeg with libflite support: python evidence/final-demo-2026-11-13/render.py. No paid service or network write is involved.
