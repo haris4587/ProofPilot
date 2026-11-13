@@ -1,0 +1,12 @@
+{
+  "README.md": "a6afd2b1e2440a420577eaabb3f83a91ae6abc20f51fb88b974375d5a1d8ed36",
+  "deployed-source.py": "b68dcb73a839a53e8875d5c65e03069dab936fdfee1e45a053d9876634a9425a",
+  "deployment-receipt.json": "16bc49cf1c05a8c6f88a3222cfb7fc5fcb1029a22c379ce19ef2093a99136fff",
+  "finalized-studio.jpg": "daa12c4f7b6ac3cf491e6ba83d559f197510745b05d03760296f574c747a0138",
+  "frontend-configuration-plan.json": "c23534b3eb58416b1a77009f56201a40d7b3b89b97610ecb63b0cfe7c3aecbb1",
+  "mandate.json": "ea0c7ee8300f76a9eee5a06794a5c393c79b734c8945a872b4d78f88ba580c73",
+  "migration-plan.json": "52206987a664793a53a87253adf876c65864e90659f0a106627291ac837caef5",
+  "offline-validation.json": "2f255c1fe3cb515e4e0992d278f962407f82ea46421473cf5a7c29db0e64a84b",
+  "test-results.json": "def25bd871893eb4310093de342780dbc887a2a4daf47543dfc646ee31190721",
+  "verification.json": "9469a365448289eb0207b5d53e998410a1b86594db28edd91b7a786fbbbffa99"
+}

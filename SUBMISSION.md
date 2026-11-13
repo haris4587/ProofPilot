@@ -1,5 +1,9 @@
 # ProofPilot — mission submission draft (BLOCKED)
 
+## Corrected contract deployed — lifecycle pending approval
+
+The approved prompt-clarification candidate deployed once, FINALIZED / SUCCESS, at [0xdcDdcB1C570700Da7C3d6c98E9FCC23801608373](https://explorer-studio.genlayer.com/address/0xdcDdcB1C570700Da7C3d6c98E9FCC23801608373). [Deployment receipt](https://explorer-studio.genlayer.com/transactions/0x38da8445e7503ce1c0d04556a24edb4df0f9d11d48433943448a2add906ad1f7), exact approved source hash and empty finalized state verified. No lifecycle transaction or new Heurist request was sent. All 87 existing tests passed before deployment. [Exact four-transaction approval plan](evidence/correction-deployment-2026-11-13/migration-plan.json) and [verification/preparation](evidence/correction-deployment-2026-11-13/README.md). Production contract configuration remains unchanged; future activation is prepared only. Prior V1/V2 failures and evidence are preserved. Mission remains incomplete until genuine successful adjudication.
+
 Mission: Internet Court Partner Demo Lab, November 9–23, 2026.
 
 Project: ProofPilot — AI Agent Delivery Court.

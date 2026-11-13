@@ -1,0 +1,20 @@
+{
+  "verifiedAt": "2026-11-13T08:41:08.368Z",
+  "chainId": 61999,
+  "address": "0xdcDdcB1C570700Da7C3d6c98E9FCC23801608373",
+  "sender": "0x67Da51Fd9AC1d52F34F5d01d06da8548979fC514",
+  "hash": "0x38da8445e7503ce1c0d04556a24edb4df0f9d11d48433943448a2add906ad1f7",
+  "status": "FINALIZED",
+  "execution": "SUCCESS",
+  "sourceSha256": "b68dcb73a839a53e8875d5c65e03069dab936fdfee1e45a053d9876634a9425a",
+  "sourceBytes": 13709,
+  "finalizedCount": 0,
+  "leaderOnly": false,
+  "consensusMaxRotations": 2,
+  "constructorArgs": [],
+  "requestedValue": 0,
+  "valueNote": "Studio zero-value deployment default; raw receipt has value_credited=false, no independent numeric value field.",
+  "attempts": 1,
+  "lifecycleTransactionsSubmitted": 0,
+  "heuristRequests": 0
+}

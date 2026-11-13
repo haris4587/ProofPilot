@@ -1,0 +1,18 @@
+{
+  "status": "PREPARED_ONLY_NOT_APPLIED",
+  "project": "proofpilot",
+  "hosting": "Vercel only",
+  "productionUrl": "https://proofpilot-anza0x.vercel.app/",
+  "publicVariable": "VITE_CONTRACT_ADDRESS",
+  "currentContract": "0x95e28B38a3268f9e625e766B3FD6Cd0aa9f5430f",
+  "proposedContract": "0xdcDdcB1C570700Da7C3d6c98E9FCC23801608373",
+  "chainId": 61999,
+  "abi": "contracts/abi-v2.json",
+  "abiChanged": false,
+  "activationGate": "Genuine FINALIZED/SUCCESS adjudication, DECIDED state and verified decision/evidence hashes; retain historical V1/V2 explorer/evidence links. Then test/build/CI and redeploy existing Vercel project.",
+  "preserveSecrets": [
+    "HEURIST_API_KEY",
+    "PROOFPILOT_OPERATOR_TOKEN"
+  ],
+  "preventStaleDraft": "Scope live workflow drafts to the selected contract; do not carry V1/V2 signing drafts into corrected-contract writes. Public archive remains address-scoped."
+}
