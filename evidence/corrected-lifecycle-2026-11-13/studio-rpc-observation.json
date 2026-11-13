@@ -1,0 +1,7 @@
+{
+  "observed": "Studio RPC log emitted sim_fundAccount entries near adjudication submission and rotations.",
+  "agentAction": "Only the four authorized contract-method send controls were used. No separate funding RPC, faucet, transfer, purchase or subscription was initiated by the agent.",
+  "limits": "RPC-log parameters, source attribution and effects were not independently verified. Do not infer real-fund transfers or claim no internal simulator funding occurred.",
+  "transactionValue": "All four contract calls used the Studio zero-value default; receipts have no independent numeric value field.",
+  "furtherWrites": "STOPPED"
+}

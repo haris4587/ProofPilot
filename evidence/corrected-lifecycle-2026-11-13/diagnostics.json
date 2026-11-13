@@ -1,0 +1,57 @@
+{
+  "historicalModelResponsesAvailable": false,
+  "rounds": [
+    {
+      "round": 0,
+      "mode": "leader",
+      "execution": "ERROR",
+      "diagnostics": [
+        {
+          "attempt": 0,
+          "code": "REASON_ASCII_LENGTH",
+          "responseHash": "2185bb30f4f91cdb98c5c5d968c9b97849fbe6f30f3ef7fac7026c1e4c92fdfc"
+        },
+        {
+          "attempt": 1,
+          "code": "OBJECT_FIELDS",
+          "responseHash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+        }
+      ]
+    },
+    {
+      "round": 1,
+      "mode": "leader",
+      "execution": "ERROR",
+      "diagnostics": [
+        {
+          "attempt": 0,
+          "code": "QUOTE_ASCII_LENGTH",
+          "responseHash": "97477ac6b179f3622e50341cec081535d17aaf5ba4014403a485b58c28d05abc"
+        },
+        {
+          "attempt": 1,
+          "code": "QUOTE_ASCII_LENGTH",
+          "responseHash": "b70ce3a1d054a1193a987564e6186dac4d73c9a1d8335125186a5bc6604a2e48"
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "mode": "leader",
+      "execution": "ERROR",
+      "diagnostics": [
+        {
+          "attempt": 0,
+          "code": "QUOTE_ASCII_LENGTH",
+          "responseHash": "0d87bf7e61ed5337348e2edc69686a0594552c022d0c1d5a1bd1bdbfdcf84e3a"
+        },
+        {
+          "attempt": 1,
+          "code": "QUOTE_ASCII_LENGTH",
+          "responseHash": "b79dba878397028b617221f8c5cb2b4f44183bfaa0d94fadd5638f931d4a8311"
+        }
+      ]
+    }
+  ],
+  "interpretation": "One REASON_ASCII_LENGTH, one OBJECT_FIELDS and four QUOTE_ASCII_LENGTH failures. These combined codes do not distinguish wrong type, length and non-ASCII characters. No rejected model text is fabricated."
+}

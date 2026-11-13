@@ -1,0 +1,10 @@
+{
+  "address": "0xdcDdcB1C570700Da7C3d6c98E9FCC23801608373",
+  "chainId": 61999,
+  "sourceSha256": "b68dcb73a839a53e8875d5c65e03069dab936fdfee1e45a053d9876634a9425a",
+  "finalizedCount": 0,
+  "taskAbsentBecauseEmptyContract": true,
+  "bundleBytes": 4935,
+  "bundleSha256": "63f65ff031703e754867fac5fb6c40013392b6d365b80613ad9f8339accf1500",
+  "providerRawSha256": "f28bd1f3b05b34087f1a4bcb798f27b30240088a232608f740575f64151fb544"
+}

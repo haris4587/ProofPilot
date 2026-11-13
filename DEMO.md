@@ -1,20 +1,16 @@
-# Actual 45-second demonstration — blocked progress report
+# Latest actual demonstration — corrected adjudication blocked
 
-## Corrected contract deployed — lifecycle pending approval
+The updated 45-second MP4 is evidence/corrected-demo-2026-11-13/ProofPilot-verified-progress.mp4. It shows actual Heurist execution evidence, original mandate context, corrected-contract commitments and the genuine latest FINALIZED / execution ERROR receipt. It carries VERIFIED PROGRESS — ADJUDICATION BLOCKED throughout and cannot be submitted as a successful final mission demonstration.
 
-The approved prompt-clarification candidate deployed once, FINALIZED / SUCCESS, at [0xdcDdcB1C570700Da7C3d6c98E9FCC23801608373](https://explorer-studio.genlayer.com/address/0xdcDdcB1C570700Da7C3d6c98E9FCC23801608373). [Deployment receipt](https://explorer-studio.genlayer.com/transactions/0x38da8445e7503ce1c0d04556a24edb4df0f9d11d48433943448a2add906ad1f7), exact approved source hash and empty finalized state verified. No lifecycle transaction or new Heurist request was sent. All 87 existing tests passed before deployment. [Exact four-transaction approval plan](evidence/correction-deployment-2026-11-13/migration-plan.json) and [verification/preparation](evidence/correction-deployment-2026-11-13/README.md). Production contract configuration remains unchanged; future activation is prepared only. Prior V1/V2 failures and evidence are preserved. Mission remains incomplete until genuine successful adjudication.
-
-The current MP4 is evidence/final-demo-2026-11-13/ProofPilot-verified-progress.mp4, with English synthetic narration, readable captions, 1920×1080, 24 fps, H.264/AAC. It is explicitly labeled VERIFIED PROGRESS — ADJUDICATION BLOCKED throughout. It cannot satisfy the requested successful mission demo until a real verdict exists.
-
-| Time | Authentic evidence shown |
+| Time | Genuine evidence |
 | --- | --- |
 | 0–5 | Existing ProofPilot website and Internet Court / Heurist / GenLayer integration names |
-| 5–12 | Original mandate evidence and disclosed later V2 recovery mandate |
-| 12–20 | Genuine archived Heurist research success and preserved source limitations |
-| 20–30 | Three finalized successful V2 transactions and exact evidence commitment |
-| 30–40 | Actual V2 FINALIZED / execution ERROR receipt and diagnostic codes; DISPUTED, no verdict |
-| 40–45 | Production URL, repository and explicit remaining adjudication blocker |
+| 5–12 | Original mandate and explicit retrospective corrected mandate disclosure |
+| 12–20 | Archived genuine Heurist research result, missing [6] and source-support limitations |
+| 20–30 | Corrected create_assignment, exact delivery and dispute: FINALIZED / SUCCESS |
+| 30–40 | Corrected adjudication FINALIZED / execution ERROR; exact response-format diagnostics; no verdict |
+| 40–45 | Production/repository links and genuine remaining mission blocker |
 
-render.py, captions.srt, narration.txt, assets.json and probe.json in that directory reproduce the edit and identify unaltered screenshots by SHA-256. Text panels summarize actual archived receipts; they are editorial captions, not fabricated application screens. Synthetic voices are editing assets, not recorded provider/validator speech. No secret-bearing browser state is included.
+H.264/AAC, 1920×1080, 24 fps, 45.000 seconds. English synthetic editorial narration, readable captions and restrained fades. render.py, captions.srt, narration.txt, assets.json, probe.json and checksums.json reproduce and identify the assets. The captions summarize real receipts and do not fabricate application screens, validator output or successful transactions. Historical videos and failures remain unchanged in their original folders.
 
-For a later successful final cut, replace only the actual failed-outcome segment after a separately authorized real successful adjudication, add its genuine decision hash/explorer receipt, update production to the verified contract, and recheck all captions. Preserve retrospective research disclosure. Never relabel execution ERROR as INCONCLUSIVE.
+A successful final film requires a genuine successful finalized verdict, its receipt and decision hash. No such outcome exists. The corrected contract was not activated as the production write target because that action was conditioned on successful adjudication.
