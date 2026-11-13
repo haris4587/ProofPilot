@@ -39,3 +39,7 @@ GenVM linter 0.11.0 checks both original deployed source and V2 against the EXAC
 Blindly retrying V1 is NOT recommended. Its state is still valid DISPUTED and retry is technically possible, but the two observed failures provide no reason to expect a different result. Repository changes cannot repair its immutable evaluate closure.
 
 V2 is required IF the user chooses the diagnostic contract path; it is not proven that replacement is the only possible route to a valid V1 verdict. Deploying V2 alone cannot reuse storage at the old address. A new lifecycle is required unless a separately reviewed migration method is added (none is included). See MIGRATION.md for exact prepared actions. No transaction, deployment, provider execution, purchase or key export was performed during this diagnosis.
+
+## Production verification and wallet availability
+
+Frontend commit 8d81a916483b3a6180095cbff01832eee2fee038 passed GitHub CI https://github.com/haris4587/ProofPilot/actions/runs/43367454482 and Vercel deployment dpl_EnfnKALh9BKA7idak6nFBwoeYqbs is READY. Contract configuration remains the V1 address. Browser inventory on 13 November had no retained tab; a fresh production tab displayed the empty session dashboard. No wallet was loaded, generated or exported. Original-owner access cannot be presumed. V1 can only continue if its signing account is genuinely available; otherwise V2 requires an explicitly approved accessible commissioning account.
