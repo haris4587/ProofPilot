@@ -20,6 +20,15 @@ jobs:
         with:
           node-version: '22'
           cache: npm
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install pinned SDK tooling
+        run: pip install -r requirements.txt
+      - name: GenVM lint and pinned SDK compatibility
+        run: |
+          genvm-lint check contracts/proof_pilot_v3.py --json
+          python scripts/check-candidate-sdk.py
       - name: Install locked dependencies
         run: npm ci
       - name: JavaScript and adapter tests
@@ -32,3 +41,7 @@ jobs:
         run: npm run lint
       - name: Build
         run: npm run build
+      - name: Install browser
+        run: npx playwright install --with-deps chromium
+      - name: Desktop and mobile offline demo
+        run: npx playwright test

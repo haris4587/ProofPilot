@@ -1,5 +1,9 @@
 # ProofPilot — mission submission draft (BLOCKED)
 
+## Undeployed structured assessment candidate — 13 November 2026
+
+`contracts/proof_pilot_v3.py` is a single offline replacement candidate. Models produce nine criterion/state/reference rows; source quotations, outcome and bounded explanation are derived deterministically. Validators retrieve and hash sources independently, make a blind assessment, then verify citation relevance. Prior versions/tasks/evidence remain preserved. No new deployment, blockchain write, funding, Heurist request, Git push or Vercel release has occurred. [Engineering review](evidence/structured-candidate-2026-11-13/REVIEW.md), [reproduction guide](REPRODUCE.md) and [bounded execution plan](FINAL_EXECUTION_PLAN.md). Production is still the historical deployment; this local change is not live. Browser CI and genuine network consensus remain unverified.
+
 Mission: Internet Court Partner Demo Lab, November 9–23, 2026.
 
 Project: ProofPilot — AI Agent Delivery Court.

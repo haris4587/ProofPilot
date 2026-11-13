@@ -1,0 +1,16 @@
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+
+> proofpilot@1.0.0 test
+> vitest run --exclude tests/browser/**
+
+
+ RUN  v3.2.4 /workspace/scratch/e195859e0ddf/ProofPilot
+
+ ✓ tests/receipt-status.test.ts (1 test) 3ms
+ ✓ tests/adapters.test.ts (31 tests) 53ms
+ ✓ tests/recovery.test.ts (15 tests) 31ms
+
+ Test Files  3 passed (3)
+      Tests  47 passed (47)
+   Start at  15:33:13
+   Duration  631ms (transform 187ms, setup 0ms, collect 457ms, tests 87ms, environment 1ms, prepare 299ms)

@@ -1,0 +1,20 @@
+[
+  {
+    "brand": "internet-court",
+    "officialSource": "https://internetcourt.org/logos/tic-logo-red.svg",
+    "sha256": "4f7e0461894f482fa969bb04935f70d2bfa65d6360449d59d3535d5c6b912906",
+    "use": "Unmodified official site asset for identifying the integration in the demonstration. Trademark remains with owner; no general redistribution license asserted."
+  },
+  {
+    "brand": "genlayer",
+    "officialSource": "https://internetcourt.org/partners/genlayer.svg",
+    "sha256": "d836787c0f3e69e5982de141531d856ab4518749fed949f754adb88768616b46",
+    "use": "Unmodified official site asset for identifying the integration in the demonstration. Trademark remains with owner; no general redistribution license asserted."
+  },
+  {
+    "brand": "heurist",
+    "officialSource": "https://internetcourt.org/partners/heurist.svg",
+    "sha256": "d281dd165a1fff51a3b076857b4e2bc96d6c87bde17665698a482ba480ed22a7",
+    "use": "Unmodified official site asset for identifying the integration in the demonstration. Trademark remains with owner; no general redistribution license asserted."
+  }
+]

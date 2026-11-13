@@ -1,0 +1,23 @@
+{
+  "status": "OFFLINE_CANDIDATE_NOT_DEPLOYED",
+  "baseCommit": "24235399698fffa4b5df4839b4de661de8feae68",
+  "candidateSource": "contracts/proof_pilot_v3.py",
+  "sourceSha256": "c0ff057d983c72ba0df0cc04021a993ffde4c0d0e97ba3aedf49d71efa293296",
+  "pythonTests": 57,
+  "javascriptTests": 47,
+  "genvmLint": "passed",
+  "pinnedSDKValidation": "passed",
+  "abiExtraction": "passed",
+  "nativeSDKDirectLifecycleAndValidator": "passed_mocked_io",
+  "closureSerialization": "passed",
+  "lint": "passed",
+  "productionBuildAndTypecheck": "passed",
+  "browserTests": "2 discovered; execution blocked by host socket permissions/cloud localhost isolation; CI required",
+  "baseGitHubCI": "success; does not validate local candidate",
+  "networkWrites": 0,
+  "heuristRequests": 0,
+  "fundingActions": 0,
+  "historicalTaskState": "DISPUTED",
+  "historicalVerdict": null,
+  "liveConsensusReliability": "UNPROVEN"
+}

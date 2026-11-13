@@ -1,0 +1,21 @@
+import {test,expect} from '@playwright/test';
+test('credential-free archive verification and clearly labeled offline lifecycle',async({page})=>{
+ const pageErrors:string[]=[];
+ const writes:string[]=[];
+ page.on('pageerror',e=>pageErrors.push(e.message));
+ await page.route('**/api/status',r=>r.fulfill({json:{heuristConfigured:false,operatorConfigured:false}}));
+ page.on('request',r=>{if(r.method()==='POST')writes.push(r.url());});
+ await page.goto('/');
+ await page.getByRole('button',{name:'Verify archived hashes locally'}).click();
+ await expect(page.getByText('Both archived SHA-256 commitments verified locally.',{exact:false})).toBeVisible();
+ await page.getByRole('button',{name:'Try offline lifecycle'}).click();
+ await page.getByRole('button',{name:'Review mandate',exact:true}).click();
+ await page.getByRole('button',{name:'Lock offline mandate'}).click();
+ await page.getByRole('button',{name:'Load offline delivery'}).click();
+ await page.getByRole('button',{name:'Commit delivery',exact:true}).click();
+ await page.getByRole('button',{name:'Open delivery dispute'}).click();
+ await page.getByRole('button',{name:'Explain expected outcome'}).click();
+ await expect(page.getByText('Offline review receipt',{exact:false})).toBeVisible();
+ expect(writes).toEqual([]);expect(pageErrors).toEqual([]);
+ expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);
+});
