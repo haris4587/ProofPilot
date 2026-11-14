@@ -6,6 +6,9 @@ test('credential-free archive verification and clearly labeled offline lifecycle
  await page.route('**/api/status',r=>r.fulfill({json:{heuristConfigured:false,operatorConfigured:false}}));
  page.on('request',r=>{if(r.method()==='POST')writes.push(r.url());});
  await page.goto('/');
+ await expect(page.getByText('DISPUTED · NO VERDICT',{exact:true})).toBeVisible();
+ await expect(page.getByText('Adjudication FINALIZED · execution ERROR',{exact:true})).toBeVisible();
+ await expect(page.getByRole('link',{name:'Download MP4'})).toHaveAttribute('href',/ProofPilot-verified-progress\.mp4$/);
  await page.screenshot({path:testInfo.outputPath('overview.png')});
  await page.getByRole('button',{name:'Verify archived hashes locally'}).click();
  await expect(page.getByText('Both archived SHA-256 commitments verified locally.',{exact:false})).toBeVisible();

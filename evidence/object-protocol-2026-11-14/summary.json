@@ -1,0 +1,51 @@
+{
+  "contract": "0xf0EE634ab77Bdc99B7905E227569A5A96b8dd3ff",
+  "deploymentHash": "0xf3ef39828dd75a46021080f4c8bb9894ff8d179993baacd2333cec5b99774c5a",
+  "owner": "0x67Da51Fd9AC1d52F34F5d01d06da8548979fC514",
+  "taskId": "pp-object-20261114",
+  "chainId": 61999,
+  "state": "DISPUTED",
+  "verdict": null,
+  "decisionHash": null,
+  "mandateHash": "ea0c7ee8300f76a9eee5a06794a5c393c79b734c8945a872b4d78f88ba580c73",
+  "evidenceHash": "63f65ff031703e754867fac5fb6c40013392b6d365b80613ad9f8339accf1500",
+  "researchReceivedAt": "2026-11-12T10:53:59.523Z",
+  "verifiedDate": "14 November 2026",
+  "sourceSha256": "823be7ee58545c4f84712853265ddc0e094de24b66b8ffd1d5dafb7265e8dd33",
+  "sourceCommit": "582a9e68295fd5e94f67ac175cf6f311d31b175d",
+  "blocker": "EXTERNAL_SUPPORT_REQUIRED",
+  "transactions": [
+    {
+      "method": "create_assignment",
+      "hash": "0x25fc0f69ed22b294092a98532aeef4d055c8b66d40cbf8518459851c34d63b03",
+      "status": "FINALIZED",
+      "execution": "SUCCESS",
+      "configuredMaxRotations": 0,
+      "rotationsUsed": 0
+    },
+    {
+      "method": "submit_delivery",
+      "hash": "0x31bd0be516618bfc84995ae1e06ebda9a9b5bb6b9eba83763f7b825c89c129c4",
+      "status": "FINALIZED",
+      "execution": "SUCCESS",
+      "configuredMaxRotations": 0,
+      "rotationsUsed": 0
+    },
+    {
+      "method": "open_dispute",
+      "hash": "0x723b92c94dd3145938bd86c861f54670d441333c43845a93ccb9cc3342fdc793",
+      "status": "FINALIZED",
+      "execution": "SUCCESS",
+      "configuredMaxRotations": 0,
+      "rotationsUsed": 0
+    },
+    {
+      "method": "adjudicate",
+      "hash": "0x3aa66f7e979dd2abb32b17943f54e7fd688f14874f26b717e615fa645cbd7557",
+      "status": "FINALIZED",
+      "execution": "ERROR",
+      "configuredMaxRotations": 0,
+      "rotationsUsed": 0
+    }
+  ]
+}

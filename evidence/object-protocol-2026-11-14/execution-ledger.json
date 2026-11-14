@@ -1,0 +1,21 @@
+{
+  "chainId": 61999,
+  "contract": "0xf0EE634ab77Bdc99B7905E227569A5A96b8dd3ff",
+  "taskId": "pp-object-20261114",
+  "sourceCommit": "582a9e68295fd5e94f67ac175cf6f311d31b175d",
+  "sourceSha256": "823be7ee58545c4f84712853265ddc0e094de24b66b8ffd1d5dafb7265e8dd33",
+  "deploymentSubmissions": 1,
+  "mandateSubmissions": 1,
+  "deliverySubmissions": 1,
+  "disputeSubmissions": 1,
+  "adjudicationSubmissions": 1,
+  "automaticResends": 0,
+  "heuristRequests": 0,
+  "fundingActions": 0,
+  "purchases": 0,
+  "leaderOnly": false,
+  "consensusMaxRotations": 0,
+  "adjudication": "FINALIZED_EXECUTION_ERROR",
+  "adjudicationHash": "0x3aa66f7e979dd2abb32b17943f54e7fd688f14874f26b717e615fa645cbd7557",
+  "furtherBlockchainWrites": "STOPPED"
+}

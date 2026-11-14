@@ -1,40 +1,69 @@
-# ProofPilot — mission submission draft (BLOCKED)
+# Submission status: incomplete
 
-Mission: Internet Court Partner Demo Lab, November 9–23, 2026.
+Title: ProofPilot — Evidence-bound AI delivery review
 
-Project: ProofPilot — AI Agent Delivery Court.
+Progress description (not a completed mission claim):
+ProofPilot locks nine acceptance criteria, commits genuine Heurist research by SHA-256 and asks GenLayer validators to review the exact pinned evidence. The public interface provides local commitment verification, read-only finalized-state checks and an explicitly labeled offline walkthrough. The single corrected V4 attempt finalized deployment, mandate, delivery and dispute successfully; adjudication failed EXTERNAL_SUPPORT_REQUIRED and remains DISPUTED with no verdict or decision hash. Source, receipts and diagnostics are public. The existing 43.8-second narrated video shows an earlier failed attempt; no successful adjudication or new success film is claimed. Mission submission remains incomplete.
 
-Description (copy-ready, truthful): ProofPilot locks AI research requirements, preserves genuine Heurist Mesh execution evidence and sends delivery disputes to independent GenLayer review. Its Internet Court integration is a mandate/action-receipt/review protocol adapter, without a fabricated remote filing API. A genuine ExaSearchDigestAgent Aave research result and three commit-pinned sources are preserved with SHA-256 commitments. The corrected Studionet contract finalized the disclosed retrospective mandate, exact delivery and dispute successfully. Its single bounded adjudication failed strict response validation and rolled back; no verdict exists. Source, tests, transaction receipts, diagnostic hashes and a narrated progress film are available. Successful finalized adjudication is still required for mission completion.
+# Current result — 14 November 2026
 
-- Production: https://proofpilot-anza0x.vercel.app/ (Vercel only)
+The single authorized V4 attempt did not produce a verdict. Deployment, mandate, delivery and dispute finalized with execution SUCCESS. Adjudication finalized with execution ERROR / MAJORITY_DISAGREE / EXTERNAL_SUPPORT_REQUIRED. State remains DISPUTED with an empty decision; no decisionHash exists. There were zero rotations, no resubmissions, no new Heurist request, no funding and no purchases.
+
+V4 corrected the documented JSON object protocol mismatch without relaxing the nine assessments, source-span references or independent validation. The new execution reached the external support check and rejected a decided criterion without an external span. The raw rejected model responses and criterion identity are unavailable; no semantic verdict is inferred.
+
+- Contract: https://explorer-studio.genlayer.com/address/0xf0EE634ab77Bdc99B7905E227569A5A96b8dd3ff
+- Adjudication: https://explorer-studio.genlayer.com/tx/0x3aa66f7e979dd2abb32b17943f54e7fd688f14874f26b717e615fa645cbd7557
+- Pinned deployed source: https://github.com/haris4587/ProofPilot/blob/582a9e68295fd5e94f67ac175cf6f311d31b175d/contracts/proof_pilot_v4.py
+- Source SHA-256: `823be7ee58545c4f84712853265ddc0e094de24b66b8ffd1d5dafb7265e8dd33`
+- Read-only public reproduction: use the site's archive hash checks, pinned-source checks and finalized-state read. Offline walkthrough is explicitly labeled.
+
+78 Python tests, 47 JavaScript tests, lint/build, pinned-runner lint/ABI and native mocked lifecycle/validator/closure checks passed. GitHub CI run 43593002835 passed including desktop/mobile browser walkthroughs. These checks do not prove live adjudication success.
+
+The original 4,935-byte Heurist result and evidence commitment are unchanged. Research was received 12 November 2026, before this retrospective recovery mandate. The existing 43.8-second film records an earlier failed attempt. No new success film was made because success was not observed. Mission submission remains incomplete.
+
+## Historical documentation
+
+# Mission submission — BLOCKED, not submitted
+
+**Do not mark ProofPilot complete or submit a successful-consensus claim.** Deployment, mandate, authentic delivery and dispute finalized successfully. The one submitted V3 adjudication finalized with execution ERROR (`ASSESSMENT_COUNT`, `MAJORITY_DISAGREE`). The task remains DISPUTED. No verdict or decision hash exists. All blockchain writes stopped; no further deployment, retry, funding or Heurist request was made.
+
+## Truthful project description
+
+ProofPilot binds AI research to nine immutable acceptance criteria, preserves genuine Heurist Mesh research and hash-pinned source snapshots, and requests independent GenLayer delivery review through an Internet Court mandate/dispute protocol adapter. Its public interface provides credential-free evidence verification and a clearly labeled local lifecycle. The exact-source V3 deployment, mandate, delivery and dispute finalized successfully. The single bounded adjudication failed ASSESSMENT_COUNT, so no verdict or decision hash exists. Code, authentic receipts, passing offline/browser tests and a narrated 43.8-second progress film with all three official logos are available. Successful adjudication is still required for mission completion.
+
+- Website: https://proofpilot-anza0x.vercel.app/
 - Repository: https://github.com/haris4587/ProofPilot
-- Corrected contract: https://explorer-studio.genlayer.com/address/0xdcDdcB1C570700Da7C3d6c98E9FCC23801608373
-- Corrected deployment: https://explorer-studio.genlayer.com/transactions/0x38da8445e7503ce1c0d04556a24edb4df0f9d11d48433943448a2add906ad1f7
-- Genuine Heurist execution: https://github.com/haris4587/ProofPilot/tree/eeab424cb2a01404c7ef3f7a9c2ab9960edf990d/evidence/heurist-funded-attempt-2026-11-12
-- Pinned sources: https://github.com/haris4587/ProofPilot/tree/256420256b995e55543241e9b4e616a95a262699/evidence/heurist-funded-attempt-2026-11-12/sources
-- Current receipts/diagnostics: evidence/corrected-lifecycle-2026-11-13/
-- Mandate SHA-256: ea0c7ee8300f76a9eee5a06794a5c393c79b734c8945a872b4d78f88ba580c73
-- Evidence SHA-256: 63f65ff031703e754867fac5fb6c40013392b6d365b80613ad9f8339accf1500 (4,935 exact bytes)
-- Decision hash: NONE — execution ERROR, not an INCONCLUSIVE verdict.
-- Passing application CI: https://github.com/haris4587/ProofPilot/actions/runs/43398914704 (87 tests, type checking, lint and build). Production/browser checks: evidence/corrected-lifecycle-2026-11-13/release-verification.json.
-- Video: evidence/corrected-demo-2026-11-13/ProofPilot-verified-progress.mp4 — honest 45-second blocked-progress film, not a successful mission demo.
+- Contract: [0x798f0278e09e485961819Eacc5E5Dde8Ab96bDe8](https://explorer-studio.genlayer.com/address/0x798f0278e09e485961819Eacc5E5Dde8Ab96bDe8)
+- Task: `pp-structured-18ec1e64ccb747d8`
+- Network: Studionet 61999
+- Mandate SHA-256: `ea0c7ee8300f76a9eee5a06794a5c393c79b734c8945a872b4d78f88ba580c73`
+- Exact evidence SHA-256: `63f65ff031703e754867fac5fb6c40013392b6d365b80613ad9f8339accf1500` (4,935 bytes)
+- Deployed source SHA-256: `c0ff057d983c72ba0df0cc04021a993ffde4c0d0e97ba3aedf49d71efa293296`
 
-| Method | Verified result | Explorer |
+
+| Operation | Verified result | Evidence |
 | --- | --- | --- |
-| create_assignment | FINALIZED / SUCCESS | [Transaction](https://explorer-studio.genlayer.com/transactions/0x3c8cbe50fdbfc88608ae0d557a9e4ec9473771ac043425060276d5443ffc1039) |
-| submit_delivery | FINALIZED / SUCCESS | [Transaction](https://explorer-studio.genlayer.com/transactions/0xceca49331756c994932ed615ed0b8e38f42c7ff71802f34218aa80cb895cb6ed) |
-| open_dispute | FINALIZED / SUCCESS | [Transaction](https://explorer-studio.genlayer.com/transactions/0x51dfe20cefa2926cffada242d4e3e10e07ee6fdbcc6f617bd5587c6f7f8c8950) |
-| adjudicate | FINALIZED / ERROR | [Transaction](https://explorer-studio.genlayer.com/transactions/0xe1522746ae23c527d302ff8c0bd2c08203829a27cc7ab81e895546190e2df77e) |
+| Deployment | FINALIZED / SUCCESS | [Explorer](https://explorer-studio.genlayer.com/transactions/0xbeecc48fd5e22c3890704f8305c03aaf6dfe4d61b60bf6aadac6ab3a0e1b69f0) |
+| create_assignment | FINALIZED / SUCCESS | [Explorer](https://explorer-studio.genlayer.com/transactions/0xcf51fef26f4f9ed7d31fe6895d3af2e4902f866afe9f655f1c8c52935b6bb06a) |
+| submit_delivery | FINALIZED / SUCCESS | [Explorer](https://explorer-studio.genlayer.com/transactions/0xd36f303ee4432af79602d69fd118ee942e2d4179c72ba9a95454d7d002f5afac) |
+| open_dispute | FINALIZED / SUCCESS | [Explorer](https://explorer-studio.genlayer.com/transactions/0xf1749eda5d16d41a8f07bd2295866a5cb7d0396dca4e2f5662747df34c4791ad) |
+| adjudicate | FINALIZED / ERROR | [Explorer](https://explorer-studio.genlayer.com/transactions/0x577ac6f7f93b91dc62042a7e65bdb2c0219e0255894902ba01f63e639483c986) |
 
-## Technical explanation
+## Supporting links
 
-Internet Court's pattern fixes scope, acceptance criteria and dispute/review conditions. The protected server-only Heurist Mesh adapter checks the tool schema and preserves the genuine research response/provenance. GenLayer locks canonical mandate and evidence commitments, independently retrieves/hash-verifies pinned sources, evaluates nine criteria and derives outcomes deterministically under independent validator checks. Strict grounding and fail-closed behavior remain intact. No escrow, legally binding court decision, provider signature or invented partner endpoint is claimed.
+- Reproduction: https://github.com/haris4587/ProofPilot/blob/main/REPRODUCE.md
+- Genuine Heurist archive: https://github.com/haris4587/ProofPilot/tree/main/evidence/heurist-funded-attempt-2026-11-12
+- Latest receipts: https://github.com/haris4587/ProofPilot/tree/main/evidence/authorized-finish-2026-11-13
+- Reviewed candidate CI: https://github.com/haris4587/ProofPilot/actions/runs/43410196941
+- Progress video: https://proofpilot-anza0x.vercel.app/ProofPilot-demo.mp4
+- Internet Court integration explanation: ARCHITECTURE.md (protocol adapter; no invented external filing API)
 
-The original mandate preceded research; later recovery mandates explicitly disclose research reuse. Provider citation [6] lacks a sixth URL, and three bounded operator-captured excerpts do not support every claim. Browser session counts are not persistent global metrics. Current deployment/adjudication histories are address-scoped; archived V1 and V2 failed attempts remain public:
+## Acceptance checklist
 
-- V1: https://explorer-studio.genlayer.com/address/0x95e28B38a3268f9e625e766B3FD6Cd0aa9f5430f
-- V2: https://explorer-studio.genlayer.com/address/0x8d64250Eb8c3Eafb8628482d2381799189055a90
+- Public read-only and isolated reproducibility: implemented; real desktop/mobile browser validation available.
+- Clean public repository and CI: reviewed code published; final release CI must be verified.
+- Professional MP4 <=45 seconds with three authentic logos: rendered progress version, explicitly identifies blocker.
+- Genuine successful finalized adjudication: **NOT MET**.
+- Mission submitted as complete: **NO**.
 
-## Remaining blocker
-
-Actual corrected diagnostics: one REASON_ASCII_LENGTH, one OBJECT_FIELDS and four QUOTE_ASCII_LENGTH failures. The actual rejected text is not archived, so wrong type/length/character-set causes remain indistinguishable. No speculative redeployment or retry was performed. The required next engineering step is minimal safe subtype diagnostics and a validated structured-generation correction, preserving existing grounding/consensus. No production fix is proven yet. Mission submission was withheld because the requested successful finalized verdict does not exist. Use this only as a truthful progress draft.
+No additional contract deployment, retry, funding, purchase or Heurist request is authorized by this document. A future attempt needs separate user authorization and real evidence.

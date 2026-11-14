@@ -1,0 +1,80 @@
+{
+  "status": "AUTHORIZED_SINGLE_ATTEMPT_IN_PROGRESS",
+  "sourceCommit": "582a9e68295fd5e94f67ac175cf6f311d31b175d",
+  "sourcePath": "contracts/proof_pilot_v4.py",
+  "sourceSha256": "823be7ee58545c4f84712853265ddc0e094de24b66b8ffd1d5dafb7265e8dd33",
+  "contractClass": "ProofPilotV4",
+  "network": {
+    "name": "studionet",
+    "chainId": 61999,
+    "rpc": "https://studio.genlayer.com/api",
+    "explorer": "https://explorer-studio.genlayer.com",
+    "constructorArgs": [],
+    "value": "0",
+    "leaderOnly": false,
+    "consensusMaxRotations": 0
+  },
+  "owner": "0x67Da51Fd9AC1d52F34F5d01d06da8548979fC514",
+  "wallet": "Existing selected Studio built-in account; never export a key or substitute MetaMask",
+  "taskId": "pp-object-20261114",
+  "mandateHash": "ea0c7ee8300f76a9eee5a06794a5c393c79b734c8945a872b4d78f88ba580c73",
+  "evidenceHash": "63f65ff031703e754867fac5fb6c40013392b6d365b80613ad9f8339accf1500",
+  "evidenceBytes": 4935,
+  "deploymentAddress": "0xf0EE634ab77Bdc99B7905E227569A5A96b8dd3ff",
+  "addressNote": "Assigned by Studio only after the approved deployment; verify source/schema/finality before using it. No writes to prior contracts.",
+  "writeBudget": 5,
+  "adjudicationBudget": 1,
+  "automaticRetries": 0,
+  "providerRequests": 0,
+  "fundingActions": 0,
+  "purchases": 0,
+  "calls": [
+    {
+      "method": "deploy",
+      "sourcePath": "contracts/proof_pilot_v3.py",
+      "args": []
+    },
+    {
+      "method": "create_assignment",
+      "args": [
+        "pp-object-20261114",
+        "{\"adjudicator\":\"GenLayer:61999:ProofPilot\",\"deliveryConditions\":\"Deliver clear English research with direct source URLs. Review the submitted report against the original locked mandate and require evidence-backed consensus. Recovery review: the archived Heurist research was received on 2026-11-12 at 10:53:59.523 UTC before this replacement mandate. Review that prior result; no new agent execution is claimed.\",\"disputeRules\":\"Client may dispute once after delivery. Final adjudication is terminal; protocol-level appeals remain available. No funds are transferred.\",\"minSources\":2,\"objective\":\"Aave V3 Lending Research Verification: Research Aave V3 decentralized lending and borrowing. Explain supplying assets, collateralized borrowing, health factor and liquidation risk, and variable borrowing interest rates. Use at least two independently attributable reliable sources with direct URLs. Support factual claims with evidence, acknowledge contradictions, and provide no investment advice or unsupported financial claims.\",\"requiredFacts\":[\"Explain how users supply assets and borrow against collateral\",\"Explain the health factor and liquidation risk\",\"Explain how variable borrowing interest rates work\"],\"rubric\":[\"All three required facts are covered accurately\",\"At least two independently attributable sources\",\"Factual claims supported by evidence\",\"No unsupported financial claims\",\"Any unresolved contradiction must be acknowledged\"],\"version\":\"proofpilot/1\"}",
+        "ea0c7ee8300f76a9eee5a06794a5c393c79b734c8945a872b4d78f88ba580c73"
+      ]
+    },
+    {
+      "method": "submit_delivery",
+      "args": [
+        "pp-object-20261114",
+        "{\"provenance\":{\"agentId\":\"ExaSearchDigestAgent\",\"limitations\":\"Provider cites [6] but lists five URLs. Excerpts are limited and do not establish every report claim. No verdict or factual acceptance is asserted.\",\"provider\":\"Heurist Mesh\",\"rawSha256\":\"f28bd1f3b05b34087f1a4bcb798f27b30240088a232608f740575f64151fb544\",\"receivedAt\":\"2026-11-12T10:53:59.523Z\",\"requestId\":null,\"schemaSha256\":\"bc52520f096614747186fedb77a2117ac0c7c03e7a8b309be3443d947158d6c4\",\"sourceCapture\":\"Operator-retrieved bounded excerpts after provider execution; not provider-supplied full source bodies.\",\"sourceCommit\":\"256420256b995e55543241e9b4e616a95a262699\"},\"report\":\"{\\\"data\\\":{\\\"data\\\":{\\\"processed_summary\\\":\\\"Aave V3 is a decentralized, non-custodial liquidity protocol that enables users to lend and borrow crypto assets through smart contracts across multiple blockchain networks like Ethereum, Polygon, and Avalanche [1, 3, 5].\\\\n\\\\nSupplying assets involves users depositing cryptocurrencies into Aave's liquidity pools to earn interest [5]. Upon supplying, users receive interest-bearing aTokens (e.g., aWETH for WETH), which are ERC-20 tokens whose balance automatically increases over time due to accrued interest [1, 3, 5]. The interest earned by suppliers is not fixed and varies based on the \\\\\\\"utilization rate\\\\\\\" of the asset in the pool: a higher utilization rate (more borrowed liquidity) leads to increased interest rates to incentivize more supply and borrowing repayments [1, 5]. Users can withdraw their assets and accrued interest by redeeming aTokens, provided there is available unborrowed liquidity [3, 5].\\\\n\\\\nCollateralized borrowing requires users to post supplied assets as collateral to access liquidity [3, 5]. All loans on Aave V3 are \\\\\\\"overcollateralized,\\\\\\\" meaning \\\\\\\"the value of the collateral must exceed the borrowed amount\\\\\\\" as a safeguard against market volatility [1, 3, 5]. Each collateral asset has a specific \\\\\\\"Loan-to-Value (LTV) ratio,\\\\\\\" which determines \\\\\\\"the maximum amount that can be borrowed relative to the collateral\\\\u2019s value\\\\\\\" [4, 5, 6]. For example, a 75% LTV on ETH collateral means a user can borrow up to 75% of the ETH's value [5, 6]. The LTV ratio \\\\\\\"evolves with market conditions\\\\\\\" [6]. Borrowers can repay their loans, including accrued interest, at any time to unlock their collateral [5].\\\\n\\\\nLiquidation risk is managed through a \\\\\\\"Health Factor\\\\\\\" [1, 3, 6]. This factor is calculated based on the collateral value and the liquidation threshold of the assets, relative to the total borrowed amount [6]. If a user's health factor drops below 1, typically due to falling collateral prices or accrued interest, their position becomes \\\\\\\"eligible for liquidation\\\\\\\" [1, 3, 5, 6]. At this point, \\\\\\\"third-party liquidators can repay a portion of the debt and receive the corresponding collateral, plus a liquidation bonus\\\\\\\" [1, 3, 5]. This mechanism ensures the protocol's solvency by maintaining adequate collateralization [1, 5]. The \\\\\\\"liquidation threshold\\\\\\\" is the specific collateral ratio where a position is deemed undercollateralized and can be liquidated [1, 4, 6].\\\\n\\\\nVariable borrowing interest rates are determined algorithmically and adjust dynamically based on the \\\\\\\"utilization rate\\\\\\\" of each asset pool [1, 3, 4, 5]. As the utilization rate increases, indicating higher borrowing demand and reduced liquidity, interest rates rise to incentivize more supply and moderate further borrowing [1, 4, 5]. Aave V3 uses an interest rate model with \\\\\\\"two slopes with an optimal utilization point,\\\\\\\" where rates rise faster beyond this optimal point [3].\\\\n\\\\n[WARNING] Total Value Locked (TVL) data may be outdated. Aave was reported to have approximately 34 billion USD secured in smart contracts as of July 29, 2025 [1].\\\\n\\\\nSources:\\\\n1. https://www.banqueducanada.ca/wp-content/uploads/2026/04/sap2026-13.pdf\\\\n2. https://www.aave.org/docs/aave-v3/overview\\\\n3. https://www.aave.com/docs/aave-v3/concepts/reserve\\\\n4. https://www.aave.org/help/aave-101/introduction-to-aave\\\\n5. https://github.com/aave/risk-v3/blob/main/asset-risk/risk-parameters.md\\\"},\\\"status\\\":\\\"success\\\"}}\",\"sources\":[{\"sha256\":\"46792654bdb5e201dcab3075ed0bc02451bf1e8ae70d7c8ab8e38d96c9d81a8c\",\"url\":\"https://raw.githubusercontent.com/haris4587/ProofPilot/256420256b995e55543241e9b4e616a95a262699/evidence/heurist-funded-attempt-2026-11-12/sources/aave-intro.txt\"},{\"sha256\":\"64d7d9465f588ee0755ba251dcf55f0afe12d033c0143539924236c61e3a9710\",\"url\":\"https://raw.githubusercontent.com/haris4587/ProofPilot/256420256b995e55543241e9b4e616a95a262699/evidence/heurist-funded-attempt-2026-11-12/sources/aave-reserve.txt\"},{\"sha256\":\"0ec54618e6a872e1db8ca1546965756cd1ee727ddb3728952a303c436e166c63\",\"url\":\"https://raw.githubusercontent.com/haris4587/ProofPilot/256420256b995e55543241e9b4e616a95a262699/evidence/heurist-funded-attempt-2026-11-12/sources/bank.txt\"}]}",
+        "63f65ff031703e754867fac5fb6c40013392b6d365b80613ad9f8339accf1500"
+      ]
+    },
+    {
+      "method": "open_dispute",
+      "args": [
+        "pp-object-20261114",
+        "Please independently review whether the archived Heurist research delivery satisfies every requirement in the original locked mandate, including disclosed source limitations. No new research execution is claimed."
+      ]
+    },
+    {
+      "method": "adjudicate",
+      "args": [
+        "pp-object-20261114"
+      ]
+    }
+  ],
+  "feePolicy": "Observed gas price 0, task-owner balance 0; require zero value and zero fee/no funding at execution. Quota may block. No real-money budget.",
+  "stopConditions": [
+    "Owner unavailable or different",
+    "Source, commitment, schema or chain mismatch",
+    "Browser/SDK tests or CI fail",
+    "Cannot enforce one send, zero rotations, zero retry and no funding",
+    "Gas price/fees become nonzero or quota/payment/funding required",
+    "Any write fails or times out with uncertain submission",
+    "Source hash retrieval failure",
+    "Any adjudication failure or disagreement",
+    "No FINALIZED SUCCESS state and verified decisionHash"
+  ],
+  "deployedSourceVerified": true
+}

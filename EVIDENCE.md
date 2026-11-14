@@ -1,98 +1,63 @@
-# Latest verified status — 13 November 2026
+# Current result — 14 November 2026
 
-## Latest corrected-contract result — 13 November 2026
+The single authorized V4 attempt did not produce a verdict. Deployment, mandate, delivery and dispute finalized with execution SUCCESS. Adjudication finalized with execution ERROR / MAJORITY_DISAGREE / EXTERNAL_SUPPORT_REQUIRED. State remains DISPUTED with an empty decision; no decisionHash exists. There were zero rotations, no resubmissions, no new Heurist request, no funding and no purchases.
 
-The four authorized transactions were each submitted once. Mandate, authentic delivery and dispute finalized SUCCESS; the single corrected adjudication finalized execution ERROR. Task pp-corrected-18ec1e64ccb747d8 remains DISPUTED with no verdict/decision hash. All blockchain writes stopped. [Current receipts, diagnostics and remaining limitation](evidence/corrected-lifecycle-2026-11-13/README.md). The deployed source and original research are unchanged; no new Heurist call or deployment occurred. Production transaction configuration remains V1 because corrected-contract activation required successful adjudication. The public read-only archive now shows the actual corrected-contract failure. Earlier preparation and V2 records below are historical.
+V4 corrected the documented JSON object protocol mismatch without relaxing the nine assessments, source-span references or independent validation. The new execution reached the external support check and rejected a decided criterion without an external span. The raw rejected model responses and criterion identity are unavailable; no semantic verdict is inferred.
 
-## Corrected contract deployed — lifecycle pending approval
+- Contract: https://explorer-studio.genlayer.com/address/0xf0EE634ab77Bdc99B7905E227569A5A96b8dd3ff
+- Adjudication: https://explorer-studio.genlayer.com/tx/0x3aa66f7e979dd2abb32b17943f54e7fd688f14874f26b717e615fa645cbd7557
+- Pinned deployed source: https://github.com/haris4587/ProofPilot/blob/582a9e68295fd5e94f67ac175cf6f311d31b175d/contracts/proof_pilot_v4.py
+- Source SHA-256: `823be7ee58545c4f84712853265ddc0e094de24b66b8ffd1d5dafb7265e8dd33`
+- Read-only public reproduction: use the site's archive hash checks, pinned-source checks and finalized-state read. Offline walkthrough is explicitly labeled.
 
-The approved prompt-clarification candidate deployed once, FINALIZED / SUCCESS, at [0xdcDdcB1C570700Da7C3d6c98E9FCC23801608373](https://explorer-studio.genlayer.com/address/0xdcDdcB1C570700Da7C3d6c98E9FCC23801608373). [Deployment receipt](https://explorer-studio.genlayer.com/transactions/0x38da8445e7503ce1c0d04556a24edb4df0f9d11d48433943448a2add906ad1f7), exact approved source hash and empty finalized state verified. No lifecycle transaction or new Heurist request was sent. All 87 existing tests passed before deployment. [Exact four-transaction approval plan](evidence/correction-deployment-2026-11-13/migration-plan.json) and [verification/preparation](evidence/correction-deployment-2026-11-13/README.md). Production contract configuration remains unchanged; future activation is prepared only. Prior V1/V2 failures and evidence are preserved. Mission remains incomplete until genuine successful adjudication.
+78 Python tests, 47 JavaScript tests, lint/build, pinned-runner lint/ABI and native mocked lifecycle/validator/closure checks passed. GitHub CI run 43593002835 passed including desktop/mobile browser walkthroughs. These checks do not prove live adjudication success.
 
-Genuine Heurist execution succeeded. V2 lifecycle: three FINALIZED / SUCCESS transactions, followed by FINALIZED / execution ERROR adjudication. Final task DISPUTED, decision {}, no verdict or decision hash. [Current raw evidence and diagnosis](evidence/v2-lifecycle-2026-11-13/README.md). This supersedes older preparation/configuration statements below; historical evidence is retained.
+The original 4,935-byte Heurist result and evidence commitment are unchanged. Research was received 12 November 2026, before this retrospective recovery mandate. The existing 43.8-second film records an earlier failed attempt. No new success film was made because success was not observed. Mission submission remains incomplete.
 
-| Method | Verified result | Transaction |
+## Historical documentation
+
+# Authentic evidence
+
+## Latest real execution
+
+Deployment, mandate, authentic delivery and dispute finalized successfully. The one submitted V3 adjudication finalized with execution ERROR (`ASSESSMENT_COUNT`, `MAJORITY_DISAGREE`). The task remains DISPUTED. No verdict or decision hash exists. All blockchain writes stopped; no further deployment, retry, funding or Heurist request was made.
+
+- Website: https://proofpilot-anza0x.vercel.app/
+- Repository: https://github.com/haris4587/ProofPilot
+- Contract: [0x798f0278e09e485961819Eacc5E5Dde8Ab96bDe8](https://explorer-studio.genlayer.com/address/0x798f0278e09e485961819Eacc5E5Dde8Ab96bDe8)
+- Task: `pp-structured-18ec1e64ccb747d8`
+- Network: Studionet 61999
+- Mandate SHA-256: `ea0c7ee8300f76a9eee5a06794a5c393c79b734c8945a872b4d78f88ba580c73`
+- Exact evidence SHA-256: `63f65ff031703e754867fac5fb6c40013392b6d365b80613ad9f8339accf1500` (4,935 bytes)
+- Deployed source SHA-256: `c0ff057d983c72ba0df0cc04021a993ffde4c0d0e97ba3aedf49d71efa293296`
+
+
+| Operation | Verified result | Evidence |
 | --- | --- | --- |
-| create_assignment | FINALIZED / SUCCESS | [Explorer](https://explorer-studio.genlayer.com/transactions/0x209d8e8e899b1f68ab896698969666573e0e68e50a217c11fb804153b29823ad) |
-| submit_delivery | FINALIZED / SUCCESS | [Explorer](https://explorer-studio.genlayer.com/transactions/0xfa6672091cdb93481e4505dca8da5bdf511c4f6078d0f5b2397f51d2603c62e4) |
-| open_dispute | FINALIZED / SUCCESS | [Explorer](https://explorer-studio.genlayer.com/transactions/0x33edab7de57f447890e7eaaf768be556b056a098f8a479db038b4e68278178cb) |
-| adjudicate | FINALIZED / ERROR | [Explorer](https://explorer-studio.genlayer.com/transactions/0xf70976a7d9effddb50ad4bd208c6c98b7ea39939a77a3eb22767177e57ad6dd9) |
+| Deployment | FINALIZED / SUCCESS | [Explorer](https://explorer-studio.genlayer.com/transactions/0xbeecc48fd5e22c3890704f8305c03aaf6dfe4d61b60bf6aadac6ab3a0e1b69f0) |
+| create_assignment | FINALIZED / SUCCESS | [Explorer](https://explorer-studio.genlayer.com/transactions/0xcf51fef26f4f9ed7d31fe6895d3af2e4902f866afe9f655f1c8c52935b6bb06a) |
+| submit_delivery | FINALIZED / SUCCESS | [Explorer](https://explorer-studio.genlayer.com/transactions/0xd36f303ee4432af79602d69fd118ee942e2d4179c72ba9a95454d7d002f5afac) |
+| open_dispute | FINALIZED / SUCCESS | [Explorer](https://explorer-studio.genlayer.com/transactions/0xf1749eda5d16d41a8f07bd2295866a5cb7d0396dca4e2f5662747df34c4791ad) |
+| adjudicate | FINALIZED / ERROR | [Explorer](https://explorer-studio.genlayer.com/transactions/0x577ac6f7f93b91dc62042a7e65bdb2c0219e0255894902ba01f63e639483c986) |
 
-# Evidence and verification
+Source integrity was checked by retrieving deployed code and matching its SHA-256 against the approved source. The mandate, exact original bundle and client owner were checked after each successful lifecycle transaction using latest-final reads. The post-error state contains an empty decision object. The result is a failed execution, not a finalized INCONCLUSIVE verdict.
 
-Use actual JSON records in `evidence/` as the source of truth for deployment, transactions and validation. No addresses, hashes, paid provider responses or screenshots are fabricated.
+## Preserved files
 
-## Implemented checks
+- `evidence/authorized-finish-2026-11-13/`: five genuine receipts, finalized task states, deployed source/schema, diagnostic summary, rotation disclosure and read-only verification.
+- `evidence/heurist-funded-attempt-2026-11-12/`: original genuine provider result, prepared bundle, provenance and pinned operator source excerpts.
+- `evidence/structured-candidate-2026-11-13/`: candidate review and synthetic adversarial fixtures, clearly labeled offline.
+- `evidence/authorized-finish-2026-11-13/browser/`: actual desktop/mobile Chromium verification screenshots/WebM, with artifact source and checksums.
+- `evidence/final-demo-2026-11-13/`: narrated motion edit, exact credits, original soundtrack, subtitles and edit source. Its title explicitly says progress/blocker.
 
-- `npm test`: adapter/authentication/schema/error/timeout/response-size and canonicalization tests. HTTP responses in this suite are explicit test doubles.
-- `npm run test:contract`: state machine, authorization, replay, byte integrity, missing evidence, grounded quotes, outcome derivation and independent validator callback tests. GenVM is explicitly mocked here; these tests do not prove network consensus or empirical prompt-injection immunity.
-- `genvm-lint check contracts/proof_pilot.py`: AST safety and actual SDK schema validation.
-- `npm run build`: TypeScript and production bundling.
-- `npm run lint`: source lint.
+## Important limits
 
-## Required live mission evidence
+The bundle is exactly 4,935 bytes and is not a newly generated delivery. Research was received 12 November 2026 at 10:53:59.523 UTC, before the disclosed retrospective mandate. Provider reference [6] is missing from its five URLs. Source excerpts were captured by the operator after the provider execution and do not establish every claim. Source hash integrity is not authenticity of all original publications or correctness of the report.
 
-1. A credentialed Heurist response with raw bytes/hash, actual agent/tool, request metadata and attributed source links.
-2. A locked on-chain mandate before that execution.
-3. Commit-pinned public snapshots of the response and original supporting documents.
-4. Finalized and successful mandate, delivery, dispute and adjudication transactions, plus finalized state reads.
-5. A short video showing those records. Synthetic chain smoke fixtures must remain labeled and do not satisfy item 1.
+The one adjudication submitted on 14 November finalized ERROR. ASSESSMENT_COUNT means a response failed the nine-row array requirement. The raw rejected model response is unavailable, so neither its exact shape nor a semantic verdict is invented.
 
-Official implementation references were read from the pinned source repositories listed in ARCHITECTURE.md, along with current https://docs.genlayer.com/developers/intelligent-contracts/equivalence-principle and SDK source declarations from installed `genlayer-js@1.1.8`. Stable SDK 1.1.8 exposes `waitForTransactionReceipt` and `TransactionHashVariant.LATEST_FINAL`; do not copy unsupported v2 helper methods into this implementation.
+Historical Studio logs contained sim_fundAccount entries, but the log is shared and unscoped entries do not establish that this agent caused them or identify their balance effects. No explicit funding action was initiated. No real-currency transfer is inferred from simulator logs. See the preserved funding review rather than attributing unrelated entries to this task.
 
-## Observed Studionet deployment
+## Verification
 
-Contract: [0x95e28B38a3268f9e625e766B3FD6Cd0aa9f5430f](https://explorer-studio.genlayer.com/address/0x95e28B38a3268f9e625e766B3FD6Cd0aa9f5430f). Deployment transaction: [0xc5a1f0ccff0831cb9a16fc5c2027d72466a8c81a77fbc07aeaea4992ab610516](https://explorer-studio.genlayer.com/transactions/0xc5a1f0ccff0831cb9a16fc5c2027d72466a8c81a77fbc07aeaea4992ab610516), observed FINALIZED in Studio. The exact deployed source is archived in `evidence/deployed-source.py`; metadata describes its small difference from the typechecked source. No real Heurist execution or finalized adjudication is claimed. `smoke-mandate.json` and `smoke-bundle.json` are prepared synthetic inputs, not executed transactions.
-
-## Verified production website
-
-[ProofPilot on Vercel](https://proofpilot-anza0x.vercel.app/) is READY in production. Homepage and status API returned 200. The research endpoint correctly rejected GET with 405. The complete labeled offline browser workflow passed. The runtime error/fatal scan returned no matching records for the checked window. See `evidence/vercel-deployment.json` and `evidence/vercel-live.png`. Live Heurist credentials remain unconfigured.
-
-## 11 November 2026 production audit
-
-The latest verified audit, all-six-stage screenshots, downloaded exports, passing 46-test CI reference, production deployment metadata, real finalized successful commitments, failed adjudication and finalized state reads are recorded in [evidence/e2e/README.md](evidence/e2e/README.md). This supersedes earlier unexecuted-smoke wording: synthetic create/delivery were attempted, but no successful finalized adjudication or genuine Heurist execution is claimed.
-
-## 12 November 2026 live configuration update
-
-Heurist and operator production configuration now report true. A fresh real browser mandate finalized SUCCESS before execution. The provider test awaits private entry of the separate operator token; no Heurist request or new adjudication has occurred. See [verified preparation evidence](evidence/live-heurist-2026-11-12/README.md). This supersedes prior statements that HEURIST_API_KEY is absent; mission readiness remains incomplete.
-
-## Heurist preflight schema repair
-
-The production schema mismatch was traced to `query` versus the published `search_term` argument. The adapter repair, captured public schema and 53 passing regression checks are documented in [the schema repair audit](evidence/heurist-schema-fix/README.md). No research POST or real provider result was produced by these offline checks.
-
-## Autonomous attempt after schema repair — 12 November 2026
-
-The schema fix is deployed and passed 53 tests. One secure browser research submission reached provider credit-error handling: **Heurist credits are required** (HTTP 402 mapping). No report, provider receipt, delivery or new verdict exists. A fresh mandate finalized SUCCESS before the attempt. See [the genuine attempt record](evidence/heurist-live-attempt-2026-11-12/README.md). No credits were purchased or retries made; the mission remains incomplete.
-
-## Successful Heurist free-credit claim and secure installation
-
-The official X verification claim returned HTTP 200 and 100 credits for anza0x. Its issued key is installed as the existing HEURIST_API_KEY Production Secret; operator and contract variables are unchanged. See [the non-secret claim evidence](evidence/heurist-free-credit-claim-2026-11-12/README.md). No new research request was made; provider execution with the funded key and successful finalized GenLayer adjudication remain unverified and require further work.
-
-
-## Funded Heurist research verified — 12 November 2026
-
-One authorized live ExaSearchDigestAgent / exa_web_search submission succeeded at 10:53:59.523 UTC using the existing configured funded key. The genuine response and SHA-256 verification, pinned source excerpts, prepared delivery commitment and screenshot are in [the funded execution evidence](evidence/heurist-funded-attempt-2026-11-12/README.md). No automatic retry, purchase, subscription or consensus execution occurred. The existing mandate was reused; its owner differs from the active cloud tab account, so delivery has not been sent. The provider cites an absent source [6]; this and limited source coverage remain explicit review gaps. Mission submission is still pending authorized owner delivery/dispute and successful finalized adjudication. No contract or validator security was changed.
-
-
-## Reviewed recovery preparation
-
-A strict authentic archive importer and an explicitly retrospective replacement-mandate draft are prepared. The original task/research remain unchanged. See [recovery preparation](evidence/recovery-preparation-2026-11-12/README.md). No new Heurist request, blockchain transaction or adjudication was performed. Mission readiness remains pending separate transaction approvals and finalized results.
-
-
-## Three recovery transactions finalized
-
-The approved replacement mandate, exact authentic Heurist delivery, and dispute all reached FINALIZED / SUCCESS. Finalized state is DISPUTED with the expected evidence hash and no decision. See [verified transaction receipts](evidence/recovery-transactions-2026-11-12/README.md). Adjudication has not been authorized or submitted; no further Heurist request occurred.
-
-
-## Authorized adjudication finalized with execution ERROR
-
-The single adjudication for pp-recovery-18ec1e64ccb747d8 finalized with execution ERROR: `[LLM_ERROR] Invalid grounded decision; rotate validator`. The task remains DISPUTED with no decision and unchanged delivery commitment. See [genuine receipt and investigation](evidence/final-adjudication-2026-11-12/README.md). No retry, additional Heurist call, validator weakening or redeployment occurred. This is not an INCONCLUSIVE verdict or completed mission. Success-dependent final video and submission work is blocked.
-
-
-## Offline diagnosis and undeployed V2 candidate
-
-The authentic nine-criterion/four-corpus input was reconstructed exactly. V1 accepts a grounded synthetic nine-criterion answer in offline mocks; the historical rejected response remains unavailable. A minimal diagnostic V2 preserves strict validation and adds categorized failures without raw provider messages. No V2 deployment or further adjudication occurred. See [diagnosis](evidence/adjudication-diagnosis/REPORT.md) and [approval-gated migration plan](evidence/adjudication-diagnosis/MIGRATION.md). Mission remains incomplete; execution ERROR is not a verdict.
-
-
-## V2 deployment verified — 13 November 2026
-
-One V2 deployment FINALIZED / SUCCESS at 0x8d64250Eb8c3Eafb8628482d2381799189055a90. Transaction 0xca8d01c87659b60cf40611f768f664e884e1ac54af1c17cc994d5003c75a0c2c. Exact approved source hash verified; finalized get_count=0. See evidence/v2-deployment-2026-11-13. Migration is prepared only; adjudication remains unauthorized, and no genuine V2 verdict exists. V1 and production contract configuration preserved. Mission is not yet submission-ready.
+`python scripts/verify-candidate-inputs.py` validates original archive bytes and source snapshots offline. Read-only `node scripts/verify-approved-step.mjs <stage> <known-hash>` validates receipts; it exits nonzero on pending/failed execution and must never be interpreted as a resend instruction. Candidate CI: https://github.com/haris4587/ProofPilot/actions/runs/43410196941. Synthetic tests and native SDK mocks are not network consensus proof.

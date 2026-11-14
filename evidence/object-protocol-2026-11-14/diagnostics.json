@@ -1,0 +1,43 @@
+{
+  "result": "MAJORITY_DISAGREE",
+  "configuredMaxRotations": 0,
+  "rotationsUsed": 0,
+  "rounds": [
+    {
+      "round": "Undetermined",
+      "leaders": [
+        {
+          "execution": "ERROR",
+          "code": "EXTERNAL_SUPPORT_REQUIRED"
+        },
+        {
+          "execution": "ERROR",
+          "code": "EXTERNAL_SUPPORT_REQUIRED"
+        }
+      ],
+      "validators": [
+        {
+          "execution": "ERROR",
+          "vote": "disagree",
+          "code": "EXTERNAL_SUPPORT_REQUIRED"
+        },
+        {
+          "execution": "ERROR",
+          "vote": "idle",
+          "code": "idle"
+        },
+        {
+          "execution": "ERROR",
+          "vote": "disagree",
+          "code": "EXTERNAL_SUPPORT_REQUIRED"
+        },
+        {
+          "execution": "ERROR",
+          "vote": "idle",
+          "code": "idle"
+        }
+      ]
+    }
+  ],
+  "interpretation": "A complete object assessment passed parsing and row checks up to an assessment lacking an external source span. The rejected responses and criterion identity are unavailable. This is execution ERROR, not a verdict."
+}

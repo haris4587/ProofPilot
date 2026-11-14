@@ -1,0 +1,63 @@
+..............................................................................
+----------------------------------------------------------------------
+Ran 78 tests in 0.077s
+
+OK
+PP_V2_DIAG {"attempt":0,"code":"JSON_PARSE","responseHash":"fc72db03e254c3ca6474a1a8ca5d411191cce356c978a942126c29dafc3ac313"}
+PP_V2_DIAG {"attempt":1,"code":"JSON_PARSE","responseHash":"fc72db03e254c3ca6474a1a8ca5d411191cce356c978a942126c29dafc3ac313"}
+PP_V2_DIAG {"attempt":0,"code":"JSON_PARSE","responseHash":"cfe945f3baf086eaf3c9824f7544d3c179bc2b568f0641258b2c97ab4a6935fc"}
+PP_V2_DIAG {"attempt":1,"code":"JSON_PARSE","responseHash":"cfe945f3baf086eaf3c9824f7544d3c179bc2b568f0641258b2c97ab4a6935fc"}
+PP_V2_DIAG {"attempt":0,"code":"PROMPT_EXCEPTION_TimeoutError","responseHash":"74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b"}
+PP_V2_DIAG {"attempt":1,"code":"PROMPT_EXCEPTION_TimeoutError","responseHash":"74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b"}
+PP_V2_DIAG {"attempt":0,"code":"RESPONSE_SIZE","responseHash":"3d8232f69a1bc0a3037dc909cddc912bd589e26bf006039f57270c32f8307186"}
+PP_V2_DIAG {"attempt":1,"code":"RESPONSE_SIZE","responseHash":"3d8232f69a1bc0a3037dc909cddc912bd589e26bf006039f57270c32f8307186"}
+PP_V2_DIAG {"attempt":0,"code":"OBJECT_FIELDS","responseHash":"ccb1d0f3288019debeaad8809df80c9d7f4cd6811755f600403c2aef2196358a"}
+PP_V2_DIAG {"attempt":1,"code":"OBJECT_FIELDS","responseHash":"ccb1d0f3288019debeaad8809df80c9d7f4cd6811755f600403c2aef2196358a"}
+PP_V2_DIAG {"attempt":0,"code":"OBJECT_FIELDS","responseHash":"d719bb029d59457f6401fcac6e96ca6d71b7974ce1fab7142770c0f278955ae6"}
+PP_V2_DIAG {"attempt":1,"code":"OBJECT_FIELDS","responseHash":"d719bb029d59457f6401fcac6e96ca6d71b7974ce1fab7142770c0f278955ae6"}
+PP_V2_DIAG {"attempt":0,"code":"OBJECT_FIELDS","responseHash":"unserializable"}
+PP_V2_DIAG {"attempt":1,"code":"OBJECT_FIELDS","responseHash":"unserializable"}
+PP_V2_DIAG {"attempt":0,"code":"OBJECT_FIELDS","responseHash":"74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b"}
+PP_V2_DIAG {"attempt":1,"code":"OBJECT_FIELDS","responseHash":"74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b"}
+PP_V2_DIAG {"attempt":0,"code":"OBJECT_FIELDS","responseHash":"73475cb40a568e8da8a045ced110137e159f890ac4da883b6b17dc651b3a8049"}
+PP_V2_DIAG {"attempt":1,"code":"OBJECT_FIELDS","responseHash":"73475cb40a568e8da8a045ced110137e159f890ac4da883b6b17dc651b3a8049"}
+PP_V2_DIAG {"attempt":0,"code":"OBJECT_FIELDS","responseHash":"44e317650d60df5a5e4e17a615960c92f94878ee23fa9ddb630f81a3a4089f7d"}
+PP_V2_DIAG {"attempt":1,"code":"OBJECT_FIELDS","responseHash":"44e317650d60df5a5e4e17a615960c92f94878ee23fa9ddb630f81a3a4089f7d"}
+PP_V2_DIAG {"attempt":0,"code":"OBJECT_FIELDS","responseHash":"2ca62e1fb1ff9c5a9bd61096a9d2d8781979a9e971302079dff7bad3ed053c4c"}
+PP_V2_DIAG {"attempt":1,"code":"OBJECT_FIELDS","responseHash":"2ca62e1fb1ff9c5a9bd61096a9d2d8781979a9e971302079dff7bad3ed053c4c"}
+PP_V2_DIAG {"attempt":0,"code":"OUTCOME","responseHash":"404f251050a326c9bc3191be245bc1d1cfbaeb282e2b33e2868774e1dae46c7f"}
+PP_V2_DIAG {"attempt":1,"code":"OUTCOME","responseHash":"404f251050a326c9bc3191be245bc1d1cfbaeb282e2b33e2868774e1dae46c7f"}
+PP_V2_DIAG {"attempt":0,"code":"CRITERIA_COUNT","responseHash":"013fd23cc1d044c753ad3296cd0c2865b8cc7938763efe5ea4b5dfcef67cefe6"}
+PP_V2_DIAG {"attempt":1,"code":"CRITERIA_COUNT","responseHash":"013fd23cc1d044c753ad3296cd0c2865b8cc7938763efe5ea4b5dfcef67cefe6"}
+PP_V2_DIAG {"attempt":0,"code":"CRITERIA_COUNT","responseHash":"1fb79649b212763f6e9457f484bb69b5483d6c60a6e9565d9a9d6db5654a0ab2"}
+PP_V2_DIAG {"attempt":1,"code":"CRITERIA_COUNT","responseHash":"1fb79649b212763f6e9457f484bb69b5483d6c60a6e9565d9a9d6db5654a0ab2"}
+PP_V2_DIAG {"attempt":0,"code":"CRITERIA_STATE","responseHash":"131f249844b69cd9e0c9eac9635086dcf6a4d60d50b83a1d6c6bc8c7742c9075"}
+PP_V2_DIAG {"attempt":1,"code":"CRITERIA_STATE","responseHash":"131f249844b69cd9e0c9eac9635086dcf6a4d60d50b83a1d6c6bc8c7742c9075"}
+PP_V2_DIAG {"attempt":0,"code":"OUTCOME_DERIVATION","responseHash":"6f4ea642fb597c44dd109fe6e5f0526cd8bcad91be3f327c7c4e7083dac64dc9"}
+PP_V2_DIAG {"attempt":1,"code":"OUTCOME_DERIVATION","responseHash":"6f4ea642fb597c44dd109fe6e5f0526cd8bcad91be3f327c7c4e7083dac64dc9"}
+PP_V2_DIAG {"attempt":0,"code":"REASON_ASCII_LENGTH","responseHash":"62043cb9848211a20d68765058f939cea3f5664627bbefbd0a10295aa953f2a4"}
+PP_V2_DIAG {"attempt":1,"code":"REASON_ASCII_LENGTH","responseHash":"62043cb9848211a20d68765058f939cea3f5664627bbefbd0a10295aa953f2a4"}
+PP_V2_DIAG {"attempt":0,"code":"REASON_ASCII_LENGTH","responseHash":"ffa513b6998245175dc937cb6bad482a93642afeb459f0b31b89a8e5472be4f2"}
+PP_V2_DIAG {"attempt":1,"code":"REASON_ASCII_LENGTH","responseHash":"ffa513b6998245175dc937cb6bad482a93642afeb459f0b31b89a8e5472be4f2"}
+PP_V2_DIAG {"attempt":0,"code":"CITATIONS_COUNT","responseHash":"065b0363d66f0766fc638487384493ce4f761268ac86a0e4291965a1ca7aab97"}
+PP_V2_DIAG {"attempt":1,"code":"CITATIONS_COUNT","responseHash":"065b0363d66f0766fc638487384493ce4f761268ac86a0e4291965a1ca7aab97"}
+PP_V2_DIAG {"attempt":0,"code":"CITATION_INDEX","responseHash":"ffe88791f127a5466c679943f50f5d2f4d99c6acb4fe41332c415b690665e83e"}
+PP_V2_DIAG {"attempt":1,"code":"CITATION_INDEX","responseHash":"ffe88791f127a5466c679943f50f5d2f4d99c6acb4fe41332c415b690665e83e"}
+PP_V2_DIAG {"attempt":0,"code":"CITATION_INDEX","responseHash":"ced92b0da573df0950df0b7f3f1870de373f33987cb4e1d590fdd293222b9836"}
+PP_V2_DIAG {"attempt":1,"code":"CITATION_INDEX","responseHash":"ced92b0da573df0950df0b7f3f1870de373f33987cb4e1d590fdd293222b9836"}
+PP_V2_DIAG {"attempt":0,"code":"CITATION_INDEX","responseHash":"f2f5502a84c15eda9c3d5a01fb45ae6f1e81a6e5130f6318bb72426c7bc3a4d2"}
+PP_V2_DIAG {"attempt":1,"code":"CITATION_INDEX","responseHash":"f2f5502a84c15eda9c3d5a01fb45ae6f1e81a6e5130f6318bb72426c7bc3a4d2"}
+PP_V2_DIAG {"attempt":0,"code":"QUOTE_ASCII_LENGTH","responseHash":"256540fae9d4c6a59193f679d3e76afdde123a455d68d02eb29a23dfcbbc3b4f"}
+PP_V2_DIAG {"attempt":1,"code":"QUOTE_ASCII_LENGTH","responseHash":"256540fae9d4c6a59193f679d3e76afdde123a455d68d02eb29a23dfcbbc3b4f"}
+PP_V2_DIAG {"attempt":0,"code":"QUOTE_NOT_FOUND","responseHash":"47d986575ace78016ca7e2d44da06dc14818e6fbe6deda5795aaa55e2a231105"}
+PP_V2_DIAG {"attempt":1,"code":"QUOTE_NOT_FOUND","responseHash":"47d986575ace78016ca7e2d44da06dc14818e6fbe6deda5795aaa55e2a231105"}
+PP_V4_SCHEMA {"count":8,"field":"assessments","type":"list"}
+PP_V4_SCHEMA {"count":10,"field":"assessments","type":"list"}
+PP_V4_SCHEMA {"count":-1,"field":"assessments","type":"NoneType"}
+PP_V4_SCHEMA {"count":-1,"field":"assessments","type":"NoneType"}
+PP_V4_SCHEMA {"count":0,"field":"assessments","type":"list"}
+PP_V4_SCHEMA {"count":8,"field":"assessments","type":"list"}
+PP_V4_SCHEMA {"count":10,"field":"assessments","type":"list"}
+PP_V4_SCHEMA {"count":-1,"field":"assessments","type":"bool"}
+PP_V4_SCHEMA {"count":0,"field":"checks","type":"list"}
+PP_V4_SCHEMA {"count":8,"field":"checks","type":"list"}

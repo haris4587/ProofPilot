@@ -1,25 +1,41 @@
+# Current result — 14 November 2026
+
+The single authorized V4 attempt did not produce a verdict. Deployment, mandate, delivery and dispute finalized with execution SUCCESS. Adjudication finalized with execution ERROR / MAJORITY_DISAGREE / EXTERNAL_SUPPORT_REQUIRED. State remains DISPUTED with an empty decision; no decisionHash exists. There were zero rotations, no resubmissions, no new Heurist request, no funding and no purchases.
+
+V4 corrected the documented JSON object protocol mismatch without relaxing the nine assessments, source-span references or independent validation. The new execution reached the external support check and rejected a decided criterion without an external span. The raw rejected model responses and criterion identity are unavailable; no semantic verdict is inferred.
+
+- Contract: https://explorer-studio.genlayer.com/address/0xf0EE634ab77Bdc99B7905E227569A5A96b8dd3ff
+- Adjudication: https://explorer-studio.genlayer.com/tx/0x3aa66f7e979dd2abb32b17943f54e7fd688f14874f26b717e615fa645cbd7557
+- Pinned deployed source: https://github.com/haris4587/ProofPilot/blob/582a9e68295fd5e94f67ac175cf6f311d31b175d/contracts/proof_pilot_v4.py
+- Source SHA-256: `823be7ee58545c4f84712853265ddc0e094de24b66b8ffd1d5dafb7265e8dd33`
+- Read-only public reproduction: use the site's archive hash checks, pinned-source checks and finalized-state read. Offline walkthrough is explicitly labeled.
+
+78 Python tests, 47 JavaScript tests, lint/build, pinned-runner lint/ABI and native mocked lifecycle/validator/closure checks passed. GitHub CI run 43593002835 passed including desktop/mobile browser walkthroughs. These checks do not prove live adjudication success.
+
+The original 4,935-byte Heurist result and evidence commitment are unchanged. Research was received 12 November 2026, before this retrospective recovery mandate. The existing 43.8-second film records an earlier failed attempt. No new success film was made because success was not observed. Mission submission remains incomplete.
+
+## Historical documentation
+
 # Security boundaries
 
-ProofPilot is a testnet research-delivery demonstration, with no escrow, payments, financial recommendations or production custody.
+## Commitments and ownership
 
-## Controls
+Mandates and delivery bundles must be canonical JSON and match their SHA-256 commitments. They become immutable at the corresponding lifecycle transition. A commissioning-client address controls delivery, dispute and adjudication. Task IDs are unique; task capacity and input sizes are bounded. Decisions are terminal and recorded through append-only hash-linked audit receipts. No escrow, staking, token payout or real-fund transfer is implemented.
 
-- Only a task's commissioning account can submit its delivery, open its one dispute or request its one adjudication.
-- Mandates, evidence bytes, source digests and dispute reasons cannot be overwritten after their respective transitions.
-- Source URLs accept only HTTPS `raw.githubusercontent.com` with full 40-character commits. No arbitrary host, credentials, query strings, fragments, mutable branch paths or traversal are accepted. GitHub is trusted not to redirect pinned raw resources into an unsafe origin; runtime fetch redirect and response limits remain platform controls.
-- At most 128 tasks, four audit records per task, three sources, 8 KB per source, 24 KB per bundle and two LLM attempts per evaluator. Capacity is global and can be exhausted by public callers: this deployment is a bounded public demo, not a multi-tenant production service.
-- Validators independently retrieve exact source bytes, verify SHA-256 and compare substantive criterion states; all quoted excerpts must exist in those independently fetched documents.
-- Missing/conflicting evidence leads to UNKNOWN and INCONCLUSIVE. Unknown takes priority over established violations to avoid an unsupported terminal judgment.
-- The model receives untrusted external data separated from fixed evaluation instructions. Data cannot change the mandate, keys, authorization or supported outcomes. Prompt injection remains a model-level risk; exact grounding and independent comparison reduce, but do not eliminate it.
-- Heurist secrets are server-only. An independent operator bearer token protects paid execution. No uncertain paid POST is retried. Schema mismatches stop execution. The API limits output streaming and time.
-- Pending, accepted, undetermined, reverted and finalized-failed transactions are never treated as successful final verdicts.
+## Evidence and model boundary
 
-## Limitations
+Only commit-pinned HTTPS raw GitHub source URLs matching the strict allowlist grammar are retrieved, with duplicate rejection, response-status/size bounds, UTF-8 decoding and exact SHA-256 verification on every node. The report is bound by the bundle hash. Source spans preserve actual UTF-8 bytes; models never fabricate source quotation text or offsets.
 
-Content addressing establishes integrity, not authenticity or truth. Source snapshots may be fabricated or selectively chosen. Heurist metadata is an operator-produced receipt, not signed provider evidence. This release does not cryptographically prove the API response originated with Heurist. A client can edit a report before committing it; the reviewed delivery is the committed report.
+All reports, source bodies, provenance, disputes and catalog entries are treated as untrusted data, never instructions. Leader and validators independently retrieve evidence. Validators make a blind nine-criterion assessment and then judge citation relevance against full context. Merely matching a substring or valid JSON shape is not sufficient. Prompt-injection resistance and model relevance judgment remain probabilistic; offline mocks do not prove them.
 
-The browser demo key is held in sessionStorage; a page compromise can access it. Use it only on gasless Studionet with no funds. Production needs a secure signer, durable indexing, per-user auth, rate limiting and quotas. The operator endpoint is a limited private demo API, not a publicly metered service.
+V3 accepts only nine compact criterion/state/reference rows with fixed IDs/enums and bounded references. Unknown fields, root types, wrong counts, invalid references, disagreement and provider exceptions fail closed. No response repair or silent semantic coercion is used. Any UNKNOWN derives INCONCLUSIVE; otherwise VIOLATED derives REJECTED; otherwise ACCEPTED. Explicit independently agreed source-unavailability errors may produce INCONCLUSIVE. Provider/formatting errors roll back instead of becoming a verdict.
 
-Contract HTTP response sizes are rejected after the GenVM host receives them; host-level network time/size budgets still apply. Sources are limited to a single trusted public host. Consensus is subject to available validator models, network rules and appeal finality. Exact agreement on criterion states can reject otherwise similar answers; failure to reach consensus leaves the task disputed, not accepted.
+## Execution bounds and actual limitation
 
-Do not publish credentials or sensitive research. All committed task contents and pinned source snapshots are public. Report vulnerabilities privately to the repository owner; include reproduction without secret values.
+One leader assessment and at most two prompts per verifying node per execution; no contract-level retries. Network rotations are separately bounded by transaction configuration. The latest adjudication used maximum two rotations and was submitted once. It finalized with ASSESSMENT_COUNT and left the task DISPUTED. No successful network verdict is claimed. Earlier zero-rotation successes retained a default configured maximum of three; this mismatch is disclosed in DEPLOYMENT.md.
+
+## Website and secrets
+
+Public verification and local fixtures require no private key or provider token. Provider keys/operator access tokens stay server-side, and the research endpoint requires authorization. Credentials are not included in evidence or editing assets. Development session wallets are tab-local; never substitute another owner or export Studio private keys. UI example receipts must always stay labeled offline and cannot increment a successful on-chain verdict counter.
+
+Do not rerun scripts to recover from an uncertain write. Preserve its hash and inspect read-only state. Network quotas, provider policies, model disagreement, source availability and Studio resets can block progress. No wallet funding, credit purchase or subscription is included. Report a reproducible issue through a private maintainer channel without including credentials; public issues should contain only sanitized evidence.
