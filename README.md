@@ -1,5 +1,12 @@
 # Current result — 14 November 2026
 
+## Milestone v1 — Audit Desk (23 November 2026)
+
+New public review tools are available at [Audit Desk](https://proofpilot-anza0x.vercel.app/#audit-desk): read existing finalized tasks, verify mandate/delivery commitments and full per-task audit linkage, export/re-import bounded review packets and compare two snapshots. Imported files remain integrity-only until matched against public finalized state. Receipt classification now rejects conflicting execution success/error fields. [Implementation delta, reproduction, tests and limits](docs/milestone-v1.md).
+
+The existing contract and all write configuration are unchanged. This milestone adds verification tools; it does not resolve or relabel the historical adjudication failure below.
+
+
 The single authorized V4 attempt did not produce a verdict. Deployment, mandate, delivery and dispute finalized with execution SUCCESS. Adjudication finalized with execution ERROR / MAJORITY_DISAGREE / EXTERNAL_SUPPORT_REQUIRED. State remains DISPUTED with an empty decision; no decisionHash exists. There were zero rotations, no resubmissions, no new Heurist request, no funding and no purchases.
 
 V4 corrected the documented JSON object protocol mismatch without relaxing the nine assessments, source-span references or independent validation. The new execution reached the external support check and rejected a decided criterion without an external span. The raw rejected model responses and criterion identity are unavailable; no semantic verdict is inferred.

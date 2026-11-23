@@ -1,0 +1,25 @@
+import {test,expect} from '@playwright/test';
+test('audit archive, export/import, tamper rejection and snapshot comparison',async({page},testInfo)=>{
+ const writes:string[]=[];const errors:string[]=[];
+ page.on('request',r=>{if(r.method()==='POST')writes.push(r.url());});page.on('pageerror',e=>errors.push(e.message));
+ await page.route('**/api/status',r=>r.fulfill({json:{heuristConfigured:false,operatorConfigured:false}}));
+ await page.goto('/#audit-desk');
+ await expect(page.getByRole('heading',{name:'Audit Desk',exact:true})).toBeVisible();
+ await page.getByRole('button',{name:'Load archived review'}).click();
+ await expect(page.getByText('Internal integrity verified',{exact:false})).toBeVisible();
+ await expect(page.getByText('DISPUTED · NO VERIFIED VERDICT',{exact:true})).toBeVisible();
+ await expect(page.getByText('Not authenticated against live chain state.',{exact:false})).toBeVisible();
+ await expect(page.getByText('PASS · Complete audit linkage')).toBeVisible();
+ await page.getByRole('button',{name:'Keep as comparison baseline'}).click();
+ const downloadPromise=page.waitForEvent('download');await page.getByRole('button',{name:'Export review packet'}).click();
+ const download=await downloadPromise;const path=await download.path();expect(path).toBeTruthy();
+ await page.getByLabel('Import review packet',{exact:true}).setInputFiles(path!);
+ await expect(page.getByText('Imported file',{exact:true})).toBeVisible();
+ await page.getByRole('button',{name:'Compare snapshots',exact:true}).click();
+ await expect(page.getByText('0 changed fields.',{exact:false})).toBeVisible();
+ await page.getByLabel('Import review packet',{exact:true}).setInputFiles({name:'tampered.json',mimeType:'application/json',buffer:Buffer.from('{"verified":true}')});
+ await expect(page.getByRole('alert')).toContainText('Unsupported or malformed review packet.');
+ await page.screenshot({path:testInfo.outputPath('audit-desk.png'),fullPage:true});
+ expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);
+ expect(errors).toEqual([]);expect(writes).toEqual([]);
+});
