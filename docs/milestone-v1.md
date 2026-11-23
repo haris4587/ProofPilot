@@ -40,6 +40,18 @@ The archive loader reconstructs historical events from three committed state sna
 - `npm run test:browser`: desktop/mobile coverage for archive verification, export/import, modified-file rejection, comparison, no page errors, no horizontal overflow and no POST requests in the offline workflow, plus the existing demo walkthrough.
 - Local Chromium launch is restricted by this container's socket policy. Real browser verification runs in GitHub CI; its final result is provided in the submission. Do not count an environment launch failure as a browser pass.
 
+## Recorded live verification
+
+The new reader successfully read the existing deployed task and its three audit events from public latest-final state. All seven checks passed, with `integrity: true`, `status: DISPUTED`, `verdict: null`. See [machine-readable verification](../evidence/milestone-v1/live-audit-verification.json).
+
+Reproduce without a wallet after `npm ci`:
+
+```sh
+npx --no-install vite-node scripts/verify-audit-live.ts
+```
+
+This runs the same `readAuditPacket` and `verifyPacket` functions as the interface. It reads only `get_task` and `get_audit`; it does not create accounts or submit transactions. The command exits nonzero for an incomplete or failed check.
+
 ## Limits and trust boundaries
 
 A self-hashed imported packet is not a signature or proof of blockchain origin. An attacker can fabricate a fully self-consistent packet; public finalized matching is necessary to authenticate its current contents. Snapshot comparison is structural, not a guarantee of chronological progress or factual correctness. Source hashes inside a delivery do not prove source truth, complete semantic support or provider identity. This desk does not reproduce AI consensus.

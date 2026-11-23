@@ -1,0 +1,50 @@
+{
+  "checkedAt": "2026-11-23T05:11:02.127Z",
+  "source": "public latest-final reads",
+  "chainId": 61999,
+  "contract": "0xf0EE634ab77Bdc99B7905E227569A5A96b8dd3ff",
+  "taskId": "pp-object-20261114",
+  "status": "DISPUTED",
+  "packetHash": "960aaeca9a8856601c16c9aef083af4d501b3bdc3fa5649b243ca9d6378a80a0",
+  "auditHead": "846cb3a175df1aa4cb15ce2da757c7e98a5226cd37dc518c775578aca85890bc",
+  "auditEvents": 3,
+  "checks": [
+    {
+      "label": "Mandate commitment",
+      "ok": true,
+      "detail": "SHA-256 of the canonical locked mandate."
+    },
+    {
+      "label": "Nine locked criteria",
+      "ok": true,
+      "detail": "V4 requires exactly nine criteria."
+    },
+    {
+      "label": "Delivery commitment",
+      "ok": true,
+      "detail": "Exact canonical delivery bytes match the locked SHA-256."
+    },
+    {
+      "label": "Lifecycle consistency",
+      "ok": true,
+      "detail": "Dispute text agrees with the recorded phase."
+    },
+    {
+      "label": "Complete audit linkage",
+      "ok": true,
+      "detail": "Events must start at AGREED, link in order and end at this task’s audit head. Gaps fail verification."
+    },
+    {
+      "label": "Latest state binding",
+      "ok": true,
+      "detail": "Reconstructs the contract’s pre-save state hash for the final event."
+    },
+    {
+      "label": "Decision receipt",
+      "ok": true,
+      "detail": "No verdict is inferred from a disputed or unfinished task."
+    }
+  ],
+  "integrity": true,
+  "verdict": null
+}
