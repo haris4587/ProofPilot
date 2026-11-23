@@ -8,13 +8,19 @@ export async function devClient(){
  const account=createAccount(key);return {account,client:createClient({chain:studionet,account})};
 }
 export function statusName(t:Record<string,unknown>):string{const raw=t.statusName??t.status;return typeof raw==='number'?(transactionsStatusNumberToName[String(raw) as keyof typeof transactionsStatusNumberToName]||'UNKNOWN'):String(raw||'UNKNOWN');}
-export function successful(t:Record<string,unknown>){
- const status=statusName(t);
+function executionStatus(t:Record<string,unknown>):'SUCCESS'|'ERROR'|'UNVERIFIED'{
  const result=t.txExecutionResultName;
  const consensus=t.consensus_data as {leader_receipt?:Array<{execution_result?:string}>|{execution_result?:string}}|undefined;
  const leaders=consensus?.leader_receipt;
- const leader=Array.isArray(leaders)?leaders[0]:leaders;
- return status==='FINALIZED' && (result==='SUCCESS' || leader?.execution_result==='SUCCESS');
+ const receipts=Array.isArray(leaders)?leaders:leaders?[leaders]:[];
+ // A contradictory receipt must never become success because one nested leader
+ // happened to execute successfully. Explicit execution failure takes precedence.
+ if(result==='ERROR'||receipts.some(r=>r.execution_result==='ERROR'))return 'ERROR';
+ if(result==='SUCCESS'||receipts.some(r=>r.execution_result==='SUCCESS'))return 'SUCCESS';
+ return 'UNVERIFIED';
+}
+export function successful(t:Record<string,unknown>){
+ return statusName(t)==='FINALIZED'&&executionStatus(t)==='SUCCESS';
 }
 export async function write(functionName:string,args:CalldataEncodable[],onHash:(hash:string)=>void){
  if(!/^0x[0-9a-fA-F]{40}$/.test(contractAddress))throw new Error('A deployed ProofPilot contract is not configured.');
@@ -40,7 +46,5 @@ export function receiptStatus(t:Record<string,unknown>):string{
  if(successful(t))return 'FINALIZED · SUCCESS';
  const status=statusName(t);
  if(status!=='FINALIZED')return status;
- const data=t.consensus_data as {leader_receipt?:Array<{execution_result?:string}>|{execution_result?:string}}|undefined;
- const rows=data?.leader_receipt;const leader=Array.isArray(rows)?rows[0]:rows;
- return leader?.execution_result==='ERROR'?'FINALIZED · EXECUTION ERROR':'FINALIZED · EXECUTION UNVERIFIED';
+ return executionStatus(t)==='ERROR'?'FINALIZED · EXECUTION ERROR':'FINALIZED · EXECUTION UNVERIFIED';
 }
