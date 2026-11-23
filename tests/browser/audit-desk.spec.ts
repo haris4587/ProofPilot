@@ -18,7 +18,7 @@ test('audit archive, export/import, tamper rejection and snapshot comparison',as
  await page.getByRole('button',{name:'Compare snapshots',exact:true}).click();
  await expect(page.getByText('0 changed fields.',{exact:false})).toBeVisible();
  await page.getByLabel('Import review packet',{exact:true}).setInputFiles({name:'tampered.json',mimeType:'application/json',buffer:Buffer.from('{"verified":true}')});
- await expect(page.getByRole('alert')).toBeVisible();
+ await expect(page.getByRole('alert')).toContainText('Unsupported or malformed review packet.');
  await page.screenshot({path:testInfo.outputPath('audit-desk.png'),fullPage:true});
  expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);
  expect(errors).toEqual([]);expect(writes).toEqual([]);

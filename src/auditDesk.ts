@@ -31,7 +31,9 @@ export function parseTask(value:unknown):AuditTask{
   if(byteSize(value)>65536)throw new Error('Task response exceeds 64 KiB.');
   value=JSON.parse(value);
  }
- return taskSchema.parse(value);
+ const task=taskSchema.safeParse(value);
+ if(!task.success)throw new Error('Task response does not match the existing ProofPilot deployment.');
+ return task.data;
 }
 export async function makePacket(taskId:string,task:unknown,auditEvents:unknown[]):Promise<AuditPacket>{
  const content={version:'proofpilot/audit-packet/1' as const,chainId:61999 as const,contract:auditContract,
@@ -40,7 +42,11 @@ export async function makePacket(taskId:string,task:unknown,auditEvents:unknown[
 }
 export async function parsePacket(raw:string):Promise<AuditPacket>{
  if(byteSize(raw)>MAX_PACKET_BYTES)throw new Error('Review packet exceeds 128 KiB.');
- const packet=packetSchema.parse(JSON.parse(raw));
+ let value:unknown;
+ try{value=JSON.parse(raw);}catch{throw new Error('Review packet is not valid JSON.');}
+ const parsed=packetSchema.safeParse(value);
+ if(!parsed.success)throw new Error('Unsupported or malformed review packet. Export a packet from this Audit Desk for the existing Studionet contract.');
+ const packet=parsed.data;
  const {packetHash,...content}=packet;
  if(await sha256(canonical(content))!==packetHash)throw new Error('Review packet hash mismatch. The file changed.');
  return packet;
@@ -118,9 +124,13 @@ export async function collectPacket(taskId:string,read:ReadView):Promise<AuditPa
 export async function readAuditPacket(taskId:string):Promise<AuditPacket>{
  const [{createClient},{studionet},{TransactionHashVariant}]=await Promise.all([import('genlayer-js'),import('genlayer-js/chains'),import('genlayer-js/types')]);
  const client=createClient({chain:studionet});
- const read:ReadView=(functionName,args)=>client.readContract({address:auditContract,functionName,args,transactionHashVariant:TransactionHashVariant.LATEST_FINAL});
+ let expired=false;
+ const read:ReadView=(functionName,args)=>{
+  if(expired)throw new Error('Public finalized read timed out.');
+  return client.readContract({address:auditContract,functionName,args,transactionHashVariant:TransactionHashVariant.LATEST_FINAL});
+ };
  let timer:ReturnType<typeof setTimeout>|undefined;
- try{return await Promise.race([collectPacket(taskId,read),new Promise<never>((_,reject)=>{timer=setTimeout(()=>reject(new Error('Public finalized read timed out. No live verification is claimed.')),25000);})]);}
+ try{return await Promise.race([collectPacket(taskId,read),new Promise<never>((_,reject)=>{timer=setTimeout(()=>{expired=true;reject(new Error('Public finalized read timed out. No live verification is claimed.'));},25000);})]);}
  finally{if(timer)clearTimeout(timer);}
 }
 
